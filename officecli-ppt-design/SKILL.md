@@ -121,6 +121,8 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 
 新增静态机制按目标进入：[字形等距扩张](references/glyph-equal-offset.md)、[汉字共享笔画](references/chinese-stroke-design.md)、[逐笔画局部层次](references/stroke-depth.md)、[受限曲线包络与尖端顶盖](references/bounded-envelope.md)、[轮廓混合与长影](references/contour-blend-extrusion.md)、[柔和局部色场](references/soft-local-color-field.md)。这些配方保留明确的字形/路径/拓扑边界，不据此宣称任意字体自动设计。
 
+字形全体／选定笔画的虚化见[局部Gaussian](references/local-blur-background.md)：`glyph_gaussian_build.py`复用已有原创笔画，外部计算透明Gaussian图层，OfficeCLI保留其余清晰路径及原文。按实际核心效果归external-render，不与原生艺术Blur或方向性Motion Blur混称。
+
 需要复制/重排后自动编号时使用[真实动态页码](references/dynamic-slide-number.md)：母版样式、版式页码占位符和原生slidenum字段共同工作，不能换成固定数字文本。
 
 自动生成章节目录、整体改列与节末返回使用[真Summary Zoom](references/summary-zoom.md)：OfficeCLI基础页加本机原生UI创建/编辑摘要容器；不要将手工SectionZoom组称为Summary，新增缩略图须等待可见Normal原生渲染就绪。

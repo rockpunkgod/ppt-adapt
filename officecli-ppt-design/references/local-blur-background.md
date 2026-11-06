@@ -45,3 +45,24 @@ python scripts/local_blur_verify.py --deck FRESH_FINAL/local-blur.pptx --origina
 来源9Ewb0Rd3P3E 2:28:54–2:29:09明确白色内阴影及20pt；本轮复读本地已存字幕，并以Ego Lite复核9张实际视频元素画面，8946秒可见透明度0%、Blur20、角度0、距离0。没有重下视频或作者照片。此增量仍为静态配方：实际放映与返回要在新稿检查，不能借已有Hover或Morph的结果宣称组合通过。用于业务稿时同步替换清晰原图、原生Blur参考与缓存，字体和信息排在霜边内侧，不让高光压住正文。
 
 [四页可编辑样稿与23秒原生播放](../../examples/frost-glass/README.md)保留清晰原图、原生Blur30、两个霜边窗口及移动后的窗口位置；实际5次方向键走1→2→3→4→3→4，0额外输入。四张导图和六个放映状态已复看，返回显示正常。原诊断版本的12项结构回归仍通过；没有把它原来的通过当作本次霜边效果的证明。
+
+## 字形的全体／局部 Gaussian 虚化
+
+backend：**external-render**。这是不同于上面原生Artistic Blur的具体实现：复用`stroke_depth_geometry.py`的原创四笔“木”路径，只对所选对象的alpha做显式Gaussian卷积，再由OfficeCLI将透明PNG与其余清晰原生路径组合。原始轮廓和原文留在稿内；虚化层是可重建图片，不是继续可打字的字体或原生Gaussian效果。没有重写已有笔画、Multiply或背景模糊配方。
+
+选择虚化范围先于调参数：整字退后用于引导主次；局部虚化只选择一笔或一个部件，剩余轮廓维持清晰，保留阅读骨架。不要在整字模糊图上再盖完整清晰字，那会变成辉光；局部效果中要移除该笔的清晰副本。样稿的虚化左撇在其余三笔后面，避免交点的模糊覆盖清晰横竖。
+
+使用已有Pillow/NumPy环境和本机OfficeCLI：
+
+```powershell
+python scripts/glyph_gaussian_build.py --officecli EXE --outdir FRESH_OUT --sigma 12
+powershell -File scripts/layout_story_native.ps1 -InputDeck FRESH_OUT/glyph-gaussian.pptx -OutputDirectory FRESH_NATIVE
+```
+
+生成器同时保留可重建alpha源、Gaussian图层和参数。当前600×600路径域以4倍超采样生成源alpha，`sigma`以该600像素域计；一维核`exp(-x²/(2σ²))`归一化，截断到4σ并补透明留白，分别沿x/y卷积。RGB保持恒定，只滤alpha，深浅底色都不会因把透明黑色一起模糊而出现黑边。此sigma不能直接视为Illustrator或Photoshop半径，也不能按源视频38.8px数值机械套到不同尺寸。
+
+已独立测过默认σ12：两类源/结果alpha总量相对误差<0.025%，重心位移<0.001像素，x/y方差增量约141.23–142.41（离散核方差143.87，差异来自8位alpha量化）。PPT实际嵌入PNG字节与生成源一致；全字效果不含对应清晰路径，局部效果保留其余三条原生轮廓。三张原生导图、深浅底边缘及六个实播状态已复看，文字可读；原生保存重开逐像素一致，未选参考轮廓区域不变。23秒本机播放以5次方向键走1→2→3→2→3→2，返回正常、0额外输入。见[三页可编辑作品](../../examples/glyph-gaussian/README.md)。这是静态视觉配方，不新增动效通过声明。
+
+来源资格：BV1oPHgeiEgb P21/P29，播放量564564。本轮Ego Lite复核18个视频元素帧：P21 2069秒明确选中字母i并显示Gaussian38.8px；2120秒显示拆分后的g下部单独Gaussian；P29 820秒仅左偏旁虚化、836–1003秒拆分复合字形并选择部件、1015秒可见局部虚实结果。Watch尝试P21字幕，来源无可用字幕，未下载音频或启用转写；以实际操作画面为本次视觉证据，不声称连续正常速度看完整节。方向性Motion Blur尚无完整操作证据，不能从本Gaussian样稿升级为verified。
+
+范围是原创四笔轮廓、默认σ12及当前构图。其他sigma、任意字体自动拆笔、字孔或复杂自交、不同alpha颜色处理需按输入另验；此实现不证明Adobe算法/像素等价，也不据原生Artistic Blur的不同就断言PowerPoint原生永远无法实现其他Gaussian方案。
