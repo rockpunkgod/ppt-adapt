@@ -92,6 +92,7 @@
 |媒体|跨页连续播放与有限停止|[media-cross-slide-lifecycle.md](media-cross-slide-lifecycle.md)及`media_lifecycle_*`：三页直线前进，第二页保持音阶连续、第三页停止，6实播+5结构项；不涵盖跳页/回退/无限loop|
 |墨迹/媒体|真Ink逐笔Replay及5+2停顿循环|`ink_pause_*`：原创三trace/183个XYT、原生drawProgress5秒/7秒PCM书签；12项与29秒真实前向多轮重画/保持通过，不是Wipe图片|
 |墨迹/路径组合|笔尖跟随Replay、Fly入场与离场|[笔尖同步](ink-pen-sync.md)及`ink_pen_*`：真Ink/透明圆心、5秒慢放及1秒串联，35秒实际点击与返回重播；限已测三等长trace|
+|文字/循环|单文本框逐字Wave与幅度变化|[逐字Wave](text-wave.md)及`text_wave_*`：原生preset34/letter10%/一往返四旋转/父UntilEnd；44秒三参数与静态对照通过，整词周期含错峰|
 |动画|连续自转、圆轨道、遮罩液面上升|`prepare_refinement.py`→`refine_visual.ps1`：圆轨径和往返原生检查；液面为矩形窗口，不是完整烧瓶波浪|
 |动画|中心120%、两侧85%与50%透明保持；Wheel六节点相位|`wheel_focus_*`：父/子行为hold及7秒单辐条，经原生中间态与16秒真实录屏、修后包内前向8项独立审计含Fade时长|
 |动画|原生Fly末段Bounce End|`bounce_end_*`：2秒Fly/Intensity0.75，GUI实读1.5秒；真实录屏238独立PTS帧，回弹与单调对照、13项审计通过；旧阅读器Fallback保留线性Fly|

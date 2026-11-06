@@ -56,6 +56,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 |跨底色局部换色、数字真实剪角|[局部字形与剪角](references/glyph-slices.md)|`glyph_slices_*`：原位副本求交、真实Subtract和独立细斜线；静态矢量，不自动随背景换色|
 |中文文字、字体字面、多图与透明表格顺序入场|[中文与多图版式](references/bilibili-layout-type.md)|`bili_layout_build.py`与`bili_layout_polish.ps1`，真表格/字形描边/Float修正|
 |单文本框逐段、逐字符、逐单词出现|[原生文本构建](references/text-unit-build.md)|`text_build_*`：真paragraph范围与Swivel文本iterate，保留原文字，不拆成多个框|
+|单文本框逐字起伏、旋转与连续循环|[原生逐字Wave](references/text-wave.md)|`text_wave_*`：保留活文字、letter10%与四段旋转，0.5秒/2秒及两幅度44秒实播|
 |照片揭示、斜切信息层、视差、时间轴|[连续状态与Morph](references/morph-patterns.md)|`build_morph.py`、`build_timeline.py`|
 |卡片抽拉、背景字形窗口、花瓣展开、聚焦、滚动数字|[原生组件配方](references/native-components.md)|`build_components.py`；真实数字Union用`native_card_*`，全画幅背景用`background_window_*`|
 |柔边单侧阴影、折页数字分界|[柔边折页](references/shadow-fold.md)|`shadow_fold_*`：原生导出透明椭圆后裁半，邻接同底色面板组合旋转|
@@ -80,7 +81,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 |真实3D模型、内部动作、跨页姿态|[3D场景](references/model3d.md)|`build_morph.py --mode 3d-template`，使用合法取得的模板|
 |正反面不同内容的真3D卡片|[双面GLB卡片](references/glb-double-sided-card.md)|`glb_card_*`：自建双单面贴图、OfficeCLI真model3d/Morph、两次真实点击及透视侧缘验证|
 
-只将完成适用验证的实现当作可直接复用配方；逐字Wave循环等未通过范围不作为已有能力。具体限制见各配方。
+只将完成适用验证的实现当作可直接复用配方；未实播的新组合不作为已有能力。具体限制见各配方。
 
 同心饼图/外环与百分比卡片见[份额图表一致性](references/concentric-share-charts.md)：`concentric_chart_*`核7真chart、同步改值、真透缝和余数。活动/静态菜单见[GIF/PNG状态配对](references/gif-png-menu.md)：`gif_menu_*`保真实多帧GIF，以六次物理点击验重复进入。图片双色映射见[原生双色调](references/native-duotone.md)：`duotone_*`保原图字节，原生a:duotone端点与中间灰阶通过；不外推彩色亮度权重或精确GIF重启帧。
 
