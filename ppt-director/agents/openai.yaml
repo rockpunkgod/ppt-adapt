@@ -1,0 +1,4 @@
+interface:
+  display_name: "PPT Director"
+  short_description: "规划整套PPT叙事、视觉规则与页面节奏，输出可校验的制作计划"
+  default_prompt: "使用 $ppt-director 将我的内容整理为整套PPT的叙事、视觉规格和可执行页面计划。"

@@ -1,0 +1,1084 @@
+{
+  "version": 1,
+  "deck_id": "library-night-pilot",
+  "design_spec": "design-spec.json",
+  "narrative": {
+    "opening": "先请求批准12周模拟试点，并展示20%到80%的可解释覆盖变化",
+    "throughline": "夜间需求在哪里→延至21点能覆盖谁→为什么选择有边界的试点→如何执行和复盘",
+    "closing_ask": "批准12周、18万元模拟预算，指定负责人并授权准备延时至21:00"
+  },
+  "evidence": [
+    {
+      "id": "simulation",
+      "kind": "simulated-data",
+      "path": "data.json"
+    },
+    {
+      "id": "decision-brief",
+      "kind": "original-brief",
+      "path": "brief.md"
+    },
+    {
+      "id": "visual-contract",
+      "kind": "design-spec",
+      "path": "design-spec.json"
+    }
+  ],
+  "pages": [
+    {
+      "id": "s01",
+      "order": 1,
+      "role": "decision-cover",
+      "chapter": "决策",
+      "message": "批准12周夜间延时试点，让模拟覆盖率从20%提升至80%",
+      "evidence_refs": [
+        "simulation",
+        "decision-brief"
+      ],
+      "layout_family": "editorial-cover",
+      "variant": "default",
+      "required_mechanisms": [
+        {
+          "query": "theme_semantics_*",
+          "reuse_scope": "复用全局EA/Latin字体槽、accent1/2色槽与局部夜间背景例外；不包含完整母版编辑或交互。",
+          "excluded_capabilities": []
+        }
+      ],
+      "objects": [
+        {
+          "id": "s01.title",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            1.5,
+            2,
+            22.5,
+            3.4
+          ],
+          "text": "把晚间两小时\n留给更多读者",
+          "color_role": "ink"
+        },
+        {
+          "id": "s01.subtitle",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            1.5,
+            6.2,
+            22.5,
+            2.4
+          ],
+          "text": "建议批准：12周延时至21:00试点\n模拟预算18万元",
+          "color_role": "ink"
+        },
+        {
+          "id": "s01.metric",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            24.5,
+            5.8,
+            7.87,
+            4.8
+          ],
+          "text": "20%\n↓\n80%",
+          "color_role": "ink"
+        },
+        {
+          "id": "s01.boundary",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            1.5,
+            11.4,
+            23.5,
+            2.5
+          ],
+          "text": "城市公共图书馆夜间服务\n模拟规划案例｜管理层决策稿",
+          "color_role": "ink"
+        }
+      ],
+      "relations": [],
+      "motion": {
+        "transition": "none",
+        "duration_ms": 0,
+        "groups": []
+      }
+    },
+    {
+      "id": "s02",
+      "order": 2,
+      "role": "problem-audience",
+      "chapter": "需求",
+      "message": "19点闭馆，使三类模拟夜间使用情境缺少服务窗口",
+      "evidence_refs": [
+        "simulation"
+      ],
+      "layout_family": "three-column-context",
+      "variant": "default",
+      "required_mechanisms": [
+        {
+          "query": "theme_semantics_*",
+          "reuse_scope": "复用全局EA/Latin字体槽、accent1/2色槽与局部夜间背景例外；不包含完整母版编辑或交互。",
+          "excluded_capabilities": []
+        }
+      ],
+      "objects": [
+        {
+          "id": "s02.title",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            1.5,
+            1.2,
+            30.87,
+            2.1
+          ],
+          "text": "夜间服务，解决的是可用时间",
+          "color_role": "ink"
+        },
+        {
+          "id": "s02.context",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            1.5,
+            4.2,
+            30.87,
+            1.6
+          ],
+          "text": "现状19:00闭馆；以下为设计服务时使用的模拟情境，不是调查分群占比。",
+          "color_role": "ink"
+        },
+        {
+          "id": "s02.after-work",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            1.5,
+            7.2,
+            9.95,
+            5.4
+          ],
+          "text": "下班学习\n工作结束后，仍能使用一段学习时间。",
+          "data_ref": "audience_scenarios[0]",
+          "color_role": "ink"
+        },
+        {
+          "id": "s02.study",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            11.95,
+            7.2,
+            9.95,
+            5.4
+          ],
+          "text": "自习备考\n获得连续、安静、可预期的学习窗口。",
+          "data_ref": "audience_scenarios[1]",
+          "color_role": "ink"
+        },
+        {
+          "id": "s02.family",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            22.4,
+            7.2,
+            9.97,
+            5.4
+          ],
+          "text": "家庭共读\n安排晚间阅读与陪伴活动。",
+          "data_ref": "audience_scenarios[2]",
+          "color_role": "ink"
+        }
+      ],
+      "relations": [
+        {
+          "type": "equal-width",
+          "objects": [
+            "s02.after-work",
+            "s02.study",
+            "s02.family"
+          ],
+          "tolerance_cm": 0.03
+        }
+      ],
+      "motion": {
+        "transition": "none",
+        "duration_ms": 0,
+        "groups": []
+      }
+    },
+    {
+      "id": "s03",
+      "order": 3,
+      "role": "data-evidence",
+      "chapter": "证据",
+      "message": "延至21点可覆盖200/250人次，新增150人次即60个百分点",
+      "evidence_refs": [
+        "simulation"
+      ],
+      "layout_family": "chart-plus-verdict",
+      "variant": "default",
+      "required_mechanisms": [
+        {
+          "query": "chart_build_*",
+          "reuse_scope": "复用两系列四类别原生柱状图按类别的四次onClick淡入，每次500ms；不承诺Excel数据工作簿编辑。",
+          "excluded_capabilities": []
+        },
+        {
+          "query": "theme_semantics_*",
+          "reuse_scope": "复用全局EA/Latin字体槽、accent1/2色槽与局部夜间背景例外；不包含完整母版编辑或交互。",
+          "excluded_capabilities": []
+        }
+      ],
+      "objects": [
+        {
+          "id": "s03.title",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            1.5,
+            1.2,
+            30.87,
+            2.1
+          ],
+          "text": "新增150人次，集中在19–21点",
+          "color_role": "ink"
+        },
+        {
+          "id": "s03.chart",
+          "kind": "chart",
+          "bounds_cm": [
+            1.5,
+            4.4,
+            21.4,
+            10.4
+          ],
+          "data_ref": "demand",
+          "chart_type": "clustered-column",
+          "series": [
+            "Demand",
+            "ProposedCoverage"
+          ],
+          "categories": [
+            "18–19点",
+            "19–20点",
+            "20–21点",
+            "21–22点"
+          ],
+          "axis": {
+            "minimum": 0,
+            "maximum": 100,
+            "unit": "人次"
+          }
+        },
+        {
+          "id": "s03.verdict",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            24,
+            5,
+            8.37,
+            4.4
+          ],
+          "text": "+150人次\n+60个百分点",
+          "color_role": "ink"
+        },
+        {
+          "id": "s03.explain",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            24,
+            10.2,
+            8.37,
+            4.6
+          ],
+          "text": "50＋70＋80＝200\n200/250＝80%\n仍有50人次未覆盖",
+          "color_role": "ink"
+        },
+        {
+          "id": "s03.note",
+          "kind": "text",
+          "font_role": "caption",
+          "bounds_cm": [
+            1.5,
+            15.4,
+            30.87,
+            1
+          ],
+          "text": "同一类别的需求与方案覆盖同步出现；两系列比较，不作堆积相加。全部为模拟数据。",
+          "color_role": "ink"
+        }
+      ],
+      "relations": [],
+      "motion": {
+        "transition": "none",
+        "duration_ms": 0,
+        "groups": [
+          {
+            "id": "s03.click1",
+            "trigger": "click",
+            "object_ids": [
+              "s03.chart"
+            ],
+            "build": "category",
+            "category_index": 1,
+            "duration_ms": 500,
+            "sequence": "main",
+            "click_index": 1,
+            "writes": [
+              {
+                "object": "s03.chart",
+                "property": "category[1].visibility",
+                "value": true
+              }
+            ]
+          },
+          {
+            "id": "s03.click2",
+            "trigger": "click",
+            "object_ids": [
+              "s03.chart"
+            ],
+            "build": "category",
+            "category_index": 2,
+            "duration_ms": 500,
+            "sequence": "main",
+            "click_index": 2,
+            "writes": [
+              {
+                "object": "s03.chart",
+                "property": "category[2].visibility",
+                "value": true
+              }
+            ]
+          },
+          {
+            "id": "s03.click3",
+            "trigger": "click",
+            "object_ids": [
+              "s03.chart"
+            ],
+            "build": "category",
+            "category_index": 3,
+            "duration_ms": 500,
+            "sequence": "main",
+            "click_index": 3,
+            "writes": [
+              {
+                "object": "s03.chart",
+                "property": "category[3].visibility",
+                "value": true
+              }
+            ]
+          },
+          {
+            "id": "s03.click4",
+            "trigger": "click",
+            "object_ids": [
+              "s03.chart"
+            ],
+            "build": "category",
+            "category_index": 4,
+            "duration_ms": 500,
+            "sequence": "main",
+            "click_index": 4,
+            "writes": [
+              {
+                "object": "s03.chart",
+                "property": "category[4].visibility",
+                "value": true
+              }
+            ]
+          }
+        ],
+        "duration_policy": "每类别暂定500ms；制作时由原样polish_timing.ps1落秒单位并原生读回"
+      }
+    },
+    {
+      "id": "s04",
+      "order": 4,
+      "role": "option-comparison",
+      "chapter": "选择",
+      "message": "先批准21点的有界试点，22点方案保留待测算",
+      "evidence_refs": [
+        "simulation",
+        "decision-brief"
+      ],
+      "layout_family": "comparison-table",
+      "variant": "default",
+      "required_mechanisms": [
+        {
+          "query": "bili_layout_table_*",
+          "reuse_scope": "复用原生表格、单元格字体与选择性边框，本例6行5列；不需要合并表头。",
+          "excluded_capabilities": []
+        },
+        {
+          "query": "theme_semantics_*",
+          "reuse_scope": "复用全局EA/Latin字体槽、accent1/2色槽与局部夜间背景例外；不包含完整母版编辑或交互。",
+          "excluded_capabilities": []
+        }
+      ],
+      "objects": [
+        {
+          "id": "s04.title",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            1.5,
+            1.2,
+            30.87,
+            2.1
+          ],
+          "text": "选择21点试点，先验证再扩展",
+          "color_role": "ink"
+        },
+        {
+          "id": "s04.table",
+          "kind": "table",
+          "bounds_cm": [
+            1.5,
+            4.5,
+            30.87,
+            9.2
+          ],
+          "data_ref": "comparison",
+          "rows": 6,
+          "columns": 5,
+          "font_role": "body"
+        },
+        {
+          "id": "s04.caveat",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            1.5,
+            14.2,
+            30.87,
+            1.8
+          ],
+          "text": "18万元仅对应12周、21点方案；22点方案预算未测算，不与试点同价比较。",
+          "color_role": "ink"
+        }
+      ],
+      "relations": [],
+      "motion": {
+        "transition": "none",
+        "duration_ms": 0,
+        "groups": []
+      }
+    },
+    {
+      "id": "s05",
+      "order": 5,
+      "role": "current-window",
+      "chapter": "服务窗口",
+      "message": "现状19点结束，仅覆盖50/250人次即20%",
+      "evidence_refs": [
+        "simulation",
+        "visual-contract"
+      ],
+      "layout_family": "continuous-service-window",
+      "variant": "night",
+      "required_mechanisms": [
+        {
+          "query": "遮罩数字条、矩形焦点窗口",
+          "reuse_scope": "仅复用稳定!!对象身份及700ms原生Morph的平移与尺寸插值；本页为实填覆盖条和标签，不是孔罩。",
+          "excluded_capabilities": [
+            "固定窗口遮罩",
+            "边界无漏缝验收",
+            "完整focus或timeline配方"
+          ]
+        },
+        {
+          "query": "theme_semantics_*",
+          "reuse_scope": "复用全局EA/Latin字体槽、accent1/2色槽与局部夜间背景例外；不包含完整母版编辑或交互。",
+          "excluded_capabilities": []
+        }
+      ],
+      "objects": [
+        {
+          "id": "s05.title",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            1.5,
+            1.2,
+            30.87,
+            2.1
+          ],
+          "text": "现状：19点结束，覆盖20%",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s05.track",
+          "kind": "shape",
+          "bounds_cm": [
+            3.5,
+            8,
+            26.4,
+            2.2
+          ],
+          "geometry": "rect",
+          "color_role": "muted",
+          "fill_role": "muted"
+        },
+        {
+          "id": "s05.coverage-window",
+          "kind": "shape",
+          "bounds_cm": [
+            3.5,
+            8,
+            6.6,
+            2.2
+          ],
+          "geometry": "rect",
+          "color_role": "accent1",
+          "morph_key": "coverage-window",
+          "fill_role": "accent1"
+        },
+        {
+          "id": "s05.focus",
+          "kind": "shape",
+          "bounds_cm": [
+            7.0,
+            5.1,
+            6.2,
+            1.8
+          ],
+          "text": "19:00闭馆",
+          "font_role": "body",
+          "morph_key": "focusTag",
+          "native_name": "!!focusTag",
+          "geometry": "roundRect",
+          "fill_role": "accent1",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s05.metric",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            3.5,
+            13.7,
+            26.4,
+            2.1
+          ],
+          "text": "50 / 250人次＝20%",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s05.hour-18",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            2.0,
+            11,
+            3,
+            1.2
+          ],
+          "text": "18:00",
+          "align": "center",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s05.hour-19",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            8.6,
+            11,
+            3,
+            1.2
+          ],
+          "text": "19:00",
+          "align": "center",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s05.hour-20",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            15.2,
+            11,
+            3,
+            1.2
+          ],
+          "text": "20:00",
+          "align": "center",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s05.hour-21",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            21.8,
+            11,
+            3,
+            1.2
+          ],
+          "text": "21:00",
+          "align": "center",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s05.hour-22",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            28.4,
+            11,
+            3,
+            1.2
+          ],
+          "text": "22:00",
+          "align": "center",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s05.axis-label",
+          "kind": "text",
+          "font_role": "caption",
+          "bounds_cm": [
+            3.5,
+            3.6,
+            26.4,
+            0.9
+          ],
+          "text": "服务开放时段（横轴为时间，覆盖人次见下方）",
+          "color_role": "on_dark"
+        }
+      ],
+      "relations": [
+        {
+          "type": "morph-pair",
+          "target_page": "s06",
+          "keys": [
+            "coverage-window",
+            "focusTag"
+          ]
+        }
+      ],
+      "motion": {
+        "transition": "none",
+        "duration_ms": 0,
+        "groups": []
+      }
+    },
+    {
+      "id": "s06",
+      "order": 6,
+      "role": "proposed-window",
+      "chapter": "服务窗口",
+      "message": "试点延至21点，覆盖200/250人次即80%，提升60个百分点",
+      "evidence_refs": [
+        "simulation",
+        "visual-contract"
+      ],
+      "layout_family": "continuous-service-window",
+      "variant": "night",
+      "required_mechanisms": [
+        {
+          "query": "遮罩数字条、矩形焦点窗口",
+          "reuse_scope": "仅复用稳定!!对象身份及700ms原生Morph的平移与尺寸插值；本页为实填覆盖条和标签，不是孔罩。",
+          "excluded_capabilities": [
+            "固定窗口遮罩",
+            "边界无漏缝验收",
+            "完整focus或timeline配方"
+          ]
+        },
+        {
+          "query": "theme_semantics_*",
+          "reuse_scope": "复用全局EA/Latin字体槽、accent1/2色槽与局部夜间背景例外；不包含完整母版编辑或交互。",
+          "excluded_capabilities": []
+        }
+      ],
+      "objects": [
+        {
+          "id": "s06.title",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            1.5,
+            1.2,
+            30.87,
+            2.1
+          ],
+          "text": "试点：延至21点，覆盖80%",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s06.track",
+          "kind": "shape",
+          "bounds_cm": [
+            3.5,
+            8,
+            26.4,
+            2.2
+          ],
+          "geometry": "rect",
+          "color_role": "muted",
+          "fill_role": "muted"
+        },
+        {
+          "id": "s06.coverage-window",
+          "kind": "shape",
+          "bounds_cm": [
+            3.5,
+            8,
+            19.8,
+            2.2
+          ],
+          "geometry": "rect",
+          "color_role": "accent1",
+          "morph_key": "coverage-window",
+          "fill_role": "accent1"
+        },
+        {
+          "id": "s06.focus",
+          "kind": "shape",
+          "bounds_cm": [
+            20.2,
+            5.1,
+            6.2,
+            1.8
+          ],
+          "text": "21:00闭馆",
+          "font_role": "body",
+          "morph_key": "focusTag",
+          "native_name": "!!focusTag",
+          "geometry": "roundRect",
+          "fill_role": "accent1",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s06.metric",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            3.5,
+            13.7,
+            26.4,
+            2.1
+          ],
+          "text": "200 / 250人次＝80%｜新增150人次",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s06.hour-18",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            2.0,
+            11,
+            3,
+            1.2
+          ],
+          "text": "18:00",
+          "align": "center",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s06.hour-19",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            8.6,
+            11,
+            3,
+            1.2
+          ],
+          "text": "19:00",
+          "align": "center",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s06.hour-20",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            15.2,
+            11,
+            3,
+            1.2
+          ],
+          "text": "20:00",
+          "align": "center",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s06.hour-21",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            21.8,
+            11,
+            3,
+            1.2
+          ],
+          "text": "21:00",
+          "align": "center",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s06.hour-22",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            28.4,
+            11,
+            3,
+            1.2
+          ],
+          "text": "22:00",
+          "align": "center",
+          "color_role": "on_dark"
+        },
+        {
+          "id": "s06.axis-label",
+          "kind": "text",
+          "font_role": "caption",
+          "bounds_cm": [
+            3.5,
+            3.6,
+            26.4,
+            0.9
+          ],
+          "text": "服务开放时段（横轴为时间，覆盖人次见下方）",
+          "color_role": "on_dark"
+        }
+      ],
+      "relations": [
+        {
+          "type": "morph-pair",
+          "target_page": "s05",
+          "keys": [
+            "coverage-window",
+            "focusTag"
+          ]
+        }
+      ],
+      "motion": {
+        "transition": "morph",
+        "duration_ms": 700,
+        "groups": []
+      }
+    },
+    {
+      "id": "s07",
+      "order": 7,
+      "role": "implementation",
+      "chapter": "执行",
+      "message": "用12周分阶段实施，18万元预算对应三类投入",
+      "evidence_refs": [
+        "simulation"
+      ],
+      "layout_family": "roadmap-budget-split",
+      "variant": "default",
+      "required_mechanisms": [
+        {
+          "query": "theme_semantics_*",
+          "reuse_scope": "复用全局EA/Latin字体槽、accent1/2色槽与局部夜间背景例外；不包含完整母版编辑或交互。",
+          "excluded_capabilities": []
+        }
+      ],
+      "objects": [
+        {
+          "id": "s07.title",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            1.5,
+            1.2,
+            30.87,
+            2.1
+          ],
+          "text": "12周试点，先准备、再运行、后评估",
+          "color_role": "ink"
+        },
+        {
+          "id": "s07.prepare",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            1.5,
+            5,
+            9.95,
+            4.6
+          ],
+          "text": "第1–2周｜准备\n排班、安全方案\n评估基线",
+          "data_ref": "roadmap.phases[0]",
+          "color_role": "ink"
+        },
+        {
+          "id": "s07.operate",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            11.95,
+            5,
+            9.95,
+            4.6
+          ],
+          "text": "第3–10周｜运行\n记录分时使用\n处理运营问题",
+          "data_ref": "roadmap.phases[1]",
+          "color_role": "ink"
+        },
+        {
+          "id": "s07.review",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            22.4,
+            5,
+            9.97,
+            4.6
+          ],
+          "text": "第11–12周｜评估\n核算覆盖与成本\n决定调整或停止",
+          "data_ref": "roadmap.phases[2]",
+          "color_role": "ink"
+        },
+        {
+          "id": "s07.budget",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            1.5,
+            11.7,
+            30.87,
+            3.3
+          ],
+          "text": "模拟预算18万元＝延时人力8万＋安保与夜间运营6万＋评估与服务准备4万",
+          "data_ref": "budget",
+          "color_role": "ink"
+        }
+      ],
+      "relations": [],
+      "motion": {
+        "transition": "none",
+        "duration_ms": 0,
+        "groups": []
+      }
+    },
+    {
+      "id": "s08",
+      "order": 8,
+      "role": "approval-next-step",
+      "chapter": "行动",
+      "message": "请批准12周、18万元和负责人授权，再确认排班与安全方案启动",
+      "evidence_refs": [
+        "simulation",
+        "decision-brief"
+      ],
+      "layout_family": "approval-action-list",
+      "variant": "default",
+      "required_mechanisms": [
+        {
+          "query": "theme_semantics_*",
+          "reuse_scope": "复用全局EA/Latin字体槽、accent1/2色槽与局部夜间背景例外；不包含完整母版编辑或交互。",
+          "excluded_capabilities": []
+        }
+      ],
+      "objects": [
+        {
+          "id": "s08.title",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            1.5,
+            1.2,
+            30.87,
+            2.1
+          ],
+          "text": "请批准这一次有边界的试点",
+          "color_role": "ink"
+        },
+        {
+          "id": "s08.ask",
+          "kind": "text",
+          "font_role": "title",
+          "bounds_cm": [
+            1.5,
+            4.5,
+            30.87,
+            3.2
+          ],
+          "text": "12周　｜　18万元　｜　延至21:00",
+          "color_role": "ink"
+        },
+        {
+          "id": "s08.approval",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            1.5,
+            8.8,
+            14.8,
+            5.6
+          ],
+          "text": "本次批准\n① 试点周期与模拟预算\n② 指定负责人与协调机制\n③ 授权启动前准备",
+          "color_role": "ink"
+        },
+        {
+          "id": "s08.next",
+          "kind": "text",
+          "font_role": "body",
+          "bounds_cm": [
+            17,
+            8.8,
+            15.37,
+            5.6
+          ],
+          "text": "批准后的下一步\n确认排班与安全方案\n建立评估基线后启动\n第12周提交调整或停止建议",
+          "color_role": "ink"
+        },
+        {
+          "id": "s08.boundary",
+          "kind": "text",
+          "font_role": "caption",
+          "bounds_cm": [
+            1.5,
+            15.5,
+            30.87,
+            1
+          ],
+          "text": "不在本次批准范围：22点延长方案与长期推广；需另行评估。",
+          "color_role": "ink"
+        }
+      ],
+      "relations": [],
+      "motion": {
+        "transition": "none",
+        "duration_ms": 0,
+        "groups": []
+      }
+    }
+  ],
+  "operations": [
+    {
+      "id": "deck:timing-polish",
+      "backend": "powerpoint-com",
+      "depends_on": [
+        "s08:officecli-close",
+        "s03:officecli-close"
+      ],
+      "action": "Call existing unmodified polish_timing.ps1 on the closed completed deck; refine chart effect 1 to 0.5 seconds and read all four effects natively.",
+      "entrypoint": "officecli-ppt-design/scripts/polish_timing.ps1",
+      "writer": "exclusive PowerPoint slot; own presentation only",
+      "writes": [
+        {
+          "page": "s03",
+          "object": "s03.chart",
+          "property": "effect[1].duration_seconds",
+          "value": 0.5
+        }
+      ]
+    }
+  ]
+}

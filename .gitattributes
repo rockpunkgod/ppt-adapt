@@ -5,3 +5,5 @@
 *.yaml text eol=lf
 *.json text eol=lf
 *.xml text eol=lf
+# Preserve the exact input/evidence bytes bound by the native acceptance hashes.
+examples/library-night-pilot/** -text -eol whitespace=trailing-space,space-before-tab,cr-at-eol

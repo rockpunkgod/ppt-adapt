@@ -1,0 +1,987 @@
+{
+  "version": 1,
+  "blocked": false,
+  "conflicts": [],
+  "automatic_repairs": [],
+  "defaults_applied": [
+    {
+      "category": "naming",
+      "location": "s01.s01.title.name",
+      "value": "library-night-pilot.s01.title",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s01.s01.title.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s01.s01.title.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s01.s01.subtitle.name",
+      "value": "library-night-pilot.s01.subtitle",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s01.s01.subtitle.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s01.s01.subtitle.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s01.s01.metric.name",
+      "value": "library-night-pilot.s01.metric",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s01.s01.metric.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s01.s01.metric.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s01.s01.boundary.name",
+      "value": "library-night-pilot.s01.boundary",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s01.s01.boundary.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s01.s01.boundary.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s02.s02.title.name",
+      "value": "library-night-pilot.s02.title",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s02.s02.title.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s02.s02.title.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s02.s02.context.name",
+      "value": "library-night-pilot.s02.context",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s02.s02.context.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s02.s02.context.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s02.s02.after-work.name",
+      "value": "library-night-pilot.s02.after-work",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s02.s02.after-work.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s02.s02.after-work.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s02.s02.study.name",
+      "value": "library-night-pilot.s02.study",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s02.s02.study.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s02.s02.study.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s02.s02.family.name",
+      "value": "library-night-pilot.s02.family",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s02.s02.family.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s02.s02.family.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s03.s03.title.name",
+      "value": "library-night-pilot.s03.title",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s03.s03.title.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s03.s03.title.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s03.s03.chart.name",
+      "value": "library-night-pilot.s03.chart",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "naming",
+      "location": "s03.s03.verdict.name",
+      "value": "library-night-pilot.s03.verdict",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s03.s03.verdict.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s03.s03.verdict.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s03.s03.explain.name",
+      "value": "library-night-pilot.s03.explain",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s03.s03.explain.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s03.s03.explain.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s03.s03.note.name",
+      "value": "library-night-pilot.s03.note",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s03.s03.note.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s03.s03.note.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s04.s04.title.name",
+      "value": "library-night-pilot.s04.title",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s04.s04.title.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s04.s04.title.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s04.s04.table.name",
+      "value": "library-night-pilot.s04.table",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s04.s04.table.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s04.s04.table.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s04.s04.caveat.name",
+      "value": "library-night-pilot.s04.caveat",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s04.s04.caveat.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s04.s04.caveat.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s05.s05.title.name",
+      "value": "library-night-pilot.s05.title",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s05.s05.title.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s05.s05.title.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s05.s05.track.name",
+      "value": "library-night-pilot.s05.track",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "theme",
+      "location": "s05.s05.track.color",
+      "value": "647381",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s05.s05.coverage-window.name",
+      "value": "!!coverage-window",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "theme",
+      "location": "s05.s05.coverage-window.color",
+      "value": "1D7774",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s05.s05.focus.name",
+      "value": "!!focusTag",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s05.s05.focus.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s05.s05.focus.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s05.s05.metric.name",
+      "value": "library-night-pilot.s05.metric",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s05.s05.metric.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s05.s05.metric.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s05.s05.hour-18.name",
+      "value": "library-night-pilot.s05.hour-18",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s05.s05.hour-18.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s05.s05.hour-18.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s05.s05.hour-19.name",
+      "value": "library-night-pilot.s05.hour-19",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s05.s05.hour-19.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s05.s05.hour-19.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s05.s05.hour-20.name",
+      "value": "library-night-pilot.s05.hour-20",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s05.s05.hour-20.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s05.s05.hour-20.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s05.s05.hour-21.name",
+      "value": "library-night-pilot.s05.hour-21",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s05.s05.hour-21.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s05.s05.hour-21.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s05.s05.hour-22.name",
+      "value": "library-night-pilot.s05.hour-22",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s05.s05.hour-22.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s05.s05.hour-22.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s05.s05.axis-label.name",
+      "value": "library-night-pilot.s05.axis-label",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s05.s05.axis-label.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s05.s05.axis-label.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s06.s06.title.name",
+      "value": "library-night-pilot.s06.title",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s06.s06.title.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s06.s06.title.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s06.s06.track.name",
+      "value": "library-night-pilot.s06.track",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "theme",
+      "location": "s06.s06.track.color",
+      "value": "647381",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s06.s06.coverage-window.name",
+      "value": "!!coverage-window",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "theme",
+      "location": "s06.s06.coverage-window.color",
+      "value": "1D7774",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s06.s06.focus.name",
+      "value": "!!focusTag",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s06.s06.focus.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s06.s06.focus.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s06.s06.metric.name",
+      "value": "library-night-pilot.s06.metric",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s06.s06.metric.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s06.s06.metric.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s06.s06.hour-18.name",
+      "value": "library-night-pilot.s06.hour-18",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s06.s06.hour-18.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s06.s06.hour-18.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s06.s06.hour-19.name",
+      "value": "library-night-pilot.s06.hour-19",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s06.s06.hour-19.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s06.s06.hour-19.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s06.s06.hour-20.name",
+      "value": "library-night-pilot.s06.hour-20",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s06.s06.hour-20.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s06.s06.hour-20.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s06.s06.hour-21.name",
+      "value": "library-night-pilot.s06.hour-21",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s06.s06.hour-21.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s06.s06.hour-21.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s06.s06.hour-22.name",
+      "value": "library-night-pilot.s06.hour-22",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s06.s06.hour-22.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s06.s06.hour-22.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s06.s06.axis-label.name",
+      "value": "library-night-pilot.s06.axis-label",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s06.s06.axis-label.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s06.s06.axis-label.color",
+      "value": "F4F1EA",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s07.s07.title.name",
+      "value": "library-night-pilot.s07.title",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s07.s07.title.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s07.s07.title.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s07.s07.prepare.name",
+      "value": "library-night-pilot.s07.prepare",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s07.s07.prepare.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s07.s07.prepare.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s07.s07.operate.name",
+      "value": "library-night-pilot.s07.operate",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s07.s07.operate.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s07.s07.operate.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s07.s07.review.name",
+      "value": "library-night-pilot.s07.review",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s07.s07.review.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s07.s07.review.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s07.s07.budget.name",
+      "value": "library-night-pilot.s07.budget",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s07.s07.budget.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s07.s07.budget.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s08.s08.title.name",
+      "value": "library-night-pilot.s08.title",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s08.s08.title.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s08.s08.title.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s08.s08.ask.name",
+      "value": "library-night-pilot.s08.ask",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s08.s08.ask.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s08.s08.ask.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s08.s08.approval.name",
+      "value": "library-night-pilot.s08.approval",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s08.s08.approval.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s08.s08.approval.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s08.s08.next.name",
+      "value": "library-night-pilot.s08.next",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s08.s08.next.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s08.s08.next.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    },
+    {
+      "category": "naming",
+      "location": "s08.s08.boundary.name",
+      "value": "library-night-pilot.s08.boundary",
+      "reason": "Stable native object identity is scoped by deck/page/object"
+    },
+    {
+      "category": "font",
+      "location": "s08.s08.boundary.fonts",
+      "value": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "reason": "Apply explicit EA/Latin role tokens; preserve text"
+    },
+    {
+      "category": "theme",
+      "location": "s08.s08.boundary.color",
+      "value": "17324E",
+      "reason": "Use declared semantic color or allowed chapter variant"
+    }
+  ],
+  "remaining": 0
+}

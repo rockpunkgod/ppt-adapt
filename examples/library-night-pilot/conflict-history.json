@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "scope": "library-night-pilot integration",
+  "priority": ["内容正确与完整性", "可读性", "整套视觉一致性", "动效质量", "装饰效果"],
+  "records": [
+    {
+      "id": "CR01", "category": "readability", "status": "resolved",
+      "detected_by": "PowerPoint native text bounds",
+      "before": "s01.metric的3行34pt文字高122.4pt，框高107.72pt",
+      "after": "框高由3.8cm扩大为4.8cm；保持文字、数值与34pt字号",
+      "reason": "不通过缩字掩盖文字溢出"
+    },
+    {
+      "id": "CR02", "category": "content and layout", "status": "resolved",
+      "detected_by": "native image review and geometry audit",
+      "before": "时间刻度依赖中文空格排布，不能保证与窗口边缘一致",
+      "after": "五个独立时刻对象等距6.6cm，开放窗口宽6.6cm到19.8cm；标签中心与19/21点锚一致",
+      "reason": "横轴编码小时，不编码人数比例；另行明确覆盖人次"
+    },
+    {
+      "id": "CR03", "category": "naming and Morph", "status": "resolved",
+      "detected_by": "actual PPTX XML and native name readback",
+      "before": "OfficeCLI设置Morph时自动给普通对象名称附加!!",
+      "after": "适配器恢复普通对象稳定名；只保留coverage-window和focusTag两对!!身份",
+      "reason": "避免执行层名字和编排引用不一致，未改变现有配方"
+    },
+    {
+      "id": "CR04", "category": "interface and font", "status": "resolved",
+      "detected_by": "independent negative tests",
+      "before": "适配器未全面消费effective计划、未检查自身/源字节哈希，字体和时长存在硬编码",
+      "after": "执行前核plan_digest、源字节、规范JSON和配方索引；使用native_name、font_size_pt、全局字体和计划时长",
+      "reason": "旧计划或被篡改的计划必须重新规划；不让视觉风格与执行参数漂移"
+    },
+    {
+      "id": "CR05", "category": "recipe scope", "status": "resolved",
+      "detected_by": "recipe application review",
+      "before": "单个配方行的选择可能被误读为复现完整focus/timeline原子",
+      "after": "逐项声明reuse_scope和excluded_capabilities；本例仅借用Morph身份、平移和尺寸插值，不声称真实孔罩",
+      "reason": "索引命中或原子通过不能授予组合通过"
+    },
+    {
+      "id": "CR06", "category": "PowerPoint interface", "status": "resolved",
+      "detected_by": "actual invocation and native timing readback",
+      "before": "既有polish_timing.ps1在当前PS5环境读取顶层JSON数组产生嵌套数组",
+      "after": "不修改既有脚本；用单对象输入精修首项，原生读回全部四项均0.5秒；操作列入DAG并依赖CLI关闭",
+      "reason": "优先复用已有机制，在适配边界修复接口问题"
+    },
+    {
+      "id": "CR07", "category": "validation coordinates", "status": "resolved",
+      "detected_by": "COM cell measurement and independent native pixels",
+      "before": "单元格局部TextFrame2坐标被误作全局坐标，造成假阴性",
+      "after": "保留原始测量；检查文字尺寸与单元格可用尺寸，以及30格原生图前景与边界，实际画面复核",
+      "reason": "纠正坐标含义，不放宽实际可读性阈值"
+    }
+  ],
+  "final_acceptance": "integration-acceptance.json",
+  "remaining_blocking_conflicts": 0
+}

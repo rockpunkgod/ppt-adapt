@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "deck_id": "library-night-pilot",
+  "canvas_cm": {
+    "width": 33.87,
+    "height": 19.05
+  },
+  "audience": "城市公共图书馆管理层",
+  "purpose": "以模拟数据支持一个有边界的夜间延时服务试点决策",
+  "decision": "批准12周、18万元模拟预算，试点延时至21:00；22:00暂不纳入",
+  "tokens": {
+    "fonts": {
+      "heading": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      },
+      "body": {
+        "ea": "Microsoft YaHei",
+        "latin": "Arial"
+      }
+    },
+    "font_sizes_pt": {
+      "title": 34,
+      "body": 20,
+      "caption": 14,
+      "footer": 11
+    },
+    "colors": {
+      "paper": "F4F1EA",
+      "ink": "17324E",
+      "accent1": "1D7774",
+      "accent2": "D36D55",
+      "muted": "647381",
+      "night": "102D36",
+      "on_dark": "F4F1EA"
+    },
+    "spacing_cm": {
+      "margin": 1.5,
+      "gap": 0.5
+    }
+  },
+  "variants": {
+    "night": {
+      "pages": [
+        "s05",
+        "s06"
+      ],
+      "background_role": "night",
+      "text_role": "on_dark",
+      "reason": "专门呈现夜间服务窗口；页脚仍用浅纸色band与墨色字，保跨页身份"
+    }
+  },
+  "quality": {
+    "min_body_pt": 18,
+    "max_motion_groups_per_page": 4
+  },
+  "layout_rules": {
+    "title_bounds_cm": [
+      1.5,
+      1.2,
+      30.87,
+      2.1
+    ],
+    "content_bounds_cm": [
+      1.5,
+      4.1,
+      30.87,
+      12.65
+    ],
+    "footer_band_bounds_cm": [
+      0,
+      18.15,
+      33.87,
+      0.9
+    ],
+    "footer_text": "模拟规划数据｜非真实调查",
+    "footer_color_role": "ink",
+    "footer_background_role": "paper",
+    "photo_policy": "不用照片，采用原创原生几何与图表，避免素材许可依赖",
+    "label_policy": "每页保模拟标识；20%→80%写60个百分点，禁止写增长60%"
+  },
+  "motion_rules": {
+    "s03": "真图表按类别四次点击；每次同时出现同一时间类别的两系列",
+    "s05_s06": "只有5→6为700ms Morph；不叠加对象进入退出动画；焦点标签与覆盖窗保持身份",
+    "other_pages": "静态；无装饰性自动动画"
+  },
+  "shared_components": {
+    "footer": {
+      "band_y_cm": 18.15,
+      "band_height_cm": 0.9,
+      "label": "夜读试点 · 原创模拟方案",
+      "font_role": "footer"
+    }
+  }
+}

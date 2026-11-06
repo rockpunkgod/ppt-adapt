@@ -1,0 +1,12 @@
+{
+    "accelerate":  0,
+    "delay":  0,
+    "effect":  1,
+    "shape":  "library-night-pilot.s03.chart",
+    "autoReverse":  0,
+    "repeatCount":  1,
+    "trigger":  1,
+    "decelerate":  0,
+    "duration":  0.5,
+    "slide":  3
+}

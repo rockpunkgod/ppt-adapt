@@ -9,6 +9,8 @@ description: 制作、优化和验证可编辑PPT。覆盖构图、配色、字�
 
 本技能补充OfficeCLI，主指令不被替换。依据调用方提供的内容制作；示例占位文字、素材与题材须替换成实际需求。
 
+制作整套演示时，先调用配套 `ppt-director` 形成整套 deck plan 与 design specification，再由 `ppt-composition-planner` 读取本技能配方索引、明确组合边界并消除阻断冲突，最后执行本技能。单页修改可沿用已确认的整套规范。总控和编排层不替代下述配方语义或验收标准；未实测组合保持未验证。
+
 ## 按实现后端封装
 
 每个原子配方使用用户指定的四类之一：`officecli-native`（CLI可完成）、`powerpoint-com`（既有文稿的原生精修）、`hybrid`（CLI基础+COM几何/动效）、`external-render`（核心视觉由外部图像计算或AE等渲染产生）。判据与交付要求见 [execution-backends.md](references/execution-backends.md)。设计方法类别作为第二维标签，不能把CLI缺口直接判为必须外部渲染。

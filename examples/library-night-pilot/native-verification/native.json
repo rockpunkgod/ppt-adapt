@@ -1,0 +1,2910 @@
+{
+  "timingNote": "InputTime is stopwatch after StartProcess, not exact first decoded video PTS",
+  "events": [
+    {
+      "actualSlide": 2,
+      "input": "physical-Right",
+      "beforeSlide": 1,
+      "capture": "state-00-s2-c0.png",
+      "inputTime": 2.0116385,
+      "observedTime": 2.8475759,
+      "step": 0,
+      "beforeClick": 0,
+      "actualClick": 0,
+      "expectedClick": 0,
+      "expectedSlide": 2
+    },
+    {
+      "actualSlide": 3,
+      "input": "physical-Right",
+      "beforeSlide": 2,
+      "capture": "state-01-s3-c0.png",
+      "inputTime": 4.0371645,
+      "observedTime": 4.9029547,
+      "step": 1,
+      "beforeClick": 0,
+      "actualClick": 0,
+      "expectedClick": 0,
+      "expectedSlide": 3
+    },
+    {
+      "actualSlide": 3,
+      "input": "physical-Right",
+      "beforeSlide": 3,
+      "capture": "state-02-s3-c1.png",
+      "inputTime": 5.0060596,
+      "observedTime": 5.8281281,
+      "step": 2,
+      "beforeClick": 0,
+      "actualClick": 1,
+      "expectedClick": 1,
+      "expectedSlide": 3
+    },
+    {
+      "actualSlide": 3,
+      "input": "physical-Right",
+      "beforeSlide": 3,
+      "capture": "state-03-s3-c2.png",
+      "inputTime": 6.0468334,
+      "observedTime": 6.8765933,
+      "step": 3,
+      "beforeClick": 1,
+      "actualClick": 2,
+      "expectedClick": 2,
+      "expectedSlide": 3
+    },
+    {
+      "actualSlide": 3,
+      "input": "physical-Right",
+      "beforeSlide": 3,
+      "capture": "state-04-s3-c3.png",
+      "inputTime": 7.0218108,
+      "observedTime": 7.8932591,
+      "step": 4,
+      "beforeClick": 2,
+      "actualClick": 3,
+      "expectedClick": 3,
+      "expectedSlide": 3
+    },
+    {
+      "actualSlide": 3,
+      "input": "physical-Right",
+      "beforeSlide": 3,
+      "capture": "state-05-s3-c4.png",
+      "inputTime": 8.0361689,
+      "observedTime": 8.9060301,
+      "step": 5,
+      "beforeClick": 3,
+      "actualClick": 4,
+      "expectedClick": 4,
+      "expectedSlide": 3
+    },
+    {
+      "actualSlide": 4,
+      "input": "physical-Right",
+      "beforeSlide": 3,
+      "capture": "state-06-s4-c0.png",
+      "inputTime": 9.003642,
+      "observedTime": 9.8700456,
+      "step": 6,
+      "beforeClick": 4,
+      "actualClick": 0,
+      "expectedClick": 0,
+      "expectedSlide": 4
+    },
+    {
+      "actualSlide": 5,
+      "input": "physical-Right",
+      "beforeSlide": 4,
+      "capture": "state-07-s5-c0.png",
+      "inputTime": 11.0076269,
+      "observedTime": 11.8788483,
+      "step": 7,
+      "beforeClick": 0,
+      "actualClick": 0,
+      "expectedClick": 0,
+      "expectedSlide": 5
+    },
+    {
+      "actualSlide": 6,
+      "input": "physical-Right",
+      "beforeSlide": 5,
+      "capture": "state-08-s6-c0.png",
+      "inputTime": 13.0086132,
+      "observedTime": 13.8472228,
+      "step": 8,
+      "beforeClick": 0,
+      "actualClick": 0,
+      "expectedClick": 0,
+      "expectedSlide": 6
+    },
+    {
+      "actualSlide": 7,
+      "input": "physical-Right",
+      "beforeSlide": 6,
+      "capture": "state-09-s7-c0.png",
+      "inputTime": 15.0599043,
+      "observedTime": 15.8905265,
+      "step": 9,
+      "beforeClick": 0,
+      "actualClick": 0,
+      "expectedClick": 0,
+      "expectedSlide": 7
+    },
+    {
+      "actualSlide": 8,
+      "input": "physical-Right",
+      "beforeSlide": 7,
+      "capture": "state-10-s8-c0.png",
+      "inputTime": 17.0207446,
+      "observedTime": 17.8882316,
+      "step": 10,
+      "beforeClick": 0,
+      "actualClick": 0,
+      "expectedClick": 0,
+      "expectedSlide": 8
+    }
+  ],
+  "powerPointVersion": "16.0",
+  "contentRectDwmPixels": [
+    -1.1368683772161603E-13,
+    20.035429583702296,
+    1280.0000000000002,
+    719.9291408325954
+  ],
+  "normalAppActivate": true,
+  "clientOrigin": [
+    2600,
+    926
+  ],
+  "cleanup": {
+    "deckCloseCalled": true,
+    "ownDeckClosed": true,
+    "hashUnchanged": {
+      "spec": true,
+      "deck": true,
+      "plan": true
+    },
+    "ownerEnabledOrDestroyed": true,
+    "showExit": true,
+    "ownShowCount": 0
+  },
+  "window": 24906108,
+  "movie": "integration-live.mp4",
+  "recorderStartUtc": "2026-11-06T04:14:55.0664429Z",
+  "combination_verified": false,
+  "client": [
+    1280,
+    760
+  ],
+  "dwm": [
+    2600,
+    926,
+    3880,
+    1686
+  ],
+  "status": "recorded-pending-independent-audit",
+  "scope": "Own eight-page presentation; real Right keys; no ChartData/workbook calls",
+  "passed": true,
+  "ownPid": 34048,
+  "surfaceChecks": 4320,
+  "inputSha256": {
+    "spec": "C54BB34060A295FAE996C2CBC8434E49E3733E4EE1D3A44E17BD0EFA4F16DE7C",
+    "deck": "A70C42956FBA16E9F535B15534619EFD6DE53BA638CE03059EAF6EB2D83A71FB",
+    "plan": "14F971B70C4FE4E6475F821FD872E6B4F029B3ACE832F7226535F656AF0D4187"
+  },
+  "transitionCaptures": {
+    "0.14": 13.191377,
+    "0.35": 13.4157058,
+    "0.55": 13.6217024
+  },
+  "elapsedSeconds": 27.4527415,
+  "slides": [
+    {
+      "shapes": [
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            64.0818862915039,
+            213.5,
+            81.5999984741211
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s01.title",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 637.7952880859375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "把晚间两小时\r留给更多读者",
+          "type": 1,
+          "heightPt": 96.3779525756836,
+          "topPt": 56.69291305541992
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            185.76377868652344,
+            297.75,
+            48.0
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s01.subtitle",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 637.7952880859375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "建议批准：12周延时至21:00试点\r模拟预算18万元",
+          "type": 1,
+          "heightPt": 68.031494140625,
+          "topPt": 175.74803161621094
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            694.4881591796875,
+            171.24095153808594,
+            77.5,
+            122.4000015258789
+          ],
+          "leftPt": 694.4881591796875,
+          "name": "library-night-pilot.s01.metric",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 223.08660888671875,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "20%\r↓\r80%",
+          "type": 1,
+          "heightPt": 136.06298828125,
+          "topPt": 164.40945434570312
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            334.5826721191406,
+            265.5,
+            48.0
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s01.boundary",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 666.1417236328125,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "城市公共图书馆夜间服务\r模拟规划案例｜管理层决策稿",
+          "type": 1,
+          "heightPt": 70.86614227294922,
+          "topPt": 323.14959716796875
+        },
+        {
+          "leftPt": 0.0,
+          "name": "library-night-pilot.s01.footer-band",
+          "fillTheme": 0,
+          "widthPt": 960.094482421875,
+          "hasTextFrame": -1,
+          "fillRgb": 15397364,
+          "type": 1,
+          "heightPt": 25.511810302734375,
+          "topPt": 514.4881591796875
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            517.5260009765625,
+            269.5,
+            13.199999809265137
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s01.footer",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 822.0472412109375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "夜读试点 · 原创模拟方案  |  模拟规划数据｜非真实调查",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            884.409423828125,
+            517.5260009765625,
+            15.25,
+            13.199999809265137
+          ],
+          "leftPt": 884.409423828125,
+          "name": "library-night-pilot.s01.page-number",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 31.181102752685547,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "01",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        }
+      ],
+      "transition": {
+        "entry": 0,
+        "duration": 2.0
+      },
+      "index": 1,
+      "effects": []
+    },
+    {
+      "shapes": [
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            43.3795280456543,
+            451.5,
+            40.79999923706055
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s02.title",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "夜间服务，解决的是可用时间",
+          "type": 1,
+          "heightPt": 59.527557373046875,
+          "topPt": 34.0157470703125
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            129.73228454589844,
+            655.5,
+            24.0
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s02.context",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "现状19:00闭馆；以下为设计服务时使用的模拟情境，不是调查分群占比。",
+          "type": 1,
+          "heightPt": 45.354331970214844,
+          "topPt": 119.05511474609375
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            244.6299285888672,
+            280.0,
+            72.0
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s02.after-work",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 282.0472412109375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "下班学习\r工作结束后，仍能使用一段学习时间。",
+          "type": 1,
+          "heightPt": 153.07086181640625,
+          "topPt": 204.094482421875
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            338.7401428222656,
+            244.6299285888672,
+            280.0,
+            72.0
+          ],
+          "leftPt": 338.7401428222656,
+          "name": "library-night-pilot.s02.study",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 282.0472412109375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "自习备考\r获得连续、安静、可预期的学习窗口。",
+          "type": 1,
+          "heightPt": 153.07086181640625,
+          "topPt": 204.094482421875
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            634.9606323242188,
+            256.6299133300781,
+            245.5,
+            48.0
+          ],
+          "leftPt": 634.9606323242188,
+          "name": "library-night-pilot.s02.family",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 282.6141662597656,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "家庭共读\r安排晚间阅读与陪伴活动。",
+          "type": 1,
+          "heightPt": 153.07086181640625,
+          "topPt": 204.094482421875
+        },
+        {
+          "leftPt": 0.0,
+          "name": "library-night-pilot.s02.footer-band",
+          "fillTheme": 0,
+          "widthPt": 960.094482421875,
+          "hasTextFrame": -1,
+          "fillRgb": 15397364,
+          "type": 1,
+          "heightPt": 25.511810302734375,
+          "topPt": 514.4881591796875
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            517.5260009765625,
+            269.5,
+            13.199999809265137
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s02.footer",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 822.0472412109375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "夜读试点 · 原创模拟方案  |  模拟规划数据｜非真实调查",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            884.409423828125,
+            517.5260009765625,
+            15.25,
+            13.199999809265137
+          ],
+          "leftPt": 884.409423828125,
+          "name": "library-night-pilot.s02.page-number",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 31.181102752685547,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "02",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        }
+      ],
+      "transition": {
+        "entry": 0,
+        "duration": 2.0
+      },
+      "index": 2,
+      "effects": []
+    },
+    {
+      "shapes": [
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            43.3795280456543,
+            466.5,
+            40.79999923706055
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s03.title",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "新增150人次，集中在19–21点",
+          "type": 1,
+          "heightPt": 59.527557373046875,
+          "topPt": 34.0157470703125
+        },
+        {
+          "chart": {
+            "chartType": 51,
+            "series": [
+              {
+                "categories": [
+                  "18–19点",
+                  "19–20点",
+                  "20–21点",
+                  "21–22点"
+                ],
+                "name": "模拟需求",
+                "values": [
+                  50.0,
+                  70.0,
+                  80.0,
+                  50.0
+                ]
+              },
+              {
+                "categories": [
+                  "18–19点",
+                  "19–20点",
+                  "20–21点",
+                  "21–22点"
+                ],
+                "name": "21点方案覆盖",
+                "values": [
+                  50.0,
+                  70.0,
+                  80.0,
+                  0.0
+                ]
+              }
+            ],
+            "axes": [
+              {
+                "minimum": 0.0,
+                "type": 1,
+                "maximum": 0.0
+              },
+              {
+                "minimum": 0.0,
+                "type": 2,
+                "maximum": 100.0
+              }
+            ]
+          },
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s03.chart",
+          "fillTheme": 0,
+          "widthPt": 606.6141967773438,
+          "hasTextFrame": 0,
+          "fillRgb": 16777215,
+          "type": 3,
+          "heightPt": 294.80316162109375,
+          "topPt": 124.72441101074219
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            680.31494140625,
+            163.29449462890625,
+            203.1250457763672,
+            81.5999984741211
+          ],
+          "leftPt": 680.31494140625,
+          "name": "library-night-pilot.s03.verdict",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 237.2598419189453,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "+150人次\r+60个百分点",
+          "type": 1,
+          "heightPt": 124.72441101074219,
+          "topPt": 141.73228454589844
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            680.31494140625,
+            318.3307189941406,
+            167.75,
+            72.0
+          ],
+          "leftPt": 680.31494140625,
+          "name": "library-night-pilot.s03.explain",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 237.2598419189453,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "50＋70＋80＝200\r200/250＝80%\r仍有50人次未覆盖",
+          "type": 1,
+          "heightPt": 130.39370727539062,
+          "topPt": 289.13385009765625
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            442.30865478515625,
+            535.8750610351562,
+            16.799999237060547
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s03.note",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 14.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "同一类别的需求与方案覆盖同步出现；两系列比较，不作堆积相加。全部为模拟数据。",
+          "type": 1,
+          "heightPt": 28.34645652770996,
+          "topPt": 436.5354309082031
+        },
+        {
+          "leftPt": 0.0,
+          "name": "library-night-pilot.s03.footer-band",
+          "fillTheme": 0,
+          "widthPt": 960.094482421875,
+          "hasTextFrame": -1,
+          "fillRgb": 15397364,
+          "type": 1,
+          "heightPt": 25.511810302734375,
+          "topPt": 514.4881591796875
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            517.5260009765625,
+            269.5,
+            13.199999809265137
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s03.footer",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 822.0472412109375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "夜读试点 · 原创模拟方案  |  模拟规划数据｜非真实调查",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            884.409423828125,
+            517.5260009765625,
+            15.25,
+            13.199999809265137
+          ],
+          "leftPt": 884.409423828125,
+          "name": "library-night-pilot.s03.page-number",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 31.181102752685547,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "03",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        }
+      ],
+      "transition": {
+        "entry": 0,
+        "duration": 2.0
+      },
+      "index": 3,
+      "effects": [
+        {
+          "duration": 0.5,
+          "shape": "library-night-pilot.s03.chart",
+          "trigger": 1,
+          "buildLevel": 0,
+          "effect": 10,
+          "delay": 0.0,
+          "paragraph": 0
+        },
+        {
+          "duration": 0.5,
+          "shape": "library-night-pilot.s03.chart",
+          "trigger": 1,
+          "buildLevel": 0,
+          "effect": 10,
+          "delay": 0.0,
+          "paragraph": 0
+        },
+        {
+          "duration": 0.5,
+          "shape": "library-night-pilot.s03.chart",
+          "trigger": 1,
+          "buildLevel": 0,
+          "effect": 10,
+          "delay": 0.0,
+          "paragraph": 0
+        },
+        {
+          "duration": 0.5,
+          "shape": "library-night-pilot.s03.chart",
+          "trigger": 1,
+          "buildLevel": 0,
+          "effect": 10,
+          "delay": 0.0,
+          "paragraph": 0
+        }
+      ]
+    },
+    {
+      "shapes": [
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            43.3795280456543,
+            455.25,
+            40.79999923706055
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s04.title",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "选择21点试点，先验证再扩展",
+          "type": 1,
+          "heightPt": 59.527557373046875,
+          "topPt": 34.0157470703125
+        },
+        {
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s04.table",
+          "fillTheme": -2,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": 0,
+          "fillRgb": -2147483648,
+          "type": 19,
+          "heightPt": 260.78741455078125,
+          "table": {
+            "columns": 5,
+            "cells": [
+              [
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    45.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    42.519683837890625,
+                    127.55905151367188,
+                    141.73228454589844,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "方案",
+                  "latin": "Arial",
+                  "rgb": 15397364,
+                  "fillRgb": 7632669
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    45.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    184.25196838378906,
+                    127.55905151367188,
+                    113.38582611083984,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "闭馆",
+                  "latin": "Arial",
+                  "rgb": 15397364,
+                  "fillRgb": 7632669
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    85.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    297.6377868652344,
+                    127.55905151367188,
+                    212.59841918945312,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "模拟覆盖",
+                  "latin": "Arial",
+                  "rgb": 15397364,
+                  "fillRgb": 7632669
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    85.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    510.2362060546875,
+                    127.55905151367188,
+                    178.58267211914062,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "新增覆盖",
+                  "latin": "Arial",
+                  "rgb": 15397364,
+                  "fillRgb": 7632669
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    91.0,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    688.8189086914062,
+                    127.55905151367188,
+                    228.7559051513672,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "预算/决策",
+                  "latin": "Arial",
+                  "rgb": 15397364,
+                  "fillRgb": 7632669
+                }
+              ],
+              [
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    85.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    42.519683837890625,
+                    171.02362060546875,
+                    141.73228454589844,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "维持现状",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    55.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    184.25196838378906,
+                    171.02362060546875,
+                    113.38582611083984,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "19:00",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    126.62503814697266,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    297.6377868652344,
+                    171.02362060546875,
+                    212.59841918945312,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "50/250＝20%",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    56.625038146972656,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    510.2362060546875,
+                    171.02362060546875,
+                    178.58267211914062,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "0人次",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    85.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    688.8189086914062,
+                    171.02362060546875,
+                    228.7559051513672,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "维持现状",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                }
+              ],
+              [
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    85.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    42.519683837890625,
+                    214.48818969726562,
+                    141.73228454589844,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "小幅延时",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    55.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    184.25196838378906,
+                    214.48818969726562,
+                    113.38582611083984,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "20:00",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    137.75,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    297.6377868652344,
+                    214.48818969726562,
+                    212.59841918945312,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "120/250＝48%",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    67.75,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    510.2362060546875,
+                    214.48818969726562,
+                    178.58267211914062,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "70人次",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    105.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    688.8189086914062,
+                    214.48818969726562,
+                    228.7559051513672,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "预算未测算",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                }
+              ],
+              [
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    85.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    42.519683837890625,
+                    257.9527587890625,
+                    141.73228454589844,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "建议试点",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    56.625038146972656,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    184.25196838378906,
+                    257.9527587890625,
+                    113.38582611083984,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "21:00",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    137.75,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    297.6377868652344,
+                    257.9527587890625,
+                    212.59841918945312,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "200/250＝80%",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    78.87503814697266,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    510.2362060546875,
+                    257.9527587890625,
+                    178.58267211914062,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "150人次",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    110.0,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    688.8189086914062,
+                    257.9527587890625,
+                    228.7559051513672,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "12周18万元",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                }
+              ],
+              [
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    105.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    42.519683837890625,
+                    301.4173278808594,
+                    141.73228454589844,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "进一步延长",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    55.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    184.25196838378906,
+                    301.4173278808594,
+                    113.38582611083984,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "22:00",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    148.8750457763672,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    297.6377868652344,
+                    301.4173278808594,
+                    212.59841918945312,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "250/250＝100%",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    78.87503814697266,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    510.2362060546875,
+                    301.4173278808594,
+                    178.58267211914062,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "200人次",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    105.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    688.8189086914062,
+                    301.4173278808594,
+                    228.7559051513672,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "预算未测算",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                }
+              ],
+              [
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    85.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    42.519683837890625,
+                    344.88189697265625,
+                    141.73228454589844,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "决策摘要",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    96.62503814697266,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    184.25196838378906,
+                    344.88189697265625,
+                    113.38582611083984,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "先至21:00",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    85.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    297.6377868652344,
+                    344.88189697265625,
+                    212.59841918945312,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "目标80%",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    127.75,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    510.2362060546875,
+                    344.88189697265625,
+                    178.58267211914062,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "＋60个百分点",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                },
+                {
+                  "textBoundsPt": [
+                    5.102362155914307,
+                    -12.0,
+                    125.5,
+                    24.0
+                  ],
+                  "boundsPt": [
+                    688.8189086914062,
+                    344.88189697265625,
+                    228.7559051513672,
+                    43.46456527709961
+                  ],
+                  "ea": "Microsoft YaHei",
+                  "size": 20.0,
+                  "text": "批准有界试点",
+                  "latin": "Arial",
+                  "rgb": 5124631,
+                  "fillRgb": 15397364
+                }
+              ]
+            ],
+            "rows": 6
+          },
+          "topPt": 127.55905151367188
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            416.031494140625,
+            674.5,
+            24.0
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s04.caveat",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "18万元仅对应12周、21点方案；22点方案预算未测算，不与试点同价比较。",
+          "type": 1,
+          "heightPt": 51.02362060546875,
+          "topPt": 402.5196838378906
+        },
+        {
+          "leftPt": 0.0,
+          "name": "library-night-pilot.s04.footer-band",
+          "fillTheme": 0,
+          "widthPt": 960.094482421875,
+          "hasTextFrame": -1,
+          "fillRgb": 15397364,
+          "type": 1,
+          "heightPt": 25.511810302734375,
+          "topPt": 514.4881591796875
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            517.5260009765625,
+            269.5,
+            13.199999809265137
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s04.footer",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 822.0472412109375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "夜读试点 · 原创模拟方案  |  模拟规划数据｜非真实调查",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            884.409423828125,
+            517.5260009765625,
+            15.25,
+            13.199999809265137
+          ],
+          "leftPt": 884.409423828125,
+          "name": "library-night-pilot.s04.page-number",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 31.181102752685547,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "04",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        }
+      ],
+      "transition": {
+        "entry": 0,
+        "duration": 2.0
+      },
+      "index": 4,
+      "effects": []
+    },
+    {
+      "shapes": [
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            43.3795280456543,
+            421.25,
+            40.79999923706055
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s05.title",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "现状：19点结束，覆盖20%",
+          "type": 1,
+          "heightPt": 59.527557373046875,
+          "topPt": 34.0157470703125
+        },
+        {
+          "leftPt": 99.21260070800781,
+          "name": "library-night-pilot.s05.track",
+          "fillTheme": 0,
+          "widthPt": 748.346435546875,
+          "hasTextFrame": -1,
+          "fillRgb": 8483684,
+          "type": 1,
+          "heightPt": 62.362205505371094,
+          "topPt": 226.7716522216797
+        },
+        {
+          "leftPt": 99.21260070800781,
+          "name": "!!coverage-window",
+          "fillTheme": 5,
+          "widthPt": 187.08660888671875,
+          "hasTextFrame": -1,
+          "fillRgb": 7632669,
+          "type": 1,
+          "heightPt": 62.362205505371094,
+          "topPt": 226.7716522216797
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            200.91598510742188,
+            158.0787353515625,
+            95.5,
+            24.0
+          ],
+          "leftPt": 198.42520141601562,
+          "name": "!!focusTag",
+          "fillTheme": 5,
+          "fillRgb": 7632669,
+          "widthPt": 175.74803161621094,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "19:00闭馆",
+          "type": 1,
+          "heightPt": 51.02362060546875,
+          "topPt": 144.56692504882812
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            99.21260070800781,
+            397.7102355957031,
+            302.3750305175781,
+            40.79999923706055
+          ],
+          "leftPt": 99.21260070800781,
+          "name": "library-night-pilot.s05.metric",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 748.346435546875,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "50 / 250人次＝20%",
+          "type": 1,
+          "heightPt": 59.527557373046875,
+          "topPt": 388.3464660644531
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            74.21260070800781,
+            316.81890869140625,
+            55.5,
+            24.0
+          ],
+          "leftPt": 56.69291305541992,
+          "name": "library-night-pilot.s05.hour-18",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 85.03936767578125,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "18:00",
+          "type": 1,
+          "heightPt": 34.0157470703125,
+          "topPt": 311.81103515625
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            261.2992248535156,
+            316.81890869140625,
+            55.5,
+            24.0
+          ],
+          "leftPt": 243.77952575683594,
+          "name": "library-night-pilot.s05.hour-19",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 85.03936767578125,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "19:00",
+          "type": 1,
+          "heightPt": 34.0157470703125,
+          "topPt": 311.81103515625
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            448.3858337402344,
+            316.81890869140625,
+            55.5,
+            24.0
+          ],
+          "leftPt": 430.86614990234375,
+          "name": "library-night-pilot.s05.hour-20",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 85.03936767578125,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "20:00",
+          "type": 1,
+          "heightPt": 34.0157470703125,
+          "topPt": 311.81103515625
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            635.472412109375,
+            316.81890869140625,
+            55.5,
+            24.0
+          ],
+          "leftPt": 617.9527587890625,
+          "name": "library-night-pilot.s05.hour-21",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 85.03936767578125,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "21:00",
+          "type": 1,
+          "heightPt": 34.0157470703125,
+          "topPt": 311.81103515625
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            822.55908203125,
+            316.81890869140625,
+            55.5,
+            24.0
+          ],
+          "leftPt": 805.0393676757812,
+          "name": "library-night-pilot.s05.hour-22",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 85.03936767578125,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "22:00",
+          "type": 1,
+          "heightPt": 34.0157470703125,
+          "topPt": 311.81103515625
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            99.21260070800781,
+            106.40315246582031,
+            297.8750305175781,
+            16.799999237060547
+          ],
+          "leftPt": 99.21260070800781,
+          "name": "library-night-pilot.s05.axis-label",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 748.346435546875,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 14.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "服务开放时段（横轴为时间，覆盖人次见下方）",
+          "type": 1,
+          "heightPt": 25.511810302734375,
+          "topPt": 102.0472412109375
+        },
+        {
+          "leftPt": 0.0,
+          "name": "library-night-pilot.s05.footer-band",
+          "fillTheme": 0,
+          "widthPt": 960.094482421875,
+          "hasTextFrame": -1,
+          "fillRgb": 15397364,
+          "type": 1,
+          "heightPt": 25.511810302734375,
+          "topPt": 514.4881591796875
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            517.5260009765625,
+            269.5,
+            13.199999809265137
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s05.footer",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 822.0472412109375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "夜读试点 · 原创模拟方案  |  模拟规划数据｜非真实调查",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            884.409423828125,
+            517.5260009765625,
+            15.25,
+            13.199999809265137
+          ],
+          "leftPt": 884.409423828125,
+          "name": "library-night-pilot.s05.page-number",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 31.181102752685547,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "05",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        }
+      ],
+      "transition": {
+        "entry": 0,
+        "duration": 2.0
+      },
+      "index": 5,
+      "effects": []
+    },
+    {
+      "shapes": [
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            43.3795280456543,
+            421.25,
+            40.79999923706055
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s06.title",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "试点：延至21点，覆盖80%",
+          "type": 1,
+          "heightPt": 59.527557373046875,
+          "topPt": 34.0157470703125
+        },
+        {
+          "leftPt": 99.21260070800781,
+          "name": "library-night-pilot.s06.track",
+          "fillTheme": 0,
+          "widthPt": 748.346435546875,
+          "hasTextFrame": -1,
+          "fillRgb": 8483684,
+          "type": 1,
+          "heightPt": 62.362205505371094,
+          "topPt": 226.7716522216797
+        },
+        {
+          "leftPt": 99.21260070800781,
+          "name": "!!coverage-window",
+          "fillTheme": 5,
+          "widthPt": 561.2598266601562,
+          "hasTextFrame": -1,
+          "fillRgb": 7632669,
+          "type": 1,
+          "heightPt": 62.362205505371094,
+          "topPt": 226.7716522216797
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            575.0892333984375,
+            158.0787353515625,
+            95.5,
+            24.0
+          ],
+          "leftPt": 572.5984497070312,
+          "name": "!!focusTag",
+          "fillTheme": 5,
+          "fillRgb": 7632669,
+          "widthPt": 175.74803161621094,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "21:00闭馆",
+          "type": 1,
+          "heightPt": 51.02362060546875,
+          "topPt": 144.56692504882812
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            99.21260070800781,
+            397.7102355957031,
+            547.8750610351562,
+            40.79999923706055
+          ],
+          "leftPt": 99.21260070800781,
+          "name": "library-night-pilot.s06.metric",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 748.346435546875,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "200 / 250人次＝80%｜新增150人次",
+          "type": 1,
+          "heightPt": 59.527557373046875,
+          "topPt": 388.3464660644531
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            74.21260070800781,
+            316.81890869140625,
+            55.5,
+            24.0
+          ],
+          "leftPt": 56.69291305541992,
+          "name": "library-night-pilot.s06.hour-18",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 85.03936767578125,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "18:00",
+          "type": 1,
+          "heightPt": 34.0157470703125,
+          "topPt": 311.81103515625
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            261.2992248535156,
+            316.81890869140625,
+            55.5,
+            24.0
+          ],
+          "leftPt": 243.77952575683594,
+          "name": "library-night-pilot.s06.hour-19",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 85.03936767578125,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "19:00",
+          "type": 1,
+          "heightPt": 34.0157470703125,
+          "topPt": 311.81103515625
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            448.3858337402344,
+            316.81890869140625,
+            55.5,
+            24.0
+          ],
+          "leftPt": 430.86614990234375,
+          "name": "library-night-pilot.s06.hour-20",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 85.03936767578125,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "20:00",
+          "type": 1,
+          "heightPt": 34.0157470703125,
+          "topPt": 311.81103515625
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            635.472412109375,
+            316.81890869140625,
+            55.5,
+            24.0
+          ],
+          "leftPt": 617.9527587890625,
+          "name": "library-night-pilot.s06.hour-21",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 85.03936767578125,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "21:00",
+          "type": 1,
+          "heightPt": 34.0157470703125,
+          "topPt": 311.81103515625
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            822.55908203125,
+            316.81890869140625,
+            55.5,
+            24.0
+          ],
+          "leftPt": 805.0393676757812,
+          "name": "library-night-pilot.s06.hour-22",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 85.03936767578125,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "22:00",
+          "type": 1,
+          "heightPt": 34.0157470703125,
+          "topPt": 311.81103515625
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            99.21260070800781,
+            106.40315246582031,
+            297.8750305175781,
+            16.799999237060547
+          ],
+          "leftPt": 99.21260070800781,
+          "name": "library-night-pilot.s06.axis-label",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 748.346435546875,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 15397364,
+            "size": 14.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "服务开放时段（横轴为时间，覆盖人次见下方）",
+          "type": 1,
+          "heightPt": 25.511810302734375,
+          "topPt": 102.0472412109375
+        },
+        {
+          "leftPt": 0.0,
+          "name": "library-night-pilot.s06.footer-band",
+          "fillTheme": 0,
+          "widthPt": 960.094482421875,
+          "hasTextFrame": -1,
+          "fillRgb": 15397364,
+          "type": 1,
+          "heightPt": 25.511810302734375,
+          "topPt": 514.4881591796875
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            517.5260009765625,
+            269.5,
+            13.199999809265137
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s06.footer",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 822.0472412109375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "夜读试点 · 原创模拟方案  |  模拟规划数据｜非真实调查",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            884.409423828125,
+            517.5260009765625,
+            15.25,
+            13.199999809265137
+          ],
+          "leftPt": 884.409423828125,
+          "name": "library-night-pilot.s06.page-number",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 31.181102752685547,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "06",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        }
+      ],
+      "transition": {
+        "entry": 3954,
+        "duration": 0.699999988079071
+      },
+      "index": 6,
+      "effects": []
+    },
+    {
+      "shapes": [
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            43.3795280456543,
+            557.25,
+            40.79999923706055
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s07.title",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "12周试点，先准备、再运行、后评估",
+          "type": 1,
+          "heightPt": 59.527557373046875,
+          "topPt": 34.0157470703125
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            170.92913818359375,
+            145.5,
+            72.0
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s07.prepare",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 282.0472412109375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "第1–2周｜准备\r排班、安全方案\r评估基线",
+          "type": 1,
+          "heightPt": 130.39370727539062,
+          "topPt": 141.73228454589844
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            338.7401428222656,
+            170.92913818359375,
+            150.0,
+            72.0
+          ],
+          "leftPt": 338.7401428222656,
+          "name": "library-night-pilot.s07.operate",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 282.0472412109375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "第3–10周｜运行\r记录分时使用\r处理运营问题",
+          "type": 1,
+          "heightPt": 130.39370727539062,
+          "topPt": 141.73228454589844
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            634.9606323242188,
+            170.92913818359375,
+            159.63999938964844,
+            72.0
+          ],
+          "leftPt": 634.9606323242188,
+          "name": "library-night-pilot.s07.review",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 282.6141662597656,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "第11–12周｜评估\r核算覆盖与成本\r决定调整或停止",
+          "type": 1,
+          "heightPt": 130.39370727539062,
+          "topPt": 141.73228454589844
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            366.4252014160156,
+            661.1250610351562,
+            24.0
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s07.budget",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "模拟预算18万元＝延时人力8万＋安保与夜间运营6万＋评估与服务准备4万",
+          "type": 1,
+          "heightPt": 93.54330444335938,
+          "topPt": 331.6535339355469
+        },
+        {
+          "leftPt": 0.0,
+          "name": "library-night-pilot.s07.footer-band",
+          "fillTheme": 0,
+          "widthPt": 960.094482421875,
+          "hasTextFrame": -1,
+          "fillRgb": 15397364,
+          "type": 1,
+          "heightPt": 25.511810302734375,
+          "topPt": 514.4881591796875
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            517.5260009765625,
+            269.5,
+            13.199999809265137
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s07.footer",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 822.0472412109375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "夜读试点 · 原创模拟方案  |  模拟规划数据｜非真实调查",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            884.409423828125,
+            517.5260009765625,
+            15.25,
+            13.199999809265137
+          ],
+          "leftPt": 884.409423828125,
+          "name": "library-night-pilot.s07.page-number",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 31.181102752685547,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "07",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        }
+      ],
+      "transition": {
+        "entry": 0,
+        "duration": 2.0
+      },
+      "index": 7,
+      "effects": []
+    },
+    {
+      "shapes": [
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            43.3795280456543,
+            417.5,
+            40.79999923706055
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s08.title",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "请批准这一次有边界的试点",
+          "type": 1,
+          "heightPt": 59.527557373046875,
+          "topPt": 34.0157470703125
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            152.5133819580078,
+            545.8750610351562,
+            40.79999923706055
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s08.ask",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 34.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "12周　｜　18万元　｜　延至21:00",
+          "type": 1,
+          "heightPt": 90.70866394042969,
+          "topPt": 127.55905151367188
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            280.81890869140625,
+            231.0,
+            96.0
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s08.approval",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 419.5275573730469,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "本次批准\r① 试点周期与模拟预算\r② 指定负责人与协调机制\r③ 授权启动前准备",
+          "type": 1,
+          "heightPt": 158.7401580810547,
+          "topPt": 249.44882202148438
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            481.8897705078125,
+            280.81890869140625,
+            247.75,
+            96.0
+          ],
+          "leftPt": 481.8897705078125,
+          "name": "library-night-pilot.s08.next",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 435.6850280761719,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 20.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "批准后的下一步\r确认排班与安全方案\r建立评估基线后启动\r第12周提交调整或停止建议",
+          "type": 1,
+          "heightPt": 158.7401580810547,
+          "topPt": 249.44882202148438
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            445.143310546875,
+            383.3750305175781,
+            16.799999237060547
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s08.boundary",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 875.0551147460938,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 14.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "不在本次批准范围：22点延长方案与长期推广；需另行评估。",
+          "type": 1,
+          "heightPt": 28.34645652770996,
+          "topPt": 439.3700866699219
+        },
+        {
+          "leftPt": 0.0,
+          "name": "library-night-pilot.s08.footer-band",
+          "fillTheme": 0,
+          "widthPt": 960.094482421875,
+          "hasTextFrame": -1,
+          "fillRgb": 15397364,
+          "type": 1,
+          "heightPt": 25.511810302734375,
+          "topPt": 514.4881591796875
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            42.519683837890625,
+            517.5260009765625,
+            269.5,
+            13.199999809265137
+          ],
+          "leftPt": 42.519683837890625,
+          "name": "library-night-pilot.s08.footer",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 822.0472412109375,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "夜读试点 · 原创模拟方案  |  模拟规划数据｜非真实调查",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        },
+        {
+          "marginsPt": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "textBoundsPt": [
+            884.409423828125,
+            517.5260009765625,
+            15.25,
+            13.199999809265137
+          ],
+          "leftPt": 884.409423828125,
+          "name": "library-night-pilot.s08.page-number",
+          "fillTheme": 0,
+          "fillRgb": 16777215,
+          "widthPt": 31.181102752685547,
+          "hasTextFrame": -1,
+          "font": {
+            "latin": "Arial",
+            "rgb": 5124631,
+            "size": 11.0,
+            "ea": "Microsoft YaHei"
+          },
+          "text": "08",
+          "type": 17,
+          "heightPt": 14.17322826385498,
+          "topPt": 517.0393676757812
+        }
+      ],
+      "transition": {
+        "entry": 0,
+        "duration": 2.0
+      },
+      "index": 8,
+      "effects": []
+    }
+  ]
+}

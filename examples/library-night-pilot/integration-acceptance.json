@@ -1,0 +1,2683 @@
+{
+  "version": 1,
+  "deck_id": "library-night-pilot",
+  "scope": "whole-deck",
+  "kind": "native-powerpoint",
+  "passed": true,
+  "acceptance_id": "native-verification",
+  "combination_verified": true,
+  "status": "verified",
+  "checks": [
+    {
+      "name": "native_capture_succeeded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_sha_deck",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_sha_plan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "input_sha_spec",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "own_cleanup",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "guarded_own_surface",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "eight_pages_plan",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "layout_diversity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "plan_information_roles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "simulation_notice",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "data_250_200_150_60pp",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "budget_8_6_4_equals_18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "roadmap_12_weeks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pptx_eight_slides",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "s01_simulation_visible_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s01.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s01.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s01.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s01.title",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s01.title",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          64.0818862915039,
+          213.5,
+          81.5999984741211
+        ],
+        "shape": [
+          42.519683837890625,
+          56.69291305541992,
+          637.7952880859375,
+          96.3779525756836
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s01.title",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s01.subtitle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s01.subtitle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s01.subtitle",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s01.subtitle",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s01.subtitle",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          185.76377868652344,
+          297.75,
+          48.0
+        ],
+        "shape": [
+          42.519683837890625,
+          175.74803161621094,
+          637.7952880859375,
+          68.031494140625
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s01.subtitle",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s01.metric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s01.metric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s01.metric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s01.metric",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s01.metric",
+      "passed": true,
+      "detail": {
+        "text": [
+          694.4881591796875,
+          171.24095153808594,
+          77.5,
+          122.4000015258789
+        ],
+        "shape": [
+          694.4881591796875,
+          164.40945434570312,
+          223.08660888671875,
+          136.06298828125
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s01.metric",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s01.boundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s01.boundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s01.boundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s01.boundary",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s01.boundary",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          334.5826721191406,
+          265.5,
+          48.0
+        ],
+        "shape": [
+          42.519683837890625,
+          323.14959716796875,
+          666.1417236328125,
+          70.86614227294922
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s01.boundary",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "actual_text_nonoverlap_s01",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "s02_simulation_visible_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s02.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s02.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s02.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s02.title",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s02.title",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          43.3795280456543,
+          451.5,
+          40.79999923706055
+        ],
+        "shape": [
+          42.519683837890625,
+          34.0157470703125,
+          875.0551147460938,
+          59.527557373046875
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s02.title",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s02.context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s02.context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s02.context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s02.context",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s02.context",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          129.73228454589844,
+          655.5,
+          24.0
+        ],
+        "shape": [
+          42.519683837890625,
+          119.05511474609375,
+          875.0551147460938,
+          45.354331970214844
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s02.context",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s02.after-work",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s02.after-work",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s02.after-work",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s02.after-work",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s02.after-work",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          244.6299285888672,
+          280.0,
+          72.0
+        ],
+        "shape": [
+          42.519683837890625,
+          204.094482421875,
+          282.0472412109375,
+          153.07086181640625
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s02.after-work",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s02.study",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s02.study",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s02.study",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s02.study",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s02.study",
+      "passed": true,
+      "detail": {
+        "text": [
+          338.7401428222656,
+          244.6299285888672,
+          280.0,
+          72.0
+        ],
+        "shape": [
+          338.7401428222656,
+          204.094482421875,
+          282.0472412109375,
+          153.07086181640625
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s02.study",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s02.family",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s02.family",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s02.family",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s02.family",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s02.family",
+      "passed": true,
+      "detail": {
+        "text": [
+          634.9606323242188,
+          256.6299133300781,
+          245.5,
+          48.0
+        ],
+        "shape": [
+          634.9606323242188,
+          204.094482421875,
+          282.6141662597656,
+          153.07086181640625
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s02.family",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "actual_text_nonoverlap_s02",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "s03_simulation_visible_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s03.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s03.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s03.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s03.title",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s03.title",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          43.3795280456543,
+          466.5,
+          40.79999923706055
+        ],
+        "shape": [
+          42.519683837890625,
+          34.0157470703125,
+          875.0551147460938,
+          59.527557373046875
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s03.title",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s03.chart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s03.verdict",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s03.verdict",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s03.verdict",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s03.verdict",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s03.verdict",
+      "passed": true,
+      "detail": {
+        "text": [
+          680.31494140625,
+          163.29449462890625,
+          203.1250457763672,
+          81.5999984741211
+        ],
+        "shape": [
+          680.31494140625,
+          141.73228454589844,
+          237.2598419189453,
+          124.72441101074219
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s03.verdict",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s03.explain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s03.explain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s03.explain",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s03.explain",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s03.explain",
+      "passed": true,
+      "detail": {
+        "text": [
+          680.31494140625,
+          318.3307189941406,
+          167.75,
+          72.0
+        ],
+        "shape": [
+          680.31494140625,
+          289.13385009765625,
+          237.2598419189453,
+          130.39370727539062
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s03.explain",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s03.note",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s03.note",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s03.note",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s03.note",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 14.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s03.note",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          442.30865478515625,
+          535.8750610351562,
+          16.799999237060547
+        ],
+        "shape": [
+          42.519683837890625,
+          436.5354309082031,
+          875.0551147460938,
+          28.34645652770996
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s03.note",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "actual_text_nonoverlap_s03",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "s04_simulation_visible_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s04.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s04.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s04.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s04.title",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s04.title",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          43.3795280456543,
+          455.25,
+          40.79999923706055
+        ],
+        "shape": [
+          42.519683837890625,
+          34.0157470703125,
+          875.0551147460938,
+          59.527557373046875
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s04.title",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s04.table",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s04.caveat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s04.caveat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s04.caveat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s04.caveat",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s04.caveat",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          416.031494140625,
+          674.5,
+          24.0
+        ],
+        "shape": [
+          42.519683837890625,
+          402.5196838378906,
+          875.0551147460938,
+          51.02362060546875
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s04.caveat",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "actual_text_nonoverlap_s04",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "s05_simulation_visible_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s05.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s05.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s05.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s05.title",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s05.title",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          43.3795280456543,
+          421.25,
+          40.79999923706055
+        ],
+        "shape": [
+          42.519683837890625,
+          34.0157470703125,
+          875.0551147460938,
+          59.527557373046875
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s05.title",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s05.track",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s05.coverage-window",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s05.focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s05.focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s05.focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s05.focus",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s05.focus",
+      "passed": true,
+      "detail": {
+        "text": [
+          200.91598510742188,
+          158.0787353515625,
+          95.5,
+          24.0
+        ],
+        "shape": [
+          198.42520141601562,
+          144.56692504882812,
+          175.74803161621094,
+          51.02362060546875
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s05.focus",
+      "passed": true,
+      "detail": 4.721
+    },
+    {
+      "name": "object_exists_s05.metric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s05.metric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s05.metric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s05.metric",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s05.metric",
+      "passed": true,
+      "detail": {
+        "text": [
+          99.21260070800781,
+          397.7102355957031,
+          302.3750305175781,
+          40.79999923706055
+        ],
+        "shape": [
+          99.21260070800781,
+          388.3464660644531,
+          748.346435546875,
+          59.527557373046875
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s05.metric",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s05.hour-18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s05.hour-18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s05.hour-18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s05.hour-18",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s05.hour-18",
+      "passed": true,
+      "detail": {
+        "text": [
+          74.21260070800781,
+          316.81890869140625,
+          55.5,
+          24.0
+        ],
+        "shape": [
+          56.69291305541992,
+          311.81103515625,
+          85.03936767578125,
+          34.0157470703125
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s05.hour-18",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s05.hour-19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s05.hour-19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s05.hour-19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s05.hour-19",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s05.hour-19",
+      "passed": true,
+      "detail": {
+        "text": [
+          261.2992248535156,
+          316.81890869140625,
+          55.5,
+          24.0
+        ],
+        "shape": [
+          243.77952575683594,
+          311.81103515625,
+          85.03936767578125,
+          34.0157470703125
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s05.hour-19",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s05.hour-20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s05.hour-20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s05.hour-20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s05.hour-20",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s05.hour-20",
+      "passed": true,
+      "detail": {
+        "text": [
+          448.3858337402344,
+          316.81890869140625,
+          55.5,
+          24.0
+        ],
+        "shape": [
+          430.86614990234375,
+          311.81103515625,
+          85.03936767578125,
+          34.0157470703125
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s05.hour-20",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s05.hour-21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s05.hour-21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s05.hour-21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s05.hour-21",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s05.hour-21",
+      "passed": true,
+      "detail": {
+        "text": [
+          635.472412109375,
+          316.81890869140625,
+          55.5,
+          24.0
+        ],
+        "shape": [
+          617.9527587890625,
+          311.81103515625,
+          85.03936767578125,
+          34.0157470703125
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s05.hour-21",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s05.hour-22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s05.hour-22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s05.hour-22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s05.hour-22",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s05.hour-22",
+      "passed": true,
+      "detail": {
+        "text": [
+          822.55908203125,
+          316.81890869140625,
+          55.5,
+          24.0
+        ],
+        "shape": [
+          805.0393676757812,
+          311.81103515625,
+          85.03936767578125,
+          34.0157470703125
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s05.hour-22",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s05.axis-label",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s05.axis-label",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s05.axis-label",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s05.axis-label",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 14.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s05.axis-label",
+      "passed": true,
+      "detail": {
+        "text": [
+          99.21260070800781,
+          106.40315246582031,
+          297.8750305175781,
+          16.799999237060547
+        ],
+        "shape": [
+          99.21260070800781,
+          102.0472412109375,
+          748.346435546875,
+          25.511810302734375
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s05.axis-label",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "actual_text_nonoverlap_s05",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "s06_simulation_visible_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s06.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s06.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s06.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s06.title",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s06.title",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          43.3795280456543,
+          421.25,
+          40.79999923706055
+        ],
+        "shape": [
+          42.519683837890625,
+          34.0157470703125,
+          875.0551147460938,
+          59.527557373046875
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s06.title",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s06.track",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s06.coverage-window",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s06.focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s06.focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s06.focus",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s06.focus",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s06.focus",
+      "passed": true,
+      "detail": {
+        "text": [
+          575.0892333984375,
+          158.0787353515625,
+          95.5,
+          24.0
+        ],
+        "shape": [
+          572.5984497070312,
+          144.56692504882812,
+          175.74803161621094,
+          51.02362060546875
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s06.focus",
+      "passed": true,
+      "detail": 4.721
+    },
+    {
+      "name": "object_exists_s06.metric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s06.metric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s06.metric",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s06.metric",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s06.metric",
+      "passed": true,
+      "detail": {
+        "text": [
+          99.21260070800781,
+          397.7102355957031,
+          547.8750610351562,
+          40.79999923706055
+        ],
+        "shape": [
+          99.21260070800781,
+          388.3464660644531,
+          748.346435546875,
+          59.527557373046875
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s06.metric",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s06.hour-18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s06.hour-18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s06.hour-18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s06.hour-18",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s06.hour-18",
+      "passed": true,
+      "detail": {
+        "text": [
+          74.21260070800781,
+          316.81890869140625,
+          55.5,
+          24.0
+        ],
+        "shape": [
+          56.69291305541992,
+          311.81103515625,
+          85.03936767578125,
+          34.0157470703125
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s06.hour-18",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s06.hour-19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s06.hour-19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s06.hour-19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s06.hour-19",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s06.hour-19",
+      "passed": true,
+      "detail": {
+        "text": [
+          261.2992248535156,
+          316.81890869140625,
+          55.5,
+          24.0
+        ],
+        "shape": [
+          243.77952575683594,
+          311.81103515625,
+          85.03936767578125,
+          34.0157470703125
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s06.hour-19",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s06.hour-20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s06.hour-20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s06.hour-20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s06.hour-20",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s06.hour-20",
+      "passed": true,
+      "detail": {
+        "text": [
+          448.3858337402344,
+          316.81890869140625,
+          55.5,
+          24.0
+        ],
+        "shape": [
+          430.86614990234375,
+          311.81103515625,
+          85.03936767578125,
+          34.0157470703125
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s06.hour-20",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s06.hour-21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s06.hour-21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s06.hour-21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s06.hour-21",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s06.hour-21",
+      "passed": true,
+      "detail": {
+        "text": [
+          635.472412109375,
+          316.81890869140625,
+          55.5,
+          24.0
+        ],
+        "shape": [
+          617.9527587890625,
+          311.81103515625,
+          85.03936767578125,
+          34.0157470703125
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s06.hour-21",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s06.hour-22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s06.hour-22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s06.hour-22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s06.hour-22",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s06.hour-22",
+      "passed": true,
+      "detail": {
+        "text": [
+          822.55908203125,
+          316.81890869140625,
+          55.5,
+          24.0
+        ],
+        "shape": [
+          805.0393676757812,
+          311.81103515625,
+          85.03936767578125,
+          34.0157470703125
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s06.hour-22",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "object_exists_s06.axis-label",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s06.axis-label",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s06.axis-label",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s06.axis-label",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 15397364,
+        "size": 14.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s06.axis-label",
+      "passed": true,
+      "detail": {
+        "text": [
+          99.21260070800781,
+          106.40315246582031,
+          297.8750305175781,
+          16.799999237060547
+        ],
+        "shape": [
+          99.21260070800781,
+          102.0472412109375,
+          748.346435546875,
+          25.511810302734375
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s06.axis-label",
+      "passed": true,
+      "detail": 12.833
+    },
+    {
+      "name": "actual_text_nonoverlap_s06",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "s07_simulation_visible_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s07.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s07.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s07.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s07.title",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s07.title",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          43.3795280456543,
+          557.25,
+          40.79999923706055
+        ],
+        "shape": [
+          42.519683837890625,
+          34.0157470703125,
+          875.0551147460938,
+          59.527557373046875
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s07.title",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s07.prepare",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s07.prepare",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s07.prepare",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s07.prepare",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s07.prepare",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          170.92913818359375,
+          145.5,
+          72.0
+        ],
+        "shape": [
+          42.519683837890625,
+          141.73228454589844,
+          282.0472412109375,
+          130.39370727539062
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s07.prepare",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s07.operate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s07.operate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s07.operate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s07.operate",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s07.operate",
+      "passed": true,
+      "detail": {
+        "text": [
+          338.7401428222656,
+          170.92913818359375,
+          150.0,
+          72.0
+        ],
+        "shape": [
+          338.7401428222656,
+          141.73228454589844,
+          282.0472412109375,
+          130.39370727539062
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s07.operate",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s07.review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s07.review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s07.review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s07.review",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s07.review",
+      "passed": true,
+      "detail": {
+        "text": [
+          634.9606323242188,
+          170.92913818359375,
+          159.63999938964844,
+          72.0
+        ],
+        "shape": [
+          634.9606323242188,
+          141.73228454589844,
+          282.6141662597656,
+          130.39370727539062
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s07.review",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s07.budget",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s07.budget",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s07.budget",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s07.budget",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s07.budget",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          366.4252014160156,
+          661.1250610351562,
+          24.0
+        ],
+        "shape": [
+          42.519683837890625,
+          331.6535339355469,
+          875.0551147460938,
+          93.54330444335938
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s07.budget",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "actual_text_nonoverlap_s07",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "s08_simulation_visible_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "object_exists_s08.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s08.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s08.title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s08.title",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s08.title",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          43.3795280456543,
+          417.5,
+          40.79999923706055
+        ],
+        "shape": [
+          42.519683837890625,
+          34.0157470703125,
+          875.0551147460938,
+          59.527557373046875
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s08.title",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s08.ask",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s08.ask",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s08.ask",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s08.ask",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 34.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s08.ask",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          152.5133819580078,
+          545.8750610351562,
+          40.79999923706055
+        ],
+        "shape": [
+          42.519683837890625,
+          127.55905151367188,
+          875.0551147460938,
+          90.70866394042969
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s08.ask",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s08.approval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s08.approval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s08.approval",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s08.approval",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s08.approval",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          280.81890869140625,
+          231.0,
+          96.0
+        ],
+        "shape": [
+          42.519683837890625,
+          249.44882202148438,
+          419.5275573730469,
+          158.7401580810547
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s08.approval",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s08.next",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s08.next",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s08.next",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s08.next",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 20.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s08.next",
+      "passed": true,
+      "detail": {
+        "text": [
+          481.8897705078125,
+          280.81890869140625,
+          247.75,
+          96.0
+        ],
+        "shape": [
+          481.8897705078125,
+          249.44882202148438,
+          435.6850280761719,
+          158.7401580810547
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s08.next",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "object_exists_s08.boundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editable_text_s08.boundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "font_size_s08.boundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "resolved_font_s08.boundary",
+      "passed": true,
+      "detail": {
+        "latin": "Arial",
+        "rgb": 5124631,
+        "size": 14.0,
+        "ea": "Microsoft YaHei"
+      }
+    },
+    {
+      "name": "text_inside_frame_s08.boundary",
+      "passed": true,
+      "detail": {
+        "text": [
+          42.519683837890625,
+          445.143310546875,
+          383.3750305175781,
+          16.799999237060547
+        ],
+        "shape": [
+          42.519683837890625,
+          439.3700866699219,
+          875.0551147460938,
+          28.34645652770996
+        ]
+      }
+    },
+    {
+      "name": "text_contrast_s08.boundary",
+      "passed": true,
+      "detail": 11.616
+    },
+    {
+      "name": "actual_text_nonoverlap_s08",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "one_true_chart",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "true_chart_2x4_values",
+      "passed": true,
+      "detail": [
+        [
+          50.0,
+          70.0,
+          80.0,
+          50.0
+        ],
+        [
+          50.0,
+          70.0,
+          80.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "name": "four_chart_categories",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_chart_values_match",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_value_axis_0_to_100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "true_table_6x5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "table_data_matches",
+      "passed": true,
+      "detail": [
+        [
+          "方案",
+          "闭馆",
+          "模拟覆盖",
+          "新增覆盖",
+          "预算/决策"
+        ],
+        [
+          "维持现状",
+          "19:00",
+          "50/250＝20%",
+          "0人次",
+          "维持现状"
+        ],
+        [
+          "小幅延时",
+          "20:00",
+          "120/250＝48%",
+          "70人次",
+          "预算未测算"
+        ],
+        [
+          "建议试点",
+          "21:00",
+          "200/250＝80%",
+          "150人次",
+          "12周18万元"
+        ],
+        [
+          "进一步延长",
+          "22:00",
+          "250/250＝100%",
+          "200人次",
+          "预算未测算"
+        ],
+        [
+          "决策摘要",
+          "先至21:00",
+          "目标80%",
+          "＋60个百分点",
+          "批准有界试点"
+        ]
+      ]
+    },
+    {
+      "name": "native_table_body_font_floor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_table_ea_latin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_table_text_dimensions_fit",
+      "passed": true,
+      "detail": {
+        "bad_cells": [],
+        "coordinate_limit": "Cell TextFrame2 XY is local/baseline-relative; dimensions plus actual native ink margins are checked separately"
+      }
+    },
+    {
+      "name": "native_table_ink_has_cell_edge_clearance",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "native_table_text_contrast",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_theme_accent1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "theme_ea_latin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "morph_keys_unique_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "morph_keys_unique_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "real_morph_matches_plan_duration",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "native_chart_category_build",
+      "passed": true,
+      "detail": [
+        {
+          "bld": "category"
+        }
+      ]
+    },
+    {
+      "name": "eleven_physical_right_events",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "four_real_chart_click_indices",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "four_chart_native_effect_durations",
+      "passed": true,
+      "detail": [
+        {
+          "duration": 0.5,
+          "shape": "library-night-pilot.s03.chart",
+          "trigger": 1,
+          "buildLevel": 0,
+          "effect": 10,
+          "delay": 0.0,
+          "paragraph": 0
+        },
+        {
+          "duration": 0.5,
+          "shape": "library-night-pilot.s03.chart",
+          "trigger": 1,
+          "buildLevel": 0,
+          "effect": 10,
+          "delay": 0.0,
+          "paragraph": 0
+        },
+        {
+          "duration": 0.5,
+          "shape": "library-night-pilot.s03.chart",
+          "trigger": 1,
+          "buildLevel": 0,
+          "effect": 10,
+          "delay": 0.0,
+          "paragraph": 0
+        },
+        {
+          "duration": 0.5,
+          "shape": "library-night-pilot.s03.chart",
+          "trigger": 1,
+          "buildLevel": 0,
+          "effect": 10,
+          "delay": 0.0,
+          "paragraph": 0
+        }
+      ]
+    },
+    {
+      "name": "chart_four_visible_build_changes",
+      "passed": true,
+      "detail": [
+        13936,
+        19552,
+        22042,
+        6968
+      ]
+    },
+    {
+      "name": "chart_categories_progress_left_to_right",
+      "passed": true,
+      "detail": [
+        158.0,
+        340.0,
+        521.5,
+        677.0
+      ]
+    },
+    {
+      "name": "morph_endpoint_geometry",
+      "passed": true,
+      "detail": {
+        "start_cm": 6.613226452905811,
+        "end_cm": 19.813226452905813
+      }
+    },
+    {
+      "name": "morph_real_intermediate_geometry",
+      "passed": true,
+      "detail": [
+        9.761122244488977,
+        16.585971943887774,
+        19.469338677354706
+      ]
+    },
+    {
+      "name": "night_and_light_footer_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "night_and_light_footer_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "movie_exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "full_movie_decodes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "native_static_pages_visually_distinct",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "regression_global_accent_changed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "regression_real_native_capture_and_deck_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "regression_content_preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "regression_same_dimensions_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "regression_same_dimensions_3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "regression_same_dimensions_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "regression_local_night_preserved_5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "regression_same_dimensions_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "regression_local_night_preserved_6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "regression_accent_visibly_changes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "composition_digest_valid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "composition_spec_and_plan_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "composition_index_bytes_bound",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "composition_reuse_scope_declared",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "explicit_visual_contact_and_movie_review",
+      "passed": true,
+      "detail": "Agent A: eight native static pages; full-duration 2fps 46-frame contact; actual four chart category states and Morph midpoint; regression native6; not continuous normal-speed viewing"
+    }
+  ],
+  "passed_count": 339,
+  "total": 339,
+  "visual_review_scope": "Agent A: eight native static pages; full-duration 2fps 46-frame contact; actual four chart category states and Morph midpoint; regression native6; not continuous normal-speed viewing",
+  "limits": [
+    "Visual review is native static pages plus sampled whole-duration movie frames and key category/transition states; not continuous normal-speed viewing. No frame-exact key/video synchronization claim.",
+    "Regression and composition binding are mandatory for final true; optional CLI arguments only support staged evidence."
+  ],
+  "artifacts": {
+    "contact": "integration-acceptance-contact.jpg"
+  },
+  "pages": [
+    "s01",
+    "s02",
+    "s03",
+    "s04",
+    "s05",
+    "s06",
+    "s07",
+    "s08"
+  ],
+  "evidence": [
+    {
+      "kind": "png",
+      "page_id": "s01",
+      "path": "E:\\ppt skills\\examples\\library-night-pilot\\native-verification\\native-1.png",
+      "sha256": "43b8ab211af089e213cdc088ec4b2e5f969667a18808c855ebb9cab92af2f305"
+    },
+    {
+      "kind": "png",
+      "page_id": "s02",
+      "path": "E:\\ppt skills\\examples\\library-night-pilot\\native-verification\\native-2.png",
+      "sha256": "51ef7ed569e3fc40d0ea48521dacf032d617d18553010ea9b70287c00ecc3a08"
+    },
+    {
+      "kind": "png",
+      "page_id": "s03",
+      "path": "E:\\ppt skills\\examples\\library-night-pilot\\native-verification\\native-3.png",
+      "sha256": "95e6bde0c2a46e1589a2bdda48f6e425adcdec62ae7a791d5f1284bfc46b8124"
+    },
+    {
+      "kind": "png",
+      "page_id": "s04",
+      "path": "E:\\ppt skills\\examples\\library-night-pilot\\native-verification\\native-4.png",
+      "sha256": "e2c4b9e54de0f30650b988faf142630e32d9c8a9162bc1cb1079589e367e5559"
+    },
+    {
+      "kind": "png",
+      "page_id": "s05",
+      "path": "E:\\ppt skills\\examples\\library-night-pilot\\native-verification\\native-5.png",
+      "sha256": "7cb6761dfd315c0308ea866d56753103dabbd662609d97fca81d304a4a484e61"
+    },
+    {
+      "kind": "png",
+      "page_id": "s06",
+      "path": "E:\\ppt skills\\examples\\library-night-pilot\\native-verification\\native-6.png",
+      "sha256": "373684ccc2e2f9b2e3097936cfc0d085826fd2221407700c1e414578471bb22c"
+    },
+    {
+      "kind": "png",
+      "page_id": "s07",
+      "path": "E:\\ppt skills\\examples\\library-night-pilot\\native-verification\\native-7.png",
+      "sha256": "9ac14f1fd8920a03b607567a192889cf1a6f5a6c52c97ccb74cb259b66027f8f"
+    },
+    {
+      "kind": "png",
+      "page_id": "s08",
+      "path": "E:\\ppt skills\\examples\\library-night-pilot\\native-verification\\native-8.png",
+      "sha256": "ca860f487099383b79e82e0237080a30e7b78b03b5cf30e462316bc2367f0888"
+    },
+    {
+      "kind": "native-recording",
+      "path": "E:\\ppt skills\\examples\\library-night-pilot\\native-verification\\integration-live.mp4",
+      "sha256": "e8e2a1e516f172f91940cfd5addd005015b14648f424e1e645a25aa5b3c67e33"
+    }
+  ],
+  "deck_sha256": "a70c42956fba16e9f535b15534619efd6de53ba638ce03059eaf6eb2d83a71fb",
+  "regression_context": {
+    "prior_plan_sha256": "5FCC48DD7F154D43724D929D6BF3EFD90266FDADCDCCE7BDF3E9E53D55E00BC1",
+    "final_plan_sha256": "14F971B70C4FE4E6475F821FD872E6B4F029B3ACE832F7226535F656AF0D4187",
+    "note": "Regression recording precedes the final COM DAG declaration. Only operations metadata was added afterward; compare current main/variant slide XML text and native states independently. No page change is inferred from a plan hash alone."
+  },
+  "plan_sha256": "8f88f1012abcedcf627fb1e4ab97e5e3ecee0f0158be38acd9d434bc73397972",
+  "index_sha256": "e5bde0e644ee77ef8fcc901aed5bc48a3c1bb55577c9b29f1a3133f72574de4b",
+  "spec_sha256": "05f56f5199addf61efeab5a5b331c6bab88c1c2f29589f5f76bdac6457bac354",
+  "deck_plan_sha256": "5782292500b8c3b1e726aa9b94c40b7957430ecce90d7e56c1b4dd94fb2780df"
+}
