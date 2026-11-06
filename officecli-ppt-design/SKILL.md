@@ -119,7 +119,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 
 ## 可运行示例
 
-新增静态机制按目标进入：[字形等距扩张](references/glyph-equal-offset.md)、[汉字共享笔画](references/chinese-stroke-design.md)、[逐笔画局部层次](references/stroke-depth.md)、[受限曲线包络](references/bounded-envelope.md)、[轮廓混合与长影](references/contour-blend-extrusion.md)、[柔和局部色场](references/soft-local-color-field.md)。这些配方保留明确的字形/路径/拓扑边界，不据此宣称任意字体自动设计。
+新增静态机制按目标进入：[字形等距扩张](references/glyph-equal-offset.md)、[汉字共享笔画](references/chinese-stroke-design.md)、[逐笔画局部层次](references/stroke-depth.md)、[受限曲线包络与尖端顶盖](references/bounded-envelope.md)、[轮廓混合与长影](references/contour-blend-extrusion.md)、[柔和局部色场](references/soft-local-color-field.md)。这些配方保留明确的字形/路径/拓扑边界，不据此宣称任意字体自动设计。
 
 需要复制/重排后自动编号时使用[真实动态页码](references/dynamic-slide-number.md)：母版样式、版式页码占位符和原生slidenum字段共同工作，不能换成固定数字文本。
 

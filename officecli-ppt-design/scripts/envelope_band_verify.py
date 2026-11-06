@@ -1,6 +1,6 @@
 import argparse,json,xml.etree.ElementTree as E,zipfile
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('--deck',type=Path,required=True);p.add_argument('--model',type=Path,required=True);p.add_argument('--report',type=Path,required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--deck',type=Path,required=True);p.add_argument('--model',type=Path,required=True);p.add_argument('--report',type=Path,required=True);p.add_argument('--ellipse-cap',action='store_true');a=p.parse_args()
 if a.report.exists():raise FileExistsError(a.report)
 model=json.loads(a.model.read_text(encoding='utf-8'));ns={'p':'http://schemas.openxmlformats.org/presentationml/2006/main','a':'http://schemas.openxmlformats.org/drawingml/2006/main'};checks={};rows=[]
 def shape(root,name):return next(q for q in root.findall('.//p:sp',ns) if q.find('p:nvSpPr/p:cNvPr',ns).get('name')==name)
@@ -26,6 +26,15 @@ with zipfile.ZipFile(a.deck) as z:
   s=target['slide'];q=shape(roots[s],'warped-glyph');path=outline(q);cs=contours(path);pts=[p for c in cs for p in c];samples=target['targetSamples']
   checks[f's{s}eightNativeClosedContours']=len(cs)==8;checks[f's{s}noRasterPictures']=not roots[s].findall('.//p:pic',ns);checks[f's{s}noPresetTextWarp']=not roots[s].findall('.//a:prstTxWarp',ns)
   checks[f's{s}positiveBandHeight']=all(l[0]<r[0] for l,r in zip(samples,samples[1:])) and min(b-t for _,t,b in samples)>0
+  if a.ellipse_cap and s==3:
+   del checks[f's{s}positiveBandHeight']
+   checks['specificEllipseCap']=target['name']=='ellipse-cap' and target.get('collapsedBoundaryTips') is True
+   checks['exactCollapsedBoundaryTips']=samples[0][0]==0 and samples[-1][0]==1 and all(t==b for _,t,b in [samples[0],samples[-1]])
+   checks['positiveInteriorHeight']=all(t<b for _,t,b in samples[1:-1]) and all(l[0]<r[0] for l,r in zip(samples,samples[1:]))
+   left,right=target['intersections'];scale=target['verticalNormalization']
+   checks['upperBoundaryIsEllipse']=0<left<.5<right<1 and all(abs((2*(left+(right-left)*u)-1)**2+(2*t*scale-1)**2-1)<1e-10 for u,t,b in samples)
+   checks['lowerBoundaryIsBowedKnife']=all(abs(b*scale-(.14+.035*(left+(right-left)*u)+.08*(left+(right-left)*u)*(1-left-(right-left)*u)))<1e-10 for u,t,b in samples)
+   checks['actualGlyphTipsCollapse']=all(any(abs(u-edge)<1e-6 for u,v in pts) and all(abs(v-samples[index][1])<2e-6 for u,v in pts if abs(u-edge)<1e-6) for edge,index in [(0,0),(1,-1)])
   inside=True
   for u,v in pts:
    t,b=bounds(samples,u)

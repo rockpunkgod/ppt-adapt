@@ -58,6 +58,8 @@
 
 [曲线关系图PPTX](examples/curve-links/curve-links.pptx)使用可编辑平滑路径、四段线渐变与原生投影表达类别间关系，节点与交叉层级清晰。
 
+[椭圆顶盖字形PPTX](examples/ellipse-cap/ellipse-cap.pptx)将粗体字形映射到两端收尖的分割轮廓，保留字孔、可编辑路径和原始文字备份。
+
 宇航员3D场景的[制作指导](officecli-ppt-design/references/model3d.md)与[52秒原生播放](officecli-ppt-design/verification/native-3d-navigation/playback.mp4)也已入库：保留模型内部动作，组合跨页Morph及四圆点导航，8次非顺序点击通过。此项使用调用方提供的原生模板，技能包不附作者原模板或模型文件；区别于上方附原创GLB的3D动作示例。
 
 ## 环境

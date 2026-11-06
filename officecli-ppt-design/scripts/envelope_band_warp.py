@@ -1,7 +1,8 @@
 import argparse,json,math,shutil,subprocess,zipfile,xml.etree.ElementTree as E
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('--input',type=Path,required=True);p.add_argument('--officecli',required=True);p.add_argument('--outdir',type=Path,required=True);p.add_argument('--targets',type=Path);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--input',type=Path,required=True);p.add_argument('--officecli',required=True);p.add_argument('--outdir',type=Path,required=True);p.add_argument('--targets',type=Path);p.add_argument('--ellipse-cap',action='store_true',help='Specific ellipse upper cap cut by a bowed knife line; only its two boundary tips may collapse');a=p.parse_args()
 if a.outdir.exists():raise FileExistsError(a.outdir)
+if a.ellipse_cap and a.targets:raise ValueError('Ellipse cap cannot be combined with arbitrary targets')
 a.outdir.mkdir(parents=True);ns={'p':'http://schemas.openxmlformats.org/presentationml/2006/main','a':'http://schemas.openxmlformats.org/drawingml/2006/main'}
 def polyline_contours(path):
  w=float(path.get('w'));h=float(path.get('h'));contours=[];current=[];position=None
@@ -33,12 +34,34 @@ def bez(v,t):return (1-t)**3*v[0]+3*(1-t)**2*t*v[1]+3*(1-t)*t*t*v[2]+t**3*v[3]
 if a.targets:targets=json.loads(a.targets.read_text(encoding='utf-8'))
 else:
  targets=[{'name':'asymmetric-ribbon','samples':[[i/128,bez([0.22,0.00,0.42,0.06],i/128),bez([0.86,0.68,1.05,0.88],i/128)] for i in range(129)]},{'name':'wavy-band','samples':[[i/128,0.16+0.12*math.sin(math.pi*i/128)+0.06*i/128,0.86-0.10*math.sin(2*math.pi*i/128)+0.04*i/128] for i in range(129)]}]
+if a.ellipse_cap:
+ # The course cuts an ellipse with a shallow bowed, slanted knife line.
+ # Solve both intersections instead of replacing the tips by epsilon height.
+ def upper(x):return .5-.5*math.sqrt(max(0,1-(2*x-1)**2))
+ def knife(x):return .14+.035*x+.02*4*x*(1-x)
+ def intersection(left,right):
+  sign=upper(left)-knife(left)
+  for _ in range(80):
+   mid=(left+right)/2
+   if (upper(mid)-knife(mid))*sign>0:left=mid
+   else:right=mid
+  return (left+right)/2
+ l=intersection(0,.5);r=intersection(.5,1)
+ raw=[(i/256,upper(l+(r-l)*i/256),knife(l+(r-l)*i/256)) for i in range(257)]
+ scale=max(b for _,_,b in raw);samples=[[u,t/scale,b/scale] for u,t,b in raw]
+ for index in [0,-1]:samples[index][1]=samples[index][2]
+ targets[0]={'name':'ellipse-cap','samples':samples,'collapsedBoundaryTips':True,'ellipse':{'cx':.5,'cy':.5,'rx':.5,'ry':.5},'knife':'0.14 + 0.035*x + 0.08*x*(1-x)','intersections':[l,r],'verticalNormalization':scale}
 if len(targets)!=2:raise ValueError('Fixture expects two target profiles')
-def validate(samples):
+def validate(samples,collapsed=False):
  if samples[0][0]!=0 or samples[-1][0]!=1:raise ValueError('Target must span x0..1')
- if not all(0<=u<=1 and 0<=t<b<=1 for u,t,b in samples):raise ValueError('Target is not a bounded positive-height band')
+ if collapsed:
+  if not (samples[0][1]==samples[0][2] and samples[-1][1]==samples[-1][2]):raise ValueError('Expected exact zero-height boundary tips')
+  if not all(0<=t<=b<=1 for _,t,b in samples) or not all(t<b for _,t,b in samples[1:-1]):raise ValueError('Only the two boundary tips may collapse')
+ elif not all(0<=u<=1 and 0<=t<b<=1 for u,t,b in samples):raise ValueError('Target is not a bounded positive-height band')
  if not all(x[0]<y[0] for x,y in zip(samples,samples[1:])):raise ValueError('Target x must be strictly monotone')
-for target in targets:validate(target['samples'])
+for target in targets:
+ if target.get('collapsedBoundaryTips') and not a.ellipse_cap:raise ValueError('Custom targets retain the original strictly positive-height contract')
+ validate(target['samples'],target.get('collapsedBoundaryTips',False))
 def bounds(samples,u):
  u=max(0,min(1,u));lo=0;hi=len(samples)-1
  while hi-lo>1:
@@ -59,7 +82,7 @@ def cli(*args):
  return r.stdout
 cli('open',deck);reports=[];operations=[]
 for s,target in enumerate(targets,3):
- samples=target['samples'];validate(samples);warped=[]
+ samples=target['samples'];validate(samples,target.get('collapsedBoundaryTips',False));warped=[]
  for c in contours:
   out=[]
   for u,v in c:
@@ -67,5 +90,5 @@ for s,target in enumerate(targets,3):
   warped.append(out)
  border=[(x,t) for x,t,b in samples]+[(x,b) for x,t,b in reversed(samples)]
  for name,cs in [('target-boundary',[border]),('warped-glyph',warped)]:operations.append({'command':'raw-set','part':f'/slide[{s}]','xpath':f'//p:sp[p:nvSpPr/p:cNvPr[@name="{name}"]]/p:spPr/a:prstGeom','action':'replace','xml':geom(cs)})
- reports.append({'slide':s,'name':target['name'],'contours':len(warped),'vertices':sum(map(len,warped)),'minimumJacobianNormalized':min(b-t for _,t,b in samples),'mapping':'x=u; y=top(u)+(bottom(u)-top(u))*v','targetSamples':samples})
-batch=a.outdir/'native-geometry-batch.json';batch.write_text(json.dumps(operations),encoding='utf-8');cli('batch',deck,'--input',batch,'--json');cli('close',deck);print(cli('validate',deck,'--json'));(a.outdir/'warp-model.json').write_text(json.dumps({'sourceContours':len(contours),'sourceVertices':sum(map(len,contours)),'targets':reports,'limits':'Only x-monotone non-crossing top/bottom bands. Positive Jacobian preserves topology before polyline discretization. Not an Adobe Envelope solver or arbitrary topology.'},indent=2),encoding='utf-8')
+ reports.append({'slide':s,'name':target['name'],'contours':len(warped),'vertices':sum(map(len,warped)),'minimumJacobianNormalized':min(b-t for _,t,b in samples),'mapping':'x=u; y=top(u)+(bottom(u)-top(u))*v','targetSamples':samples,**({'collapsedBoundaryTips':True,'ellipse':target['ellipse'],'knife':target['knife'],'intersections':target['intersections'],'verticalNormalization':target['verticalNormalization']} if target.get('collapsedBoundaryTips') else {})})
+batch=a.outdir/'native-geometry-batch.json';batch.write_text(json.dumps(operations),encoding='utf-8');cli('batch',deck,'--input',batch,'--json');cli('close',deck);print(cli('validate',deck,'--json'));(a.outdir/'warp-model.json').write_text(json.dumps({'sourceContours':len(contours),'sourceVertices':sum(map(len,contours)),'targets':reports,'limits':('Specific ellipse cap allows only its two boundary tips to collapse; interior height stays positive. ' if a.ellipse_cap else '')+'Only x-monotone non-crossing top/bottom bands. Positive interior Jacobian prevents interior folding before polyline discretization; collapsed boundary tips require separate native topology and readability checks. Not an Adobe Envelope solver or arbitrary topology.'},indent=2),encoding='utf-8')
