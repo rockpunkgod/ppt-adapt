@@ -1,0 +1,21 @@
+import argparse,sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from build_components import Deck
+p=argparse.ArgumentParser();p.add_argument('--out',required=True);p.add_argument('--officecli',required=True);a=p.parse_args()
+d=Deck(a.out,a.officecli)
+s=d.slide('173B4D')
+d.shape(s,'lower-background',0,12.1,33.87,6.95,fill='F4F1EA')
+d.shape(s,'heading',1.4,1.3,31,1.8,'编号随背景改变颜色',size=34,bold=True,color='FFFFFF')
+d.shape(s,'caption',1.4,3.3,31,1,'同一字形对齐，跨越分界线后局部反白。',size=18,color='DCE8EA')
+d.shape(s,'number-seed',3,5.8,12,10.2,'01',font='Arial',size=210,bold=True,color='FFFFFF',align='center')
+d.shape(s,'explanation-title',18,13.2,13,1.5,'跨底色的局部字形',size=28,bold=True)
+d.shape(s,'explanation',18,15.3,13,1.8,'保留原文字，再用真实求交形成下半部颜色。',size=18)
+d.notes(s,'Source BV1VTDGYsEmd P09 759–939s: duplicate number + lower rectangle Intersect, align exactly over original; source upper white/lower yellow. Original two-color background and readable darker gold replace source photograph/bright yellow.')
+s=d.slide('F4F1EA')
+d.heading(s,'切掉一个角，保留真正的字形缺口','先把数字转为矢量，再用三角形剪除，另加独立斜线。')
+d.shape(s,'number-seed',3,5.5,13,10.3,'03',font='Arial',size=210,bold=True,color='A57119',align='center')
+d.shape(s,'explanation-title',18,8,13,1.5,'缺口是几何，文字留底稿',size=25,bold=True)
+d.shape(s,'explanation',18,10.2,13,3,'切口可以透出任意背景。\n更换数字后回到基础稿重新生成，\n不要把背景色三角形盖住当作剪除。',size=18)
+d.notes(s,'Source BV1VTDGYsEmd P08 1392–1674s. Root additionally reviewed1392/1450/1550/1620/1674/1700s full frames:03 bottom-right corner truly subtracted and thin diagonal added. Own Arial replaces source font; no literal image/template reuse.')
+d.finish()
