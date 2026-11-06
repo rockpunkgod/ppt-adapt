@@ -66,3 +66,22 @@ powershell -File scripts/layout_story_native.ps1 -InputDeck FRESH_OUT/glyph-gaus
 来源资格：BV1oPHgeiEgb P21/P29，播放量564564。本轮Ego Lite复核18个视频元素帧：P21 2069秒明确选中字母i并显示Gaussian38.8px；2120秒显示拆分后的g下部单独Gaussian；P29 820秒仅左偏旁虚化、836–1003秒拆分复合字形并选择部件、1015秒可见局部虚实结果。Watch尝试P21字幕，来源无可用字幕，未下载音频或启用转写；以实际操作画面为本次视觉证据，不声称连续正常速度看完整节。方向性Motion Blur尚无完整操作证据，不能从本Gaussian样稿升级为verified。
 
 范围是原创四笔轮廓、默认σ12及当前构图。其他sigma、任意字体自动拆笔、字孔或复杂自交、不同alpha颜色处理需按输入另验；此实现不证明Adobe算法/像素等价，也不据原生Artistic Blur的不同就断言PowerPoint原生永远无法实现其他Gaussian方案。
+
+## 笔刷轮廓逐笔揭示清晰背景
+
+backend：**hybrid**。复用上面的共享坐标背景填充：清晰原图设为真实幻灯片背景，叠同尺寸图片并加原生Artistic Blur与降亮度；每个笔刷轮廓用`Fill.Background()`透出对应位置的清晰图。笔刷边界外仍显示虚化副本，不能给每笔分别拉伸填同一整图。这里的原生轮廓留白是透明区域，不需要裁切透明PNG。
+
+先摆好所有笔刷、检查覆盖范围和文字空间，再安排Wipe。首笔OnClick，后续笔刷及末尾标题AfterPrevious，观众只需一次操作。当前原创六笔版使用500ms擦入，第一笔自右、第二笔自左，依次交替；六笔完成后标题Fade500ms。不要照着枚举名猜方向：本机Grow之外的Wipe22实播确认Direction2→`wipe(right)`自右，Direction4→`wipe(left)`自左。
+
+```powershell
+python scripts/brush_reveal_build.py --officecli EXE --image LOCAL_16_BY_9.png --out NEW_BASE.pptx
+powershell -File scripts/brush_reveal_polish.ps1 -InputDeck NEW_BASE.pptx -OutputDeck NEW_FINAL.pptx
+```
+
+当前使用Blur30和亮度−54%（COM Brightness0.23，保存为`a:lum bright="-54000"`），都保持原生可调整。深色原图降亮度后可能全黑，应先看实际预览，再决定素材或亮度。本例换为原创浅色场景，未改动既有玻璃配方。更换图后同时更新真实背景和覆盖副本；移动、旋转笔刷仍应取全局坐标，不把图片跟随笔刷旋转。
+
+来源BV1jJ4m1g71D 44–101秒，资格核验时播放量10783；Ego Lite复核10个实际画面。71秒明确幻灯片背景填充，77秒Wipe0.50秒，83秒第二笔自左并交替，89秒加标题Fade，95秒后续改AfterPrevious。这与旧路由表中“裁切笔刷素材”的候选实现不同，不据该表误读成此课程必须使用PNG。
+
+[三页原创作品与45秒实播](../../examples/brush-reveal/README.md)包括清晰参考、原生虚化对照及六笔场景。最终9次方向键、0额外输入，两轮均为一次Right完成六笔及标题；Left先撤回整组，第二次Left再返回上一页，重新进入仍隐藏。36个笔刷中间采样按实际曝光面积/质心确认方向和递进，另核两轮标题亮度逐步增加、四个隐藏状态；46个分布画面已复看。保存重开后三页逐像素一致。
+
+共享坐标沿用既有RMS<2判据：约42万内部像素RMS0.295，平坦区最大差1；原图色边重采样最大差10，不声称与清晰参考逐像素完全相等。零位移误差显著小于任一方向平移1px的对照，笔刷外部与虚化对照一致。当前结论限这套六笔形状、构图、单次顺序及两轮返回；不升级任意刷头、快速中断、PNG裁切或别的动画组合。

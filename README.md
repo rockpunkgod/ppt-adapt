@@ -68,6 +68,8 @@
 
 [烛焰呼吸PPTX](examples/flame-flicker/flame-flicker.pptx)用原生矢量与纵向70%错峰循环营造微动，文字保持静止；附静态对照与22秒本机播放。
 
+[笔刷揭示PPTX](examples/brush-reveal/brush-reveal.pptx)从虚化底图逐笔擦出清晰内容，六笔交替方向后淡入标题；原生轮廓、背景填充和动画可编辑，附45秒实际播放。
+
 宇航员3D场景的[制作指导](officecli-ppt-design/references/model3d.md)与[52秒原生播放](officecli-ppt-design/verification/native-3d-navigation/playback.mp4)也已入库：保留模型内部动作，组合跨页Morph及四圆点导航，8次非顺序点击通过。此项使用调用方提供的原生模板，技能包不附作者原模板或模型文件；区别于上方附原创GLB的3D动作示例。
 
 ## 环境

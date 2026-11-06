@@ -121,6 +121,7 @@
 |轮廓混合|200中间级/30中间级、斜向挤出与连续长影|[contour-blend-extrusion.md](contour-blend-extrusion.md)、`contour_blend_*`；436面几何/颜色及COM真Union/Intersect重开过，不是可旋转3D模型|
 |2.5D/媒体|真组支点、透视铰链、打开页视频层|[laptop-hinge-scene.md](laptop-hinge-scene.md)、`laptop_hinge_*`：22秒开合再开/8状态/60项，稳定屏内动态、屏外0差；过渡poster非实时3D视频贴面|
 |图片/背景|原生艺术模糊、共享坐标窗与内阴影霜边|[local-blur-background.md](local-blur-background.md)、`local_blur_*`：原Blur30/Fill.Background的12结构+12像素标准保持；`--frost`白色20pt内阴影另验16结构、边缘衰减/重开/返回；严格Gaussian/动感另验|
+|图片/动画|清晰背景填充笔刷、交替Wipe与末尾标题Fade|[local-blur-background.md](local-blur-background.md)、`brush_reveal_*`：六笔500ms顺序、一次启动，两轮45秒实播/方向及隐藏状态已验；不是PNG笔刷裁切|
 
 视频自身裁形见[布局、叙事与几何](layout-story-geometry.md)末节：`examples/video-intersect`，OfficeCLI主体+COM Union/Intersect和播放恢复，24秒实播，真媒体custGeom、原视频字节及边界已验；不等同于后置视频孔罩。
 
