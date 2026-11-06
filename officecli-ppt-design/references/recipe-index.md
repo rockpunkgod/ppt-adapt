@@ -19,7 +19,7 @@
 |中文/多图|轴线、留白、标题成块、图片窗口与主题环绕|`bili_layout_build.py`：13页样稿中的静态方法；瀑布流仅验证静态布局|
 |表格|分组表头、横纵合并、必要边框和行列合计|`bili_layout_table_*`：真6×5表、横4/竖2合并、700合计、边框和原生尺寸/画面、包内前向过；不是自动Excel公式重算|
 |图片|多个窗口继承同一父组图片坐标|`bili_layout_group_image_*`：真实父组blipFill/子grpFill，3页原生、8区域像素与包内前向过；限轴对齐静态矩形|
-|图表|按系列/类别分步出现|`chart_build_*`：真实chart子目标，原CLI2/4次点击、6物理点击/8状态/12秒录屏过；保numLit数据，此入口不含xlsx/编辑数据|
+|图表|按系列/类别或每根柱子分步出现|[chart-build.md](chart-build.md)及`chart_build_*`：默认2/4步Fade保持；`--elements`两页各8步、自底部Wipe500ms，37秒原生/18稳定状态/16次运动通过；保numLit，不含xlsx/编辑数据|
 |图表|目标/实际同轴100%重叠|[target-actual-overlay.md](target-actual-overlay.md)及`target_overlay_*`：真clustered双系列、零起点同主轴、目标100→120而实际柱保持；无xlsx能力声明|
 |图表|逐根数据柱原生渐变|[chart-series-fill.md](chart-series-fill.md)及`chart_series_fill_build.py`：真实series gradFill、90度、逐柱归一，数据与0起点轴保持|
 |3D/Morph|从零构造双面GLB卡片|[glb-double-sided-card.md](glb-double-sided-card.md)及`glb_card_*`：正反独立纹理/相反法线与绕序，真model3d，8秒实播两次物理点击与侧缘透视|

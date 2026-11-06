@@ -2,10 +2,10 @@
 import argparse,json,zipfile,posixpath,xml.etree.ElementTree as E
 from pathlib import Path
 N={'p':'http://schemas.openxmlformats.org/presentationml/2006/main','a':'http://schemas.openxmlformats.org/drawingml/2006/main','c':'http://schemas.openxmlformats.org/drawingml/2006/chart'}
-def verify(deck):
+def verify(deck,elements=False):
  reports=[]
  with zipfile.ZipFile(deck) as z:
-  for slide,mode,total in [(1,'series',2),(2,'category',4)]:
+  for slide,mode,total in ([(1,'seriesEl',8),(2,'categoryEl',8)] if elements else [(1,'series',2),(2,'category',4)]):
    root=E.fromstring(z.read(f'ppt/slides/slide{slide}.xml'))
    charts=root.findall('.//p:graphicFrame',N);assert len(charts)==1
    sid=charts[0].find('p:nvGraphicFramePr/p:cNvPr',N).get('id')
@@ -29,23 +29,29 @@ def verify(deck):
    assert len(groups)==total,'Only the authored series/category data subtargets are expected in the OfficeCLI file'
    steps=[]
    for idx,g in enumerate(groups):
-    assert g.get('presetID')=='10' and g.get('presetClass')=='entr' and g.get('nodeType')=='clickEffect'
+    assert g.get('presetID')==('22' if elements else '10') and g.get('presetClass')=='entr' and g.get('nodeType')=='clickEffect'
     assert g.get('fill')=='hold'
     targets=g.findall('.//p:spTgt',N);assert len(targets)==2 and all(t.get('spid')==sid for t in targets)
     expected={'bldStep':mode,'seriesIdx':str(idx) if mode=='series' else '-4','categoryIdx':str(idx) if mode=='category' else '-4'}
+    if elements:
+     series,category=divmod(idx,4) if mode=='seriesEl' else (idx%2,idx//2)
+     expected={'bldStep':'ptInSeries' if mode=='seriesEl' else 'ptInCategory','seriesIdx':str(series),'categoryIdx':str(category)}
     for target in targets:assert target.find('p:graphicEl/a:chart',N).attrib==expected
     duration=g.find('p:childTnLst/p:animEffect/p:cBhvr/p:cTn',N);assert duration is not None and duration.get('dur')=='500'
+    if elements:
+     assert g.get('presetSubtype')=='4'
+     assert g.find('p:childTnLst/p:animEffect',N).get('filter')=='wipe(down)'
     steps.append(expected)
    reports.append({'slide':slide,'shapeId':sid,'build':mode,'nativePlayerDefaultFrameClicks':0,'dataClicks':total,'steps':steps,'durationMs':500,'series':data})
- return {'passed':True,'slides':reports,'scope':'OfficeCLI-authored literal native chart + Fade series/category builds. Does not claim embedded workbook or PowerPoint Edit Data capability.'}
+ return {'passed':True,'slides':reports,'scope':'OfficeCLI-authored literal native chart + '+('Wipe from bottom seriesEl/categoryEl builds.' if elements else 'Fade series/category builds.')+' Does not claim embedded workbook or PowerPoint Edit Data capability.'}
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('deck');p.add_argument('--report',required=True);p.add_argument('--desktop');p.add_argument('--pixels');a=p.parse_args();out=Path(a.report)
+ p=argparse.ArgumentParser();p.add_argument('deck');p.add_argument('--report',required=True);p.add_argument('--desktop');p.add_argument('--pixels');p.add_argument('--elements',action='store_true');a=p.parse_args();out=Path(a.report)
  if out.exists():raise FileExistsError('Refusing overwrite')
- result=verify(a.deck)
+ result=verify(a.deck,a.elements)
  if a.desktop:
-  clicks=json.loads((Path(a.desktop)/'clicks.json').read_text(encoding='utf-8-sig'));assert len(clicks)==8
+  clicks=json.loads((Path(a.desktop)/'clicks.json').read_text(encoding='utf-8-sig'));assert len(clicks)==(18 if a.elements else 8)
   for q in clicks:assert q['slide']==q['actualSlide'] and q['click']==q['index']
-  result['physicalClickStates']=8
+  result['nativeBuildStates' if a.elements else 'physicalClickStates']=len(clicks)
  if a.pixels:
-  pixel=json.loads(Path(a.pixels).read_text(encoding='utf-8'));assert pixel['passed'] and len(pixel['checks'])==8 and all(q['passed'] for q in pixel['checks']);result['pixelStates']=8
+  pixel=json.loads(Path(a.pixels).read_text(encoding='utf-8'));assert pixel['passed'] and len(pixel['checks'])==(18 if a.elements else 8) and all(q['passed'] for q in pixel['checks']);result['pixelStates']=len(pixel['checks'])
  out.write_text(json.dumps(result,indent=2),encoding='utf-8');print(out)

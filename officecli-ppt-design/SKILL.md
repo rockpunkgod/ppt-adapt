@@ -40,7 +40,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 |对齐参照、SCQA叙事、原生图表、布尔图片几何|[布局、叙事与几何](references/layout-story-geometry.md)|`layout_story_build.py`、`layout_story_geometry.py`与精修脚本|
 |同一度量的折线+渐变面积、原生编辑数据|[原生组合图](references/chart-line-area.md)|`chart_line_area_*`：同轴同值、嵌入工作簿及实际改值测试；默认不修改示范数据|
 |已有字面量bar/column图补真实“编辑数据”工作簿|[图表工作簿补齐](references/chart-workbook-materialization.md)|`chart_workbook.py`与精修脚本：当前限每文稿一图，默认保数据和画面；不清理已有工作簿|
-|真实图表按系列或类别分步讲解|[原生图表构建](references/chart-build.md)|`chart_build_*`：OfficeCLI生成真实chart子目标，series两步/category四步；此配方不包含“编辑数据”工作簿|
+|真实图表按系列、类别或逐根分步讲解|[原生图表构建](references/chart-build.md)|`chart_build_*`：默认series两步/category四步；`--elements`为两种八步逐柱/自底部Wipe；不包含“编辑数据”工作簿|
 |同轴比较目标与实际|[目标实际重叠柱](references/target-actual-overlay.md)|`target_overlay_*`：真clustered chart、100%重叠、透明目标在后；改目标而实际高度保持|
 |真实数据柱内部渐变与横纹|[图表系列填充](references/chart-series-fill.md)|`chart_series_fill_*`：CLI逐柱渐变、COM原生pattern，保数据与零轴；保存重开像素一致|
 |真正SmartArt层级、增删节点、换布局及图文配对|[原生SmartArt](references/smartart-native.md)|`bili_layout_smartart_*`：保留diagram数据模型；三个布局实际测试，不用普通group代替|

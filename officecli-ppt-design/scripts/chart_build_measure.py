@@ -3,7 +3,7 @@ import argparse,json
 from pathlib import Path
 import numpy as np
 from PIL import Image
-p=argparse.ArgumentParser();p.add_argument('--native',required=True);p.add_argument('--desktop',required=True);p.add_argument('--report',required=True);a=p.parse_args();out=Path(a.report)
+p=argparse.ArgumentParser();p.add_argument('--native',required=True);p.add_argument('--desktop',required=True);p.add_argument('--report',required=True);p.add_argument('--elements',action='store_true');a=p.parse_args();out=Path(a.report)
 if out.exists():raise FileExistsError('Refusing overwrite')
 native=Path(a.native);desktop=Path(a.desktop)
 colors=[np.array([0,127,134]),np.array([232,135,53])]
@@ -25,7 +25,7 @@ def normalize(path):
   nh=round(w*9/16);y=(h-nh)//2;im=im.crop((0,y,w,y+nh))
  return np.asarray(im.resize((1600,900),Image.Resampling.LANCZOS)).astype(int)
 checks=[]
-for slide,n in [(1,2),(2,4)]:
+for slide,n in ([(1,8),(2,8)] if a.elements else [(1,2),(2,4)]):
  for click in range(n+1):
   im=normalize(desktop/f's{slide}-c{click}.png');ratios=[]
   for bar in bars:
@@ -34,6 +34,7 @@ for slide,n in [(1,2),(2,4)]:
   actual=[i for i,q in enumerate(ratios) if q>0.9]
   assert all(q<0.05 or q>0.9 for q in ratios),('Ambiguous/partial state',slide,click,ratios)
   if click==0:expected=[]
+  elif a.elements:expected=sorted(([0,2,4,6,1,3,5,7] if slide==1 else list(range(8)))[:click])
   elif slide==1:expected=[0,2,4,6] if click==1 else list(range(8))
   else:expected=list(range(2*click))
   checks.append({'slide':slide,'click':click,'expectedBarIndices':expected,'actualBarIndices':actual,'ratios':ratios,'passed':actual==expected})

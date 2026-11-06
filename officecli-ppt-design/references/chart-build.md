@@ -4,7 +4,7 @@ backend：**officecli-native**。OfficeCLI直接生成真实clustered-column cha
 
 ## 来源与适用
 
-BV1VTDGYsEmd P21 2181–2322s；2229s菜单整帧已核：整个对象、按系列、按类别、系列内元素、类别内元素。当前只验证**series、category**两项：先讲完整个Alpha产品再Beta用series；按季度比较两产品用category。源使用Wipe，本原创样稿使用Fade隔离验证顺序，不代证源Wipe方向或全部动画预设。
+BV1VTDGYsEmd P21 2181–2322s；2229s菜单整帧已核：整个对象、按系列、按类别、系列内元素、类别内元素。初轮验证**series、category**：先讲完整个Alpha产品再Beta用series；按季度比较两产品用category。原样稿使用Fade隔离验证顺序，不代证源Wipe。后续直接复核2220秒Wipe自底部/0.50秒、2266–2270秒系列内元素的实际逐柱播放、2274秒类别内元素播放和2278秒八步菜单，再独立补齐下面的元素模式；不以菜单存在代证实现。
 
 OfficeCLI1.0.160 `help pptx animation --json`明确chartBuild枚举；父路径 `/slide[N]/chart[M]`。参数effect=fade、class=entrance、chartBuild=series或category、trigger=onClick、duration=500（毫秒）。CLI生成2/4条真实chart数据子目标、bldGraphic/bldSub/a:bldChart及graphicEl/a:chart索引。不是整图淡入，也不是矩形假柱。
 
@@ -37,3 +37,19 @@ record仅接受恰1个可见screenClass窗口并核foreground/自有文稿，使
 旧xlsx研究与失败保留独立：distill/chart-build/v4曾成功物化两份xlsx；validation/forward-chart-build首次包内第二图Activate失败、选择对照首图值数不符，随后原始chart读取阶段原生chart.dll崩溃，Windows事件标OFFICE_MODULE_VERSION_MISMATCH（POWERPNT16.0.20527.20112、chart.dll16.0.20527.20088）。不把旧成功移作新前向证明，也不据此修改/重启共享Office。需PowerPoint编辑数据时走独立chart-workbook能力，并按当前环境重新验证。当前动画配方没有绕过或伪造工作簿，它明确不包含该能力。
 
 最终包内前向：`validation/forward-chart-build-native-v3/`。从包内重建两页全新PPT，结构/CLI schema、两张原生PNG、6次物理点击/8状态GetClickIndex与8柱显隐全部通过；12秒真实桌面影片的48个0.25秒样本已人工复看，可见按组Fade中间态和稳定终值；readonly前后PPT SHA256完全相同、已有路径构建拒覆盖。原始CLI2/4步与规范化另存稿3/5步区别已写入测试/文案，首轮误用3/5计数的失败保持在native-v2，不拿失败稿代证成功。
+
+## 每根柱子揭示：系列内／类别内元素
+
+沿用同一图表、数值、色彩和网格，在构建器增加`--elements`即可生成两页各八步的原生图表子目标。seriesEl以Alpha的Q1–Q4、Beta的Q1–Q4为顺序；categoryEl以Q1的Alpha/Beta、Q2的Alpha/Beta依次展开。制作时按叙事需求选一种，不为了展示技巧在业务稿中重复相同数据。
+
+```powershell
+& $Py "$Skill/scripts/chart_build_build.py" --officecli $OfficeCLI --out "$Out/chart-elements.pptx" --elements
+& $Py "$Skill/scripts/chart_build_verify.py" "$Out/chart-elements.pptx" --elements --report "$Out/structure.json"
+& "$Skill/scripts/chart_build_export.ps1" -Deck "$Out/chart-elements.pptx" -Evidence "$Out/native"
+```
+
+OfficeCLI1.0.160的Wipe入口实际写出preset20及wipe(left)，方向参数未生效。构建器只对自己新建的元素样稿，用既有raw-set接口写入本机PowerPoint原生保存得到的**preset22、subtype4、wipe(down)**。这表示“自底部揭示”：不能按英文up/down字面推断视觉方向；实际wipe(up)从柱顶向下，已在试稿发现并修正。时长500ms、两套索引和真实chart不变，无需增加COM制作脚本或外部渲染。
+
+已保存[可编辑示例](../../examples/chart-elements/chart-elements.pptx)和[37秒原生播放](../../examples/chart-elements/playback.mp4)。所有幻灯片模式下，第一页用Right推进八次，再一次到第二页，第二页再推进八次，共17次物理按键、0次点击、0额外输入。起态框架可见但无柱；每页八次数据推进。18个稳定状态逐根核显隐、每步GetClickIndex正确，两张原生导图及24个关键运动画面已复看。另在原始编码帧PTS上量测16次运动，每次10–13个部分揭示帧，柱底保持、揭示上沿单调上升，底边误差≤2px；不是只验最终柱高。
+
+若另存或改变图表结构，重新核原生点击数和索引。原`chart_build_record.ps1`及上面的默认命令仍只测整系列／整类别Fade；不要把它的2/4步计划套到此处。元素模式预览按上述实际按键路线，需自动核固定样稿时保存每页c0–c8的18张原生画面及页码/index，再给measure和verify同时传`--elements`。这些固定几何检查不代替实际播放，也不证明任意图表、动态增删数据或任意动画预设。
