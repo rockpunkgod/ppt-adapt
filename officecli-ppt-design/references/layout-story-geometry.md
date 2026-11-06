@@ -15,6 +15,7 @@
 | 真正layout图片placeholder | One Skill PPT《PowerPoint Slide Design from Beginner to EXPERT in One Video 🔥100K Special🔥》https://www.youtube.com/watch?v=lxcHLxjkcXQ 12:15–15:07 | hybrid | CLI基础页+COM CustomLayout和placeholderType18，原生画面/结构通过；不把普通图片fill称placeholder。字形placeholder未测 |
 | Polaroid框+Pinwheel顺序 | 同片1:08:57–1:18:29 | hybrid | CLI图片shape白边/旋转，COM Pinwheel33、1秒；后3个afterPrevious。首个为自动视频用withPrevious，源首个onClick是公开差别；native7秒六帧逐张旋入通过 |
 | 两端点控制柄Bézier | 同片1:33:33–1:40:27 | officecli-native | CLI shape后raw-set原生custGeom，单段cubic；原生导图通过。无四stop渐变线/交叉投影，不是定量Sankey图 |
+| 四色标曲线与交叉投影 | 同片1:37:07–1:40:21 | officecli-native | `layout_story_geometry.py --recipe curve-links`：三个真开放cubic、四stop线渐变、前景原生下投影、节点压在线端上；独立样稿原生查看/保存重开/端点编辑通过，不改变上一行基础配方 |
 
 本增补没有powerpoint-com独立全量生成基础页、也没有external-render的通过配方：保留用户四标签作为路由，不为凑类把native图形转成图像。全套原20页schema通过/issues0，但弧线页25%浅色对比欠佳，已**完全从封装geometry builder排除**，封装版几何7页。
 
@@ -45,6 +46,23 @@ python scripts/layout_story_verify.py --artifacts NEWDIR --report NEWREPORT.json
 以上脚本使用Python标准库调用OfficeCLI，不使用python-pptx。
 
 封装后前向验收（2026-11-06）：使用封装`layout_story_build.py --recipe alignment`在全新`validation/layout-story-forward-v1`生成3页；schema通过/issues0，原生3页PNG均已查看，零文字高度溢出，结构独立4检查通过。相同输出目录再次调用以明确错误拒绝，未覆盖原作品。原生输出`validation/layout-story-forward-v1-native`与独立报告`validation/layout-story-forward-v1-check.json`保留。COM已关闭本次presentation。
+
+## 四色标曲线与交叉关系
+
+用已有Bézier方法表达少量类别之间的关系：一个开放cubic含两个端点与两个控制柄，先把端点放进对应节点，再沿水平方向调整控制柄。不要用大量折点追着图描，或把圆弧/折线换名叫同一条平滑曲线。复制后先确认没有重叠的多余端点，调整形状后再检查端部和交叉位置。
+
+线条使用真正的`a:ln/a:gradFill`，不是带渐变填充的矩形。保留四个色标：中间两个衔接起点与终点的类别色，两端适度压暗，形成线条进入节点的深度；圆形节点始终在曲线上方。多条同色线交叉时，只给前景线加原生向下外阴影，建立明确的前后顺序，避免给所有对象都加投影。
+
+示例选择0/18/82/100%四个色标、15/15/8pt线宽，前景线阴影blur4pt、distance3pt、黑色40%不透明；这些是样稿参数，不是每份演示的固定规范。配色要跟随整套演示，粗细只有在定义了数据映射时才代表数量。本例是定性关系图，不能称为定量Sankey。
+
+```powershell
+python scripts/layout_story_geometry.py --officecli PATH --outdir NEWDIR --recipe curve-links
+powershell -File scripts/layout_story_native.ps1 -InputDeck NEWDIR/curve-links.pptx -OutputDirectory NEWNATIVE
+```
+
+可编辑作品与本机静态放映见[示例](../../examples/curve-links/README.md)。三个对象原生Type5，COM各读到4个Nodes（含两个控制点），文件内各是一条moveTo+cubicBezTo开放路径；三个线条均四stop，两个真实outerShdw，六个节点在其上，无媒体位图。两处交叉的阴影、线端遮盖与文字已在原生画面检查；8秒原生放映无额外输入，保存重开后的1600×900原生导图逐像素一致。另在私有副本中移动最后一个端点，原生画面随之改变；交付稿保持原来的连接位置。此为静态组合，不新增动效通过声明。
+
+本次用Ego Lite复核该章25张视频元素画面，Watch取得1:33:33–1:40:27的英文原始自动字幕：1:37:15明确四个色标，1:38:50–1:39:04明确用底部投影区分交叉线，1:39:43明确把节点置顶；未连续正常速度观看整节。旧低对比Arc页仍排除在原有七页geometry之外，新入口不修改它的语义或验收。
 
 ## 视频自身与组合几何相交
 

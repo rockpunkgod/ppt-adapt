@@ -1,7 +1,7 @@
 """OfficeCLI foundation for source merge-shapes and 2-hour design lesson."""
 import argparse,math,struct,zlib
 from pathlib import Path
-from layout_story_build import Deck,TEAL,INK,GOLD,PAPER
+from layout_story_build import Deck,TEAL,INK,GOLD,PAPER,MUTED
 def pattern(p):
  w,h=1200,800;raw=bytearray()
  for y in range(h):
@@ -13,6 +13,36 @@ def pattern(p):
    raw.extend(color)
  def c(t,d):return struct.pack('>I',len(d))+t+d+struct.pack('>I',zlib.crc32(t+d)&0xffffffff)
  p.write_bytes(b'\x89PNG\r\n\x1a\n'+c(b'IHDR',struct.pack('>IIBBBBB',w,h,8,2,0,0,0))+c(b'IDAT',zlib.compress(raw))+c(b'IEND',b''))
+
+def curve_links(exe,out):
+ """Reuse the native cubic recipe for gradient strokes and crossing hierarchy."""
+ if out.exists():raise FileExistsError('Output directory already exists; choose a new --outdir')
+ out.mkdir(parents=True);d=Deck(exe,out/'curve-links.pptx')
+ s=d.slide('把团队信号，连接到下一步行动','关系图 / 从输入到行动',bg='FFFFFF')
+ d.call('set',d.path,s+'/shape[@name=footer]','--prop','text=示意关系 · 线宽不代表数量')
+ d.batch([d.shape(s,'left-label',3.9,4.5,5,.8,'输入信号',16,color=MUTED),d.shape(s,'right-label',25.4,4.5,6,.8,'行动方向',16,color=MUTED)])
+ a='http://schemas.openxmlformats.org/drawingml/2006/main'
+ # All route ends sit beneath node circles. Each route is one open cubic.
+ routes=[('discover',7.5,14.7,'4BB3C6','1D5686',15,False),('respond',11.1,7.5,'008CB1','4BB3C6',15,True),('learn',14.7,11.1,'1D5686','008CB1',8,True)]
+ def dark(c):return ''.join(f'{round(int(c[k:k+2],16)*.72):02X}' for k in (0,2,4))
+ for name,y1,y2,c1,c2,width,shadow in routes:
+  top=min(y1,y2);height=abs(y2-y1);down=y2>y1
+  d.batch([d.shape(s,name,6.5,top,20.8,height,fill='none',line=c1+':'+str(width))])
+  start,end=('0','100000') if down else ('100000','0')
+  geom=f'<a:custGeom xmlns:a="{a}"><a:avLst/><a:gdLst/><a:ahLst/><a:cxnLst/><a:rect l="l" t="t" r="r" b="b"/><a:pathLst><a:path w="100000" h="100000" fill="none"><a:moveTo><a:pt x="0" y="{start}"/></a:moveTo><a:cubicBezTo><a:pt x="50000" y="{start}"/><a:pt x="50000" y="{end}"/><a:pt x="100000" y="{end}"/></a:cubicBezTo></a:path></a:pathLst></a:custGeom>'
+  xp=f'//p:sp[p:nvSpPr/p:cNvPr[@name="{name}"]]/p:spPr'
+  d.call('raw-set',d.path,s,'--xpath',xp+'/a:prstGeom','--action','replace','--xml',geom)
+  stops=[(0,dark(c1)),(18000,c1),(82000,c2),(100000,dark(c2))]
+  grad='<a:gsLst>'+''.join(f'<a:gs pos="{p}"><a:srgbClr val="{c}"/></a:gs>' for p,c in stops)+'</a:gsLst>'
+  line=f'<a:ln xmlns:a="{a}" w="{width*12700}" cap="flat"><a:gradFill rotWithShape="0">{grad}<a:lin ang="0" scaled="1"/></a:gradFill><a:prstDash val="solid"/></a:ln>'
+  d.call('raw-set',d.path,s,'--xpath',xp+'/a:ln','--action','replace','--xml',line)
+  if shadow:
+   effect=f'<a:effectLst xmlns:a="{a}"><a:outerShdw blurRad="50800" dist="38100" dir="5400000" algn="ctr" rotWithShape="0"><a:srgbClr val="000000"><a:alpha val="40000"/></a:srgbClr></a:outerShdw></a:effectLst>'
+   d.call('raw-set',d.path,s,'--xpath',xp,'--action','append','--xml',effect)
+ for col,x,labels,colors in [('input',4.7,['观察','反馈','复盘'],['4BB3C6','008CB1','1D5686']),('action',26.7,['响应','优化','探索'],['4BB3C6','008CB1','1D5686'])]:
+  d.batch([d.shape(s,f'{col}-{i}',x,y-1.2,2.4,2.4,label,16,fill=color,color='FFFFFF',preset='ellipse',align='center',valign='center',bold=True) for i,(y,label,color) in enumerate(zip([7.5,11.1,14.7],labels,colors))])
+ d.note(s,'Native two-endpoint cubic paths; 15/15/8pt open strokes with four line-gradient stops, darker endpoints, foreground bottom shadows, nodes on top. Qualitative relationships, not a quantitative Sankey. One Skill PPT lxcHLxjkcXQ 1:33:33-1:40:27, original content; no source artwork bundled.')
+ d.finish();print(d.path)
 def main(exe,out):
  if out.exists():raise FileExistsError('Output directory already exists; choose a new --outdir')
  out.mkdir(parents=True);path=out/'geometry-base.pptx'
@@ -37,4 +67,4 @@ def main(exe,out):
  for si in [2,3,4]:d.call('set',d.path,f'/slide[{si}]/picture[@name=source-image]','--prop','crop=0,28.57143,0,28.57143')
  d.finish();print(path)
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--officecli',default='officecli');p.add_argument('--outdir',type=Path,required=True);a=p.parse_args();main(a.officecli,a.outdir)
+ p=argparse.ArgumentParser();p.add_argument('--officecli',default='officecli');p.add_argument('--outdir',type=Path,required=True);p.add_argument('--recipe',choices=['geometry','curve-links'],default='geometry');a=p.parse_args();(curve_links if a.recipe=='curve-links' else main)(a.officecli,a.outdir)

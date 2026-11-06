@@ -38,6 +38,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 |构图、图像窗口、阅读面板、配色|[构图与配色](references/layout-color.md)、[配色方法](references/color-method.md)|`build_visual_animation.py`的连续裁片/文本列|
 |网格、间距、视觉重量、同文案不同主次|[网格与间距](references/grid-spacing-methods.md)|`build_layout_methods.py`，8页可编辑代表方法|
 |对齐参照、SCQA叙事、原生图表、布尔图片几何|[布局、叙事与几何](references/layout-story-geometry.md)|`layout_story_build.py`、`layout_story_geometry.py`与精修脚本|
+|类别间的平滑连线、渐变线与交叉前后关系|[曲线与交叉关系](references/layout-story-geometry.md)|`layout_story_geometry.py --recipe curve-links`：真开放cubic、四stop线渐变及原生投影；定性关系图|
 |同一度量的折线+渐变面积、原生编辑数据|[原生组合图](references/chart-line-area.md)|`chart_line_area_*`：同轴同值、嵌入工作簿及实际改值测试；默认不修改示范数据|
 |已有字面量bar/column图补真实“编辑数据”工作簿|[图表工作簿补齐](references/chart-workbook-materialization.md)|`chart_workbook.py`与精修脚本：当前限每文稿一图，默认保数据和画面；不清理已有工作簿|
 |真实图表按系列、类别或逐根分步讲解|[原生图表构建](references/chart-build.md)|`chart_build_*`：默认series两步/category四步；`--elements`为两种八步逐柱/自底部Wipe；不包含“编辑数据”工作簿|

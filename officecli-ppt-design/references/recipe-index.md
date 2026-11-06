@@ -14,6 +14,7 @@
 |---|---|---|
 |版式|网格、三级间距、视觉重量、主次变体|`build_layout_methods.py`：8页静态原生样稿，未扩张为海报课程所有外观|
 |版式/叙事|对齐参照、留白、结论式图表、SCQA|`layout_story_build.py`：静态布局与叙事示例；内容结论仍须由真实材料支持|
+|关系图|四stop渐变曲线与交叉层级|[layout-story-geometry.md](layout-story-geometry.md)及`layout_story_geometry.py --recipe curve-links`：三个真开放cubic、前景下投影、节点置顶；原生静态/重开/端点编辑通过，非定量Sankey|
 |字体|标题/正文角色、结构和笔画对比配对|`type_build.py`：4页静态基础方法；缺字体时记录本机替代|
 |字体|真文字多stop渐变含透明端|`text_gradient_*`：run gradFill5stop，双背景反解alpha/字孔、重开与改字48项，OfficeCLI原生；限已测单行Latin/Arial Black|
 |中文/多图|轴线、留白、标题成块、图片窗口与主题环绕|`bili_layout_build.py`：13页样稿中的静态方法；瀑布流仅验证静态布局|
