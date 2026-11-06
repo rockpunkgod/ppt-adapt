@@ -48,6 +48,8 @@
 
 [原生3D动作PPTX](examples/native-3d-effects/native-3d-effects.pptx)组合真实3D入场、连续转盘及点击模型跳跃转身，附原创GLB及40秒原生播放记录。
 
+[双首页导航PPTX](examples/double-home/double-home.pptx)让首次入场只播放一次，两个多页章节各完成两轮往返后，都回到静态首页，保留可编辑页面和原生播放记录。
+
 宇航员3D场景的[制作指导](officecli-ppt-design/references/model3d.md)与[52秒原生播放](officecli-ppt-design/verification/native-3d-navigation/playback.mp4)也已入库：保留模型内部动作，组合跨页Morph及四圆点导航，8次非顺序点击通过。此项使用调用方提供的原生模板，技能包不附作者原模板或模型文件；区别于上方附原创GLB的3D动作示例。
 
 ## 环境

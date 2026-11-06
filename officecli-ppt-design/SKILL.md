@@ -78,6 +78,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 |笔尖跟随真墨迹，串联入场与离场|[笔尖同步](references/ink-pen-sync.md)|`ink_pen_*`：复用Replay，透明圆定位中心，同步路径，快放与返回后重播已实测|
 |真字形孔罩扩张、文字退出与视频揭示|[字形视频穿越](references/glyph-video-portal.md)|`glyph_portal_*`：真实Subtract孔、90倍原生放大、后置自动视频；单字H前向实播通过|
 |内部链接、点击区域、Zoom与返回|[交互导航](references/interaction-patterns.md)、[原生Section Zoom](references/section-zoom.md)|`section_zoom_*`：真实分节进入、自动节首、透明背景与节末返回；不以单页Zoom代替|
+|首次入场一次、各章返回静态首页|[双首页组合](references/interaction-patterns.md)|`double_home_compose.ps1`复用Section Zoom：8页、两节两轮实播，自动首播与静态返回分别实际确认|
 |原生动画导透明GIF、裁形后循环纹理|[原生GIF纹理](references/native-gif-texture.md)|`native_gif_*`：真Export与Intersect，fillRect恢复动态且保持画面比例|
 |视频自身裁为自定义轮廓并保持动态|[视频原生相交](references/layout-story-geometry.md)|`examples/video-intersect`，真媒体custGeom；相交后恢复唯一Play，保存重开实播|
 |真实3D模型、内部动作、跨页姿态|[3D场景](references/model3d.md)|`build_morph.py --mode 3d-template`，使用合法取得的模板|

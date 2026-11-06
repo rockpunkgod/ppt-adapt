@@ -33,7 +33,19 @@ OfficeCLI能建立原生Slide Zoom结构，但本轮默认poster是1像素占位
 
 大师课01:41:53–02:08:15章中的机制：初始首页有入场动画，然后进入静态主页；各章节统一返回静态主页。将动画主页设成永远循环会导致每次返回重播，与源目标不同。
 
-这一方法的设计关系已蒸馏；完整自动进入、节末返回或Kiosk逻辑仍需按具体作品实测，不凭普通内部链接宣称全部成立。
+`examples/double-home/`已完成此组合：8页为动画首页1、静态首页2、A入口3/正文4–5、B入口6/正文7–8。真实Section Zoom从静态首页进入，每节播完回到静态首页。每节两次完整往返通过，不凭普通内部链接或独立Zoom的测试代证。
+
+复用[Section Zoom](section-zoom.md)原有的build、prepare、convert三个步骤，得到五页`section-final.pptx`后，执行：
+
+```powershell
+powershell -NoProfile -File scripts/double_home_compose.ps1 -InputDeck NEW/section-final.pptx -OutputDeck NEW/double-home.pptx
+```
+
+示例适配器复制主页及两节正文，保留原GUID节关系和Morph稳定对象名。只给第一页两个Zoom入口增加1秒WithPrevious缩放入场，保留课程画面的`AdvanceOnTime=true / AdvanceTime=0 / AdvanceOnClick=true`组合；第二页无动画、无计时推进，作为导航停留点。复制或调整节范围后重新验证实际节首、所有正文、节末返回，不能只看总页数。
+
+放映设置使用所有幻灯片（`RangeType=1`）与使用排练计时（`AdvanceMode=2`）。本机把同一文件强制设为指定范围（`RangeType=2`）时，A节末错误前进到B；只恢复所有幻灯片后，两节往返正确。原生保存会省略默认开启的`returnToParent`属性，不能仅凭该属性缺失断言“返回”关闭；本机原生`ReturnBehavior`复选框仍为On。没有改写既有Section Zoom配方或验收标准。
+
+最终文件由普通编辑窗口的一次真实F5开始，录到两个入口从小到大出现，约1秒后无幻灯片点击自动到第2页；另以同一文件完成54秒、12次物理点击的两轮A/B往返。48个分布画面已复看，四次返回后均没有再次入场；10fps均匀采样中，静态首页入口区域与初始稳定画面的平均RGB误差最大不足0.06/255。录屏重采样不代表原始帧率恒定。保留的录像由首次播放4秒与分支54秒拼接，不冒称一段不间断放映。此组合不包含Kiosk或悬停预览；这些机制仍须分别组合实测。
 
 ## 真实点击验收
 
