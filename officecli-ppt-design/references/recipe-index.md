@@ -111,6 +111,7 @@
 
 |设计用途|原子机制|入口与通过范围|
 |---|---|---|
+|3D/交互|原生3D入场、连续转盘、点击模型跳跃转身|[native-3d-effects.md](native-3d-effects.md)、`native_3d_effects_*`：真model3d/3D属性，10秒转盘、三次指定触发，40秒实播；不外推跨页或快速连击|
 |字形包络|自定义上下曲线带的受限包络映射|[bounded-envelope.md](bounded-envelope.md)、`envelope_band_*`；GDI原轮廓+CLI真实路径，17模型/6原生项，不支持任意拓扑或零高度尖端|
 |轮廓混合|200中间级/30中间级、斜向挤出与连续长影|[contour-blend-extrusion.md](contour-blend-extrusion.md)、`contour_blend_*`；436面几何/颜色及COM真Union/Intersect重开过，不是可旋转3D模型|
 |2.5D/媒体|真组支点、透视铰链、打开页视频层|[laptop-hinge-scene.md](laptop-hinge-scene.md)、`laptop_hinge_*`：22秒开合再开/8状态/60项，稳定屏内动态、屏外0差；过渡poster非实时3D视频贴面|

@@ -46,6 +46,8 @@
 
 [指定媒体触发PPTX](examples/media-shape-triggers/media-shape-triggers.pptx)将蛋糕/GIF与标题/视频分为独立入口，组合原生飞入、播放和70%透明，并提供不透明对照。
 
+[原生3D动作PPTX](examples/native-3d-effects/native-3d-effects.pptx)组合真实3D入场、连续转盘及点击模型跳跃转身，附原创GLB及40秒原生播放记录。
+
 ## 环境
 
 OfficeCLI、Python 3；本地预览与精修使用Windows桌面版PowerPoint和Windows PowerShell。按具体配方准备Pillow、NumPy或FFmpeg等依赖。字体与素材由调用方确认可用。

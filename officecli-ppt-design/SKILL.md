@@ -82,6 +82,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 |视频自身裁为自定义轮廓并保持动态|[视频原生相交](references/layout-story-geometry.md)|`examples/video-intersect`，真媒体custGeom；相交后恢复唯一Play，保存重开实播|
 |真实3D模型、内部动作、跨页姿态|[3D场景](references/model3d.md)|`build_morph.py --mode 3d-template`，使用合法取得的模板|
 |正反面不同内容的真3D卡片|[双面GLB卡片](references/glb-double-sided-card.md)|`glb_card_*`：自建双单面贴图、OfficeCLI真model3d/Morph、两次真实点击及透视侧缘验证|
+|真3D入场、持续转盘与点击跳跃|[原生3D动作](references/native-3d-effects.md)|`native_3d_effects_*`：Arrive/Turntable/Jump & Turn，模型自身触发，40秒三次跳跃后持续转动|
 
 只将完成适用验证的实现当作可直接复用配方；未实播的新组合不作为已有能力。具体限制见各配方。
 
