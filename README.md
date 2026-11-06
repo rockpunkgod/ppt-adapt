@@ -48,6 +48,8 @@
 
 [原生3D动作PPTX](examples/native-3d-effects/native-3d-effects.pptx)组合真实3D入场、连续转盘及点击模型跳跃转身，附原创GLB及40秒原生播放记录。
 
+宇航员3D场景的[制作指导](officecli-ppt-design/references/model3d.md)与[52秒原生播放](officecli-ppt-design/verification/native-3d-navigation/playback.mp4)也已入库：保留模型内部动作，组合跨页Morph及四圆点导航，8次非顺序点击通过。此项使用调用方提供的原生模板，技能包不附作者原模板或模型文件；区别于上方附原创GLB的3D动作示例。
+
 ## 环境
 
 OfficeCLI、Python 3；本地预览与精修使用Windows桌面版PowerPoint和Windows PowerShell。按具体配方准备Pillow、NumPy或FFmpeg等依赖。字体与素材由调用方确认可用。
