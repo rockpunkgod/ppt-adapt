@@ -4,6 +4,8 @@
 
 多个配方一起使用时另读[高级动效组合](advanced-composition.md)：同组多动画、斜切字形/刀光、固定导航/滚动时间轴/任务Zoom、路径支点与3D翻页的制作顺序和边界。组合样稿在`examples/motion-combinations`，其通过范围单独列明，不改写下表原子配方的语义或验收标准。
 
+`examples/book-flip`补充已实播的两页曲线纸页翻转：OfficeCLI基础+COM对称隐藏半页/Camera62/FOV60/Contrasting18/Morph2秒，15秒物理翻页/回退/再翻页。它是平面组的透视旋转组合，背面留白，不扩张为多页双面书本或GLB能力。
+
 ## officecli-native
 
 |设计用途|原子机制|入口与通过范围|

@@ -44,10 +44,12 @@ WithPrevious的delay相对同一点击组安排；AfterPrevious会把起点放�
 
 原生组的透视旋转适合平面翻页；真实正反两面的立体卡片优先复用[双面GLB](glb-double-sided-card.md)。两者的对象类型与背面表现不同，按内容选，不混称。
 
-平面翻页可用“可见半页 + 对称辅助半页”把组中心放到书脊，再保持对象身份制作两个姿态，以Morph连接。参考操作中保留辅助半页但隐藏其显示，避免两页一起翻。改变辅助几何可见性是否仍保持预期组边界、相机预设/透视、背面字形与层级，都需在实际文件实播；本次新增样稿没有验证完整书本翻页，不将此新组合标为verified。已有铰链或GLB的通过范围不扩大。
+平面翻页用“可见半页 + 对称辅助半页”把组中心放到书脊，再保持对象身份制作两个姿态，以Morph连接。先分组，再隐藏辅助半页；不要删除辅助半页而改变组包围盒。本机两页原创书本已实测：水平镜像辅助页Visible=0后Left/Width不变，Camera62、透视60°、RotationX0→180°、Contrasting灯光18、Morph2秒，原生Right→Left→Right及14个中间/结束帧通过。制作源在`examples/book-flip`，与既有铰链共用相机/组支点机制，没有新建3D引擎。
+
+预留翻页中间态的空间：透视会把纸页投影放大，不能只按两张终态安排页眉与页脚。本例背面留白，内容在底层页面露出；不把旋转的背面当作已完成双面印刷文字。照片裁形、任意尺寸/相机、多张连续翻页或动态弯曲仍按实际作品另验，不扩大已有铰链或GLB的通过范围。
 
 ## 可编辑组合样稿
 
 仓库`examples/motion-combinations`提供斜切文字、同组五效果、季度状态/遮罩/Slide Zoom组合的制作示例。它是已有机制的组合小样，不是新的通用引擎。具体实播范围和限制见样稿README。
 
-操作参考：[Kevin Stratvert动画](https://www.youtube.com/watch?v=3uJd-_JpG1w)07:05–08:24、15:45–24:45；[三种Zoom构图](https://www.youtube.com/watch?v=HvCcEMXKwpQ)01:45–03:11、06:30–08:11、09:19–10:11；[交互时间轴](https://www.youtube.com/watch?v=nNN3Ito_2Mw)09:54–11:23、13:49–17:16、17:33–21:16；[文字切片](https://www.youtube.com/watch?v=JPjXeJMDrc4)01:09–06:40；[触发器问答](https://www.youtube.com/watch?v=Mo5-Bu1SHGQ)02:43–05:33、06:49–08:32的对象命名与指定对象触发复用既有Pin/Kiosk机制；[书页翻转](https://www.youtube.com/watch?v=cwPaqUC1jT4)06:22–12:47为后续完整书本组合的操作参考，尚非本次新增通过项。
+操作参考：[Kevin Stratvert动画](https://www.youtube.com/watch?v=3uJd-_JpG1w)07:05–08:24、15:45–24:45；[三种Zoom构图](https://www.youtube.com/watch?v=HvCcEMXKwpQ)01:45–03:11、06:30–08:11、09:19–10:11；[交互时间轴](https://www.youtube.com/watch?v=nNN3Ito_2Mw)09:54–11:23、13:49–17:16、17:33–21:16；[文字切片](https://www.youtube.com/watch?v=JPjXeJMDrc4)01:09–06:40；[触发器问答](https://www.youtube.com/watch?v=Mo5-Bu1SHGQ)02:43–05:33、06:49–08:32的对象命名与指定对象触发复用既有Pin/Kiosk机制；[书页翻转](https://www.youtube.com/watch?v=cwPaqUC1jT4)06:22–12:47，本例复核该段字幕与12张操作/效果帧后还原组支点、辅助页隐藏、60°透视、Contrasting光照及180°翻转，使用原创可编辑曲线纸面。
