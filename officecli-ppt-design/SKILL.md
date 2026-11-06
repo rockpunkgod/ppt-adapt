@@ -77,7 +77,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 |真实3D模型、内部动作、跨页姿态|[3D场景](references/model3d.md)|`build_morph.py --mode 3d-template`，使用合法取得的模板|
 |正反面不同内容的真3D卡片|[双面GLB卡片](references/glb-double-sided-card.md)|`glb_card_*`：自建双单面贴图、OfficeCLI真model3d/Morph、两次真实点击及透视侧缘验证|
 
-只将完成适用验证的实现当作可直接复用配方；3D菜单鼠标命中等未通过范围不作为已有能力。具体限制见各配方。
+只将完成适用验证的实现当作可直接复用配方；逐字Wave循环等未通过范围不作为已有能力。具体限制见各配方。
 
 同心饼图/外环与百分比卡片见[份额图表一致性](references/concentric-share-charts.md)：`concentric_chart_*`核7真chart、同步改值、真透缝和余数。活动/静态菜单见[GIF/PNG状态配对](references/gif-png-menu.md)：`gif_menu_*`保真实多帧GIF，以六次物理点击验重复进入。图片双色映射见[原生双色调](references/native-duotone.md)：`duotone_*`保原图字节，原生a:duotone端点与中间灰阶通过；不外推彩色亮度权重或精确GIF重启帧。
 

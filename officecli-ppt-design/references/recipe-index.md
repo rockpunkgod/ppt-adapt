@@ -34,7 +34,7 @@
 |循环背景|双幅周期网格、同组线性滚动后复位|`seamless_grid_*`：17秒一页、真20%alpha、54秒1440实际帧/17项过，三窗速度误差<0.013%；限均匀周期网格|
 |转场/时间轴|向上Push跨页路线接缝|[push-timeline-seam.md](push-timeline-seam.md)及`push_seam_*`：真开放路径同x贴边，3pt同色、两次上推，fresh真实片14中间态无断口；非反向返回能力|
 |模板/时间轴|真master/layout/local独立动画|[master-layout-animation.md](master-layout-animation.md)及`master_animation_*`：三层独立timing、自动往返到页末、本地物理click不打断；18秒fresh及自然前进/显式Reset过|
-|3D|已有原生模型与动画资产的保留改稿|`build_morph.py --mode 3d-template`：模板保留工作流，不是从零创建库存模型|
+|3D|已有原生模型与动画资产的保留改稿|`build_morph.py --mode 3d-template`：模板保留工作流；[四圆点导航](model3d.md)另经52秒/8次真实鼠标复测，不是从零创建库存模型|
 
 增量原生配方：
 
@@ -124,4 +124,4 @@
 
 ## 仍需验证的边界
 
-3D菜单鼠标点击、3D照明场景/复杂纹理及其他仅有来源笔记的特殊组合，不能因基础机制相似而升级为已通过。新作品完成原生验证后再更新本索引。
+任意新模板的3D菜单鼠标命中、3D照明场景/复杂纹理及其他仅有来源笔记的特殊组合，不能因基础机制相似而升级为已通过。新作品完成原生验证后再更新本索引。

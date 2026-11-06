@@ -1,0 +1,19 @@
+{
+  "inputSha256": "6d2321b7bf5ce59244191a162b630b7204e0fb177edb64949f007f926c2e0eae",
+  "inputUnchanged": true,
+  "route": [
+    1,
+    4,
+    1,
+    3,
+    2,
+    4,
+    2,
+    3,
+    1
+  ],
+  "physicalClicks": 8,
+  "durationSeconds": 52,
+  "reviewedFrames": 19,
+  "scope": "Four existing circular slide hyperlinks in the preserved native 3D template; no model, hotspot or action changes; no keyboard/Goto/Hyperlink.Follow navigation; caller supplies the licensed template."
+}
