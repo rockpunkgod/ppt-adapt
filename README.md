@@ -50,4 +50,12 @@
 
 OfficeCLI、Python 3；本地预览与精修使用Windows桌面版PowerPoint和Windows PowerShell。按具体配方准备Pillow、NumPy或FFmpeg等依赖。字体与素材由调用方确认可用。
 
+复用本机已经安装的工具、字体、Python环境和已有素材，不重复下载。Python依赖汇总见 `requirements.txt`；只在所选配方缺少依赖时补齐。几何配方沿用原有版本要求。OfficeCLI、FFmpeg、PowerPoint和字体属于外部运行环境，仓库不附带这些软件的安装文件；制作时向脚本传入本机已有工具路径。
+
+## 完整技能包
+
+仓库保留技能、配方、制作脚本、可编辑示例和已有原生播放记录。`ppt-skills.zip` 提供同一批项目文件的离线包，也包含可选的 `ppt-director` 与 `ppt-composition-planner`；默认制作入口仍为 `officecli-ppt-design`。
+
+维护者将新增项目文件加入Git后，可在本地执行 `python scripts/package_delivery.py` 更新离线包。打包只读取已跟踪的本地文件并检查压缩包完整性，不下载资源，不打入缓存、工具安装目录或工作区临时文件。归档的播放记录仅证明对应作品的既有结果，不能替代新作品或新组合的原生验证。
+
 参考Taste Skill的主体优先、字体比例与克制，以及PPT Master的内容驱动规划、页面职责和整套视觉语言；没有移植网页CSS、响应式实现、SVG引擎或检查平台。

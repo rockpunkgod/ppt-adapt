@@ -1,0 +1,8 @@
+# Install only missing dependencies; reuse the existing local environment.
+# Image assets and playback analysis (not needed for the standard-library packager).
+Pillow
+numpy
+# Glyph geometry verification.
+scipy
+# Geometry recipes require the version declared by their existing manifest.
+-r officecli-ppt-design/scripts/requirements-geometry.txt

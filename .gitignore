@@ -6,4 +6,5 @@ Thumbs.db
 tools/
 output/
 *.zip
+!ppt-skills.zip
 ~$*
