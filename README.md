@@ -64,6 +64,8 @@
 
 [字形局部虚化PPTX](examples/glyph-gaussian/glyph-gaussian.pptx)比较全字与单笔Gaussian，在深浅底色上保留清晰骨架；原文字和清晰路径可编辑，虚化图层可重建。
 
+[灯具聚焦PPTX](examples/lamp-focus/lamp-focus.pptx)组合原创3D灯具、三段透明渐变光束、圆形图片与Morph，跨三页引导注意力；附原创资产和27秒原生前进、返回播放。
+
 宇航员3D场景的[制作指导](officecli-ppt-design/references/model3d.md)与[52秒原生播放](officecli-ppt-design/verification/native-3d-navigation/playback.mp4)也已入库：保留模型内部动作，组合跨页Morph及四圆点导航，8次非顺序点击通过。此项使用调用方提供的原生模板，技能包不附作者原模板或模型文件；区别于上方附原创GLB的3D动作示例。
 
 ## 环境
