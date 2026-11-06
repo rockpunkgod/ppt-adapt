@@ -1,6 +1,6 @@
 import argparse,binascii,json,struct,subprocess,zlib
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('--officecli',required=True);p.add_argument('--outdir',type=Path,required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--officecli',required=True);p.add_argument('--outdir',type=Path,required=True);p.add_argument('--frost',action='store_true',help='White inner shadow, Blur20pt, no diagnostic outline; default keeps original outline-only fixture');a=p.parse_args()
 if a.outdir.exists():raise FileExistsError(a.outdir)
 a.outdir.mkdir(parents=True);W,H=960,540;pixels=bytearray()
 for y in range(H):
@@ -21,9 +21,12 @@ for s in [1,2,3,4]:
  ops.append(dict(command='add',parent=f'/slide[{s}]',type='picture',props=dict(name='clear-foreground' if s>=3 else 'reference-image',src=str(image.resolve()),x='0cm',y='0cm',width='33.87cm',height='19.05cm')))
  if s>=3:
   for i,(x,y) in enumerate(([(2,5),(19.87,5)] if s==3 else [(7,2),(17,7)]),1):
-   ops.append(dict(command='add',parent=f'/slide[{s}]',type='shape',props=dict(name=f'glass-{i}',geometry='roundRect',x=f'{x}cm',y=f'{y}cm',width='12cm',height='9cm',fill='none',line='FFFFFF:1.5')))
+   ops.append(dict(command='add',parent=f'/slide[{s}]',type='shape',props=dict(name=f'glass-{i}',geometry='roundRect',x=f'{x}cm',y=f'{y}cm',width='12cm',height='9cm',fill='none',line='none' if a.frost else 'FFFFFF:1.5')))
 f=a.outdir/'batch.json';f.write_text(json.dumps(ops),encoding='utf-8');cli('batch',deck,'--input',f,'--json')
 for s in [3,4]:
  for i in [1,2]:
   path=f'//p:sp[p:nvSpPr/p:cNvPr[@name="glass-{i}"]]';cli('raw-set',deck,f'/slide[{s}]','--xpath',path,'--action','setattr','--xml','useBgFill=1','--json');cli('raw-set',deck,f'/slide[{s}]','--xpath',path+'/p:spPr/a:noFill','--action','remove','--json')
+  if a.frost:
+   effect='<a:effectLst xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><a:innerShdw blurRad="254000" dist="0" dir="0"><a:srgbClr val="FFFFFF"><a:alpha val="100000"/></a:srgbClr></a:innerShdw></a:effectLst>'
+   cli('raw-set',deck,f'/slide[{s}]','--xpath',path+'/p:spPr','--action','append','--xml',effect,'--json')
 cli('close',deck);print(cli('validate',deck,'--json'))

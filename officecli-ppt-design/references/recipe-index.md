@@ -118,7 +118,7 @@
 |字形包络|自定义上下曲线带及椭圆顶盖|[bounded-envelope.md](bounded-envelope.md)、`envelope_band_*`；默认正高度17项保持；`--ellipse-cap`单独支持两端零高度顶盖，22结构/6原生项及返回实播通过；不支持任意拓扑|
 |轮廓混合|200中间级/30中间级、斜向挤出与连续长影|[contour-blend-extrusion.md](contour-blend-extrusion.md)、`contour_blend_*`；436面几何/颜色及COM真Union/Intersect重开过，不是可旋转3D模型|
 |2.5D/媒体|真组支点、透视铰链、打开页视频层|[laptop-hinge-scene.md](laptop-hinge-scene.md)、`laptop_hinge_*`：22秒开合再开/8状态/60项，稳定屏内动态、屏外0差；过渡poster非实时3D视频贴面|
-|图片/背景|原生艺术模糊与共享坐标局部窗|[local-blur-background.md](local-blur-background.md)、`local_blur_*`：原生Blur30缓存、清晰前景/真Fill.Background窗，12结构+12原生像素；严格Gaussian/动感另验|
+|图片/背景|原生艺术模糊、共享坐标窗与内阴影霜边|[local-blur-background.md](local-blur-background.md)、`local_blur_*`：原Blur30/Fill.Background的12结构+12像素标准保持；`--frost`白色20pt内阴影另验16结构、边缘衰减/重开/返回；严格Gaussian/动感另验|
 
 视频自身裁形见[布局、叙事与几何](layout-story-geometry.md)末节：`examples/video-intersect`，OfficeCLI主体+COM Union/Intersect和播放恢复，24秒实播，真媒体custGeom、原视频字节及边界已验；不等同于后置视频孔罩。
 

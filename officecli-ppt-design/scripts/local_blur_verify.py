@@ -1,6 +1,6 @@
 import argparse,hashlib,json,posixpath,zipfile,xml.etree.ElementTree as E
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('--deck',type=Path,required=True);p.add_argument('--original',type=Path,required=True);p.add_argument('--report',type=Path,required=True);a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--deck',type=Path,required=True);p.add_argument('--original',type=Path,required=True);p.add_argument('--report',type=Path,required=True);p.add_argument('--frost',action='store_true');a=p.parse_args()
 if a.report.exists():raise FileExistsError(a.report)
 ns={'p':'http://schemas.openxmlformats.org/presentationml/2006/main','a':'http://schemas.openxmlformats.org/drawingml/2006/main','a14':'http://schemas.microsoft.com/office/drawing/2010/main','r':'http://schemas.openxmlformats.org/officeDocument/2006/relationships'};original=a.original.read_bytes();checks={};rows=[]
 with zipfile.ZipFile(a.deck) as z:
@@ -23,6 +23,11 @@ with zipfile.ZipFile(a.deck) as z:
  for s in [3,4]:
   bg=slides[s].find('p:cSld/p:bg/p:bgPr/a:blipFill/a:blip',ns);_,data=part(s,bg.get('{'+ns['r']+'}embed'));checks[f's{s}BackgroundExactNativeCache']=data==cache
   shapes=slides[s].findall('p:cSld/p:spTree/p:sp',ns);checks[f's{s}TwoTrueBackgroundWindows']=len(shapes)==2 and all(q.get('useBgFill')=='1' and q.find('.//a:blipFill',ns) is None for q in shapes)
+  if a.frost:
+   shadows=[q.find('p:spPr/a:effectLst/a:innerShdw',ns) for q in shapes]
+   # Native Save omits default zero distance/direction; absence means zero.
+   checks[f's{s}WhiteInnerShadow20pt']=all(sh is not None and sh.get('blurRad')=='254000' and sh.get('dist','0')=='0' and sh.get('dir','0')=='0' and sh.find('a:srgbClr',ns) is not None and sh.find('a:srgbClr',ns).get('val')=='FFFFFF' and sh.find('a:srgbClr/a:alpha',ns).get('val')=='100000' for sh in shadows)
+   checks[f's{s}NoOutlineSubstitute']=all(q.find('p:spPr/a:ln/a:noFill',ns) is not None and q.find('p:spPr/a:effectLst/a:outerShdw',ns) is None for q in shapes)
   rows.append([{'name':q.find('p:nvSpPr/p:cNvPr',ns).get('name'),'xy':[int(v) for v in q.find('p:spPr/a:xfrm/a:off',ns).attrib.values()]} for q in shapes])
  checks['windowsActuallyMoved']=all(q['xy']!=r['xy'] for q,r in zip(rows[0],rows[1]))
 result={'passed':all(checks.values()),'checks':checks,'missingTargets':missing,'originalSHA256':hashlib.sha256(original).hexdigest(),'nativeCacheSHA256':hashlib.sha256(cache).hexdigest(),'nativeCachePart':cache_part,'nativeOriginalLayerPart':hdpart,'windows':rows,'note':'Blur is editable on reference picture; window background is exact native-produced cache snapshot, regenerated via native polish+CLI bridge. Not external blur; not a live Background.Fill blur parameter.'}

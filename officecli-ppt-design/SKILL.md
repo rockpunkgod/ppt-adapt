@@ -91,7 +91,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 
 同心饼图/外环与百分比卡片见[份额图表一致性](references/concentric-share-charts.md)：`concentric_chart_*`核7真chart、同步改值、真透缝和余数。活动/静态菜单见[GIF/PNG状态配对](references/gif-png-menu.md)：`gif_menu_*`保真实多帧GIF，以六次物理点击验重复进入。图片双色映射见[原生双色调](references/native-duotone.md)：`duotone_*`保原图字节，原生a:duotone端点与中间灰阶通过；不外推彩色亮度权重或精确GIF重启帧。
 
-仪表联动见[半环、指针与滚动数值](references/gauge-synchronized-values.md)：`gauge_sync_*`核同一参数终态与动作后保持，滚字是装饰过渡。完整开合场景见[笔记本铰链与视频](references/laptop-hinge-scene.md)：`laptop_hinge_*`在过渡中使用静帧，稳定打开后叠原生视频。局部虚实见[原生模糊背景窗口](references/local-blur-background.md)：`local_blur_*`用原生艺术Blur30产生缓存，再以同世界坐标窗口展示；不是实时背景模糊参数或严格Gaussian保证。
+仪表联动见[半环、指针与滚动数值](references/gauge-synchronized-values.md)：`gauge_sync_*`核同一参数终态与动作后保持，滚字是装饰过渡。完整开合场景见[笔记本铰链与视频](references/laptop-hinge-scene.md)：`laptop_hinge_*`在过渡中使用静帧，稳定打开后叠原生视频。局部虚实见[原生模糊背景窗口](references/local-blur-background.md)：`local_blur_*`用原生艺术Blur30产生缓存，再以同世界坐标窗口展示，`--frost`追加白色20pt内阴影霜边；不是实时背景模糊参数或严格Gaussian保证。
 
 ## 两层制作
 
