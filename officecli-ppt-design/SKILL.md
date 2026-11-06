@@ -72,6 +72,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 |媒体裁剪、真实声音淡化与视频书签跳点|[原生媒体控制](references/media-controls.md)|`media_controls_*`：保原媒体、同WAV对照实录、6/9/6跳点；跨页音乐另验|
 |跨页连续音乐与有限停止|[跨页音频生命周期](references/media-cross-slide-lifecycle.md)|`media_lifecycle_*`：第一页启动、第二页不断不重启、第三页停止；仅已测直线翻页路径|
 |真实墨迹逐笔回放、5秒绘制与2秒停顿循环|[Ink Replay停顿循环](references/ink-replay-pause.md)|`ink_pause_*`：原创InkML、保留原生drawProgress行为、7秒媒体书签；29秒真实多轮前向通过|
+|笔尖跟随真墨迹，串联入场与离场|[笔尖同步](references/ink-pen-sync.md)|`ink_pen_*`：复用Replay，透明圆定位中心，同步路径，快放与返回后重播已实测|
 |真字形孔罩扩张、文字退出与视频揭示|[字形视频穿越](references/glyph-video-portal.md)|`glyph_portal_*`：真实Subtract孔、90倍原生放大、后置自动视频；单字H前向实播通过|
 |内部链接、点击区域、Zoom与返回|[交互导航](references/interaction-patterns.md)、[原生Section Zoom](references/section-zoom.md)|`section_zoom_*`：真实分节进入、自动节首、透明背景与节末返回；不以单页Zoom代替|
 |原生动画导透明GIF、裁形后循环纹理|[原生GIF纹理](references/native-gif-texture.md)|`native_gif_*`：真Export与Intersect，fillRect恢复动态且保持画面比例|

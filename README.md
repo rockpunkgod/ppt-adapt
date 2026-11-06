@@ -38,6 +38,8 @@
 
 [原生GIF纹理PPTX](examples/native-gif-texture/gif-texture.pptx)展示透明活动纹理与真实裁形，另附可编辑动画源PPTX及原生播放。
 
+[笔尖同步PPTX](examples/ink-pen-sync/ink-pen-sync.pptx)展示真实墨迹Replay与笔尖路径同步，以及原生入场、离场和返回后重新播放。
+
 ## 环境
 
 OfficeCLI、Python 3；本地预览与精修使用Windows桌面版PowerPoint和Windows PowerShell。按具体配方准备Pillow、NumPy或FFmpeg等依赖。字体与素材由调用方确认可用。
