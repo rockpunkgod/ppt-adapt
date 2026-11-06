@@ -114,6 +114,8 @@
 
 视频自身裁形见[布局、叙事与几何](layout-story-geometry.md)末节：`examples/video-intersect`，OfficeCLI主体+COM Union/Intersect和播放恢复，24秒实播，真媒体custGeom、原视频字节及边界已验；不等同于后置视频孔罩。
 
+原生透明GIF活动纹理见[native-gif-texture.md](native-gif-texture.md)：`examples/native-gif-texture`，可编辑动画源→真实1080p透明GIF导出→原生Intersect→等价fillRect修复，保存重开后18秒/多轮实播。此hybrid机制不扩大既有GIF/PNG菜单或指定触发配方。
+
 ## external-render
 
 |设计用途|原子机制|入口与通过范围|
