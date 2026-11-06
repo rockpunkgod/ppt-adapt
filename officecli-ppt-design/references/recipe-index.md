@@ -103,6 +103,7 @@
 |交互/教学|Kiosk答案反馈与Next依赖门控|`kiosk_quiz_*`：新题A67/B68项、各8秒实际放映，改题后旧正确不解锁/新正确解锁、Speaker负对照；非安全隔离|
 |交互|鼠标悬停切换介绍状态|`hover_cards_*`：16条真hlinkHover、四卡五状态、15实播状态/12秒真实录屏/53项前向检查；空白保持，不含移出自动返回或点击深入|
 |交互|悬停预览/孔内Zoom深入/移出返回|[hover-zoom-menu.md](hover-zoom-menu.md)及`hover_zoom_*`：5页真双孔/SlideZoom，两分支各重复两轮、连续真实MOVE与物理click，120秒/21状态/135项fresh过；不外推任意极速横扫|
+|交互/章节|悬停预览接真正多页Section Zoom|[hover-section-zoom.md](hover-section-zoom.md)、`hover_section_*`：7页、两节各两轮，约71秒/25状态/12点击；真孔层级、最终海报、Uncover及重复悬停已实播|
 |交互|Slide Zoom及返回首页|`repair_zoom.py`及对应原生检查：Choice和Fallback图像均补齐；不能称Section Zoom通过|
 |交互|Section Zoom、透明背景、自动入口、节末返回|[section-zoom.md](section-zoom.md)及`section_zoom_*`：5页2节、4次真实点击、13秒桌面录屏、包内全新前向8项独立检查；旧软件Fallback仅静态单页链接|
 |交互/目录|首次自动入场、双首页及多页章节返回|[interaction-patterns.md](interaction-patterns.md)、`double_home_compose.ps1`：复用Section Zoom，8页/两节各两正文、两轮12点击，首次F5及四次返回不重播已实测；不含Hover/Kiosk|
