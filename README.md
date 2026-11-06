@@ -28,6 +28,8 @@
 
 [作品说明与制作源](examples/trace-product/README.md)。产品与数值均为概念演示，非在售功能或实测性能；跨机需要Noto Serif SC与Noto Sans SC，或替换后检查折行。
 
+[动效组合PPTX](examples/motion-combinations/motion-combinations.pptx)展示斜切文字、同组多效果、固定导航/滚动时间轴/任务Zoom；[制作指导](officecli-ppt-design/references/advanced-composition.md)说明组合顺序、共享坐标、支点与适用边界。
+
 ## 环境
 
 OfficeCLI、Python 3；本地预览与精修使用Windows桌面版PowerPoint和Windows PowerShell。按具体配方准备Pillow、NumPy或FFmpeg等依赖。字体与素材由调用方确认可用。

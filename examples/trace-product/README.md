@@ -20,7 +20,7 @@
 
 作品：`trace-product.pptx`。文字、界面、关系图和图表保留原生对象；图表用演示数值，不承诺嵌入Excel工作簿编辑。换机器需安装Noto Serif SC与Noto Sans SC，或替换字体后重新检查折行。
 
-已用本机PowerPoint逐页预览并实际放映，确认界面连续缩移、图表两次揭示和结尾保持。[整套预览](preview.jpg)。
+已用本机PowerPoint逐页预览并实际放映，确认界面连续缩移、图表两次揭示和结尾保持。[整套预览](preview.jpg) · [最终原生播放记录](playback.mp4)。
 
 制作源为[build.py](build.py)，仅编排现有OfficeCLI原语。重新制作时在仓库根目录运行，输出用新路径：
 
