@@ -6,6 +6,8 @@
 
 `examples/book-flip`补充已实播的两页曲线纸页翻转：OfficeCLI基础+COM对称隐藏半页/Camera62/FOV60/Contrasting18/Morph2秒，15秒物理翻页/回退/再翻页。它是平面组的透视旋转组合，背面留白，不扩张为多页双面书本或GLB能力。
 
+`examples/flask-wave`补充真瓶形Subtract/背景遮罩、Fly末段回弹与双曲线波浪斜向上升；18秒本机实播，覆盖边界与中间态已检查。详见[高级动效组合](advanced-composition.md)，不改变下表矩形窗口配方的范围。
+
 ## officecli-native
 
 |设计用途|原子机制|入口与通过范围|

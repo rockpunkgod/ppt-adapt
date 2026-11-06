@@ -32,6 +32,8 @@
 
 [书页翻转PPTX](examples/book-flip/book-flip.pptx)展示曲线纸页围绕书脊的原生透视翻转，包含可编辑制作源及翻页、回退、再次翻页的本机播放记录。
 
+[瓶形液面PPTX](examples/flask-wave/flask-wave.pptx)展示真孔遮罩、液面回弹及双层曲线波浪斜向上升，附可编辑制作源和本机播放记录。
+
 ## 环境
 
 OfficeCLI、Python 3；本地预览与精修使用Windows桌面版PowerPoint和Windows PowerShell。按具体配方准备Pillow、NumPy或FFmpeg等依赖。字体与素材由调用方确认可用。
