@@ -1,4 +1,4 @@
 interface:
-  display_name: "PPT 制作技能包"
-  short_description: "使用 OfficeCLI 与 PowerPoint 制作、优化和验证可编辑演示文稿"
-  default_prompt: "使用 $officecli-ppt-design，结合我的内容选择合适的版式、配色和动效，用 OfficeCLI 制作可编辑 PPT 并验证。"
+  display_name: "PPT Adapt"
+  short_description: "整套PPT设计与制作：艺术方向、字体配色、变化构图与现有配方组合"
+  default_prompt: "使用 $officecli-ppt-design，理解我的内容与受众，确定艺术方向和整套页面节奏，组合已有配方制作可编辑PPT，边预览边调整，最后用本机PowerPoint播放确认。"
