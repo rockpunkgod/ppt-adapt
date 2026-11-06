@@ -74,6 +74,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 |真实墨迹逐笔回放、5秒绘制与2秒停顿循环|[Ink Replay停顿循环](references/ink-replay-pause.md)|`ink_pause_*`：原创InkML、保留原生drawProgress行为、7秒媒体书签；29秒真实多轮前向通过|
 |真字形孔罩扩张、文字退出与视频揭示|[字形视频穿越](references/glyph-video-portal.md)|`glyph_portal_*`：真实Subtract孔、90倍原生放大、后置自动视频；单字H前向实播通过|
 |内部链接、点击区域、Zoom与返回|[交互导航](references/interaction-patterns.md)、[原生Section Zoom](references/section-zoom.md)|`section_zoom_*`：真实分节进入、自动节首、透明背景与节末返回；不以单页Zoom代替|
+|视频自身裁为自定义轮廓并保持动态|[视频原生相交](references/layout-story-geometry.md)|`examples/video-intersect`，真媒体custGeom；相交后恢复唯一Play，保存重开实播|
 |真实3D模型、内部动作、跨页姿态|[3D场景](references/model3d.md)|`build_morph.py --mode 3d-template`，使用合法取得的模板|
 |正反面不同内容的真3D卡片|[双面GLB卡片](references/glb-double-sided-card.md)|`glb_card_*`：自建双单面贴图、OfficeCLI真model3d/Morph、两次真实点击及透视侧缘验证|
 

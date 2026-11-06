@@ -45,3 +45,17 @@ python scripts/layout_story_verify.py --artifacts NEWDIR --report NEWREPORT.json
 以上脚本使用Python标准库调用OfficeCLI，不使用python-pptx。
 
 封装后前向验收（2026-11-06）：使用封装`layout_story_build.py --recipe alignment`在全新`validation/layout-story-forward-v1`生成3页；schema通过/issues0，原生3页PNG均已查看，零文字高度溢出，结构独立4检查通过。相同输出目录再次调用以明确错误拒绝，未覆盖原作品。原生输出`validation/layout-story-forward-v1-native`与独立报告`validation/layout-story-forward-v1-check.json`保留。COM已关闭本次presentation。
+
+## 视频自身与组合几何相交
+
+Backend **hybrid**，制作源为仓库`examples/video-intersect`。复用本参考已有可见Normal窗口、当前页选择与Union1/Intersect3；OfficeCLI创建页面、原生视频和poster，COM完成几何与播放绑定，不增加媒体渲染引擎。
+
+1. 先完成自定义轮廓。多个原生部件用Union形成一个真形状；普通group不是相交轮廓。视频应完整覆盖轮廓，并位于轮廓后方。
+2. 先选视频，再选轮廓；`Range.MergeShapes(3, video)`明确视频为PrimaryShape。相交消费源对象，基础稿另存，避免丢失可改轮廓。
+3. 检查结果仍为Type16/MediaType3，包内有真实videoFile/media关系与`pic/spPr/custGeom`，源视频字节保留。位图poster或矩形视频加孔罩不能代替媒体自身几何。
+4. 原生相交可能移除旧自动播放时间轴。本机本例相交后为空；恢复`AnimationSettings.PlaySettings.PlayOnEntry=-1`后，PowerPoint生成一个真正Media Play83。复用该效果、核对Shape.Id并设WithPrevious；不要在已有Play后再盲目AddEffect。已有的其他动画要按实际目标重绑，不由本例推导自动保留。
+5. 保存关闭再重开，实际播裸视频对照与裁后视频。检查时间推进、内部内容变化、轮廓外无矩形漏出和结束保持；仅静态导图不能证明媒体在动。
+
+本例三椭圆Union→视频Intersect，原生24秒实播、17个分布帧、第二页187帧边界检查通过。第2页是四文字+一个真媒体对象，无遮罩，嵌入8秒MP4与自产源文件SHA一致。可编辑页面、原生媒体及几何保留；换轮廓/影片后仍须预览，不能把所有编码、GIF、透明度触发或Morph播放并入此范围。
+
+操作参考：[大师课](https://www.youtube.com/watch?v=9Ewb0Rd3P3E)47:55–48:35；本次以Ego Lite复核七张实际操作画面，并用Watch取得该区间英文原始自动字幕，确认视频先选、轮廓后选、Intersect的原生流程。课程的可选渐变描边未纳入本例通过范围。

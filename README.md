@@ -34,6 +34,8 @@
 
 [瓶形液面PPTX](examples/flask-wave/flask-wave.pptx)展示真孔遮罩、液面回弹及双层曲线波浪斜向上升，附可编辑制作源和本机播放记录。
 
+[视频裁形PPTX](examples/video-intersect/video-intersect.pptx)提供裸视频与真媒体自定义几何对照，保持可编辑媒体及原生动态播放。
+
 ## 环境
 
 OfficeCLI、Python 3；本地预览与精修使用Windows桌面版PowerPoint和Windows PowerShell。按具体配方准备Pillow、NumPy或FFmpeg等依赖。字体与素材由调用方确认可用。
