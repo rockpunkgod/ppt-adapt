@@ -58,6 +58,21 @@ WithPrevious的delay相对同一点击组安排；AfterPrevious会把起点放�
 
 本例止于一次上升并保持，不推导无限循环、气泡、任意容积或自动百分比。改瓶形或路径后要检查空瓶、初次入孔、半程、波峰靠边和终态。曲线、遮罩、颜色与时间轴均可编辑，无需增加外部流体引擎。
 
+## 三支烛焰的纵向错峰循环
+
+只让烛焰运动，蜡烛、文字与背景保持静止。OfficeCLI建立可编辑外焰/内焰并组为三支独立目标，COM沿用Grow/Shrink与缓动机制：水平100%、纵向70%，单程0.2秒，自动反向，平滑开始/结束各0.1秒。三支使用WithPrevious，以0/0.1/0.2秒启动偏移形成错峰；持续循环至离页。不要同时缩小宽度，也不把透明GIF替代原生伸缩。
+
+来源9Ewb0Rd3P3E 4:22:22–4:22:36。本地原始字幕已复读，Ego Lite将144p提高到1080p后核了六个实际画面：15747/15749/15751秒清晰显示70% Vertical、Smooth start/end各0.1sec、Auto-reverse；顶部显示Duration0.20，选中的第三支Delay0.20。前两支0/0.1秒是本样稿采用的错峰安排，不能冒称视频逐个展示过三个延迟数值。
+
+```powershell
+python scripts/flame_flicker_build.py --officecli EXE --out NEW_BASE.pptx
+powershell -File scripts/flame_flicker_polish.ps1 -InputDeck NEW_BASE.pptx -OutputDeck NEW_FINAL.pptx -Officecli EXE
+```
+
+此hybrid组合复用既有Deck、原生Grow/AutoReverse和indefinite写入机制，不改变旧Grow配方。本机COM的`EffectParameters.Direction=17`对Grow报Invalid request；改设原生ScaleEffect的ByX/ToX=100、ByY/ToY=70。只改ByY而保留Size写入的ToX70会遗留横向收缩目标，必须核实实际`animScale`两组轴值，并在播放中确认宽度不变。完成COM保存关闭后再交给OfficeCLI追加repeat，避免双方同时编辑。
+
+[两页原创烛焰与22秒实播](../../examples/flame-flicker/README.md)含静态对照。实际Right到静态页、Left返回，2键/0额外输入；606个编码帧按各自PTS测量，三支首次/返回均高56–80px、宽各自恒定36或37px，高度最低/最高比0.70且相位不同，静态页105帧完全不伸缩。18个分布画面已看，保存重开两页逐像素一致；包内三组真实矢量，无GIF/视频替代。只覆盖该三支原生组合与返回路线，不等同真实火焰模拟，也不据此升级GIF或指定触发媒体的组合结论。
+
 ## 可编辑组合样稿
 
 仓库`examples/motion-combinations`提供斜切文字、同组五效果、季度状态/遮罩/Slide Zoom组合的制作示例。它是已有机制的组合小样，不是新的通用引擎。具体实播范围和限制见样稿README。
