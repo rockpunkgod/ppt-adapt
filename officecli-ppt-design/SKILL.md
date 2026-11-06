@@ -65,6 +65,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 |连续向左的周期网格背景|[双幅网格循环](references/seamless-grid-loop.md)|`seamless_grid_*`：双幅同组移一页、17秒无限repeat；54秒真实录屏与相位连续性验证|
 |中心强调、两侧缩小降权、圆环逐项绘出|[聚焦与Wheel相位](references/wheel-focus.md)|`wheel_focus_*`：真实Grow/Shrink、透明保持、7秒单辐条与六节点相位|
 |飞入末段回弹及衰减收敛|[原生Bounce End](references/bounce-end.md)|`bounce_end_*`：原生Fly的末段精修，GUI读值、真实录屏与无回弹对照轨迹验证|
+|再次单击停在当前角度、后退重启|[点击相位保持](references/until-next-click.md)|`until_next_*`：原生Spin/onNext停止/Fade，32秒两轮停转与15秒UntilEnd对照实播|
 |同页指定按钮开／关标签|[Pin指定触发](references/pin-toggle.md)|`pin_toggle_*`：首次开、二次关、三次再开，空白负对照；不是普通Next|
 |答对后才显示继续按钮、改题迁移依赖|[Kiosk问答门控](references/kiosk-quiz.md)|`kiosk_quiz_*`：三答案指定触发、真实Next迁组与两题135项；Kiosk阻本配方的空白/方向键绕过|
 |仅移动鼠标切换介绍卡片|[悬停状态导航](references/hover-state-navigation.md)|`hover_cards_*`：真实MouseOver内部动作，四卡五状态，移出保持；不是点击触发|

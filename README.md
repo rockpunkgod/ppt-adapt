@@ -42,6 +42,8 @@
 
 [逐字波浪PPTX](examples/text-wave/text-wave.pptx)保留单个可编辑文本框，以原生Wave展示字母错峰、旋转、幅度和连续循环。
 
+[点击停转PPTX](examples/until-next-click/until-next-click.pptx)展示当前角度保持、后退重启，以及同样点击下持续旋转的对照。
+
 ## 环境
 
 OfficeCLI、Python 3；本地预览与精修使用Windows桌面版PowerPoint和Windows PowerShell。按具体配方准备Pillow、NumPy或FFmpeg等依赖。字体与素材由调用方确认可用。
