@@ -61,7 +61,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 |卡片抽拉、背景字形窗口、花瓣展开、聚焦、滚动数字|[原生组件配方](references/native-components.md)|`build_components.py`；真实数字Union用`native_card_*`，全画幅背景用`background_window_*`|
 |柔边单侧阴影、折页数字分界|[柔边折页](references/shadow-fold.md)|`shadow_fold_*`：原生导出透明椭圆后裁半，邻接同底色面板组合旋转|
 |逐项点击、递增延迟、往返、环轨、拖尾|[时间与路径](references/timing-patterns.md)|`build_visual_animation.py`、`build_timeline.py`|
-|跨页上推后时间轴路线连续|[Push接缝](references/push-timeline-seam.md)|`push_seam_*`：真开放路径同x贴边、两次原生Push，14中间态接缝量测|
+|跨页时间轴前进与返回时路线连续|[Push接缝](references/push-timeline-seam.md)|`push_seam_*`：真开放路径同x贴边；双向两轮8次物理按键、58个中间态接缝量测|
 |连续向左的周期网格背景|[双幅网格循环](references/seamless-grid-loop.md)|`seamless_grid_*`：双幅同组移一页、17秒无限repeat；54秒真实录屏与相位连续性验证|
 |中心强调、两侧缩小降权、圆环逐项绘出|[聚焦与Wheel相位](references/wheel-focus.md)|`wheel_focus_*`：真实Grow/Shrink、透明保持、7秒单辐条与六节点相位|
 |飞入末段回弹及衰减收敛|[原生Bounce End](references/bounce-end.md)|`bounce_end_*`：原生Fly的末段精修，GUI读值、真实录屏与无回弹对照轨迹验证|

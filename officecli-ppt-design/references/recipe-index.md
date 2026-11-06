@@ -32,7 +32,7 @@
 |Morph|真正空心圆聚焦|`build_circle_focus.py`：原生donut调孔，三状态平移，原生动态及选中/降暗像素核查；不是3D灯光场景|
 |基础动画|反向飞入、逐项淡入、递增延迟|`build_visual_animation.py`及对应原生测试；实际触发顺序有独立检查|
 |循环背景|双幅周期网格、同组线性滚动后复位|`seamless_grid_*`：17秒一页、真20%alpha、54秒1440实际帧/17项过，三窗速度误差<0.013%；限均匀周期网格|
-|转场/时间轴|向上Push跨页路线接缝|[push-timeline-seam.md](push-timeline-seam.md)及`push_seam_*`：真开放路径同x贴边，3pt同色、两次上推，fresh真实片14中间态无断口；非反向返回能力|
+|转场/时间轴|双向Push跨页路线接缝|[push-timeline-seam.md](push-timeline-seam.md)及`push_seam_*`：真开放路径同x贴边、3pt同色；原生方向键两轮往返，58中间态无断口；其他导航方式另验|
 |模板/时间轴|真master/layout/local独立动画|[master-layout-animation.md](master-layout-animation.md)及`master_animation_*`：三层独立timing、自动往返到页末、本地物理click不打断；18秒fresh及自然前进/显式Reset过|
 |3D|已有原生模型与动画资产的保留改稿|`build_morph.py --mode 3d-template`：模板保留工作流；[四圆点导航](model3d.md)另经52秒/8次真实鼠标复测，不是从零创建库存模型|
 

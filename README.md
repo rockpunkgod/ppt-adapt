@@ -52,6 +52,8 @@
 
 [悬停章节导航PPTX](examples/hover-section-zoom/hover-section-zoom.pptx)将悬停预览接入真正多页Section Zoom，包含章节播放、节末返回、移出复位和重复进入，附连续原生录像。
 
+[双向时间轴PPTX](examples/push-return/push-return.pptx)使用真实可编辑路线与原生Push，前进和返回时都保持跨页连接，附两轮方向键往返的连续原生录像。
+
 宇航员3D场景的[制作指导](officecli-ppt-design/references/model3d.md)与[52秒原生播放](officecli-ppt-design/verification/native-3d-navigation/playback.mp4)也已入库：保留模型内部动作，组合跨页Morph及四圆点导航，8次非顺序点击通过。此项使用调用方提供的原生模板，技能包不附作者原模板或模型文件；区别于上方附原创GLB的3D动作示例。
 
 ## 环境
