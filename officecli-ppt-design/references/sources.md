@@ -22,3 +22,5 @@
 单文本框逐字Wave循环的已实播范围见[text-wave.md](text-wave.md)：0.5秒/2秒、letter10%、两竖向幅度，保留原生旋转；不扩大UntilNextClick或任意文本支持。
 
 Spin UntilNextClick与后续Fade的已实播范围见[until-next-click.md](until-next-click.md)：当前相位保持、两次Left与重新启动，另有UntilEnd对照。不推广到任意动画或指定对象触发。
+
+同页GIF指定Appear与视频Fly/Play/Transparency的独立组合见[media-shape-triggers.md](media-shape-triggers.md)：两入口和空白对照已实播，保原媒体与70%透明；不推广为任意反复触发、跨页重入或精确GIF首帧。

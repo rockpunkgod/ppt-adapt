@@ -92,6 +92,7 @@
 |媒体|跨页连续播放与有限停止|[media-cross-slide-lifecycle.md](media-cross-slide-lifecycle.md)及`media_lifecycle_*`：三页直线前进，第二页保持音阶连续、第三页停止，6实播+5结构项；不涵盖跳页/回退/无限loop|
 |墨迹/媒体|真Ink逐笔Replay及5+2停顿循环|`ink_pause_*`：原创三trace/183个XYT、原生drawProgress5秒/7秒PCM书签；12项与29秒真实前向多轮重画/保持通过，不是Wipe图片|
 |墨迹/路径组合|笔尖跟随Replay、Fly入场与离场|[笔尖同步](ink-pen-sync.md)及`ink_pen_*`：真Ink/透明圆心、5秒慢放及1秒串联，35秒实际点击与返回重播；限已测三等长trace|
+|交互/媒体|指定对象显示GIF、同一标题触发Fly/Play/透明叠加|[媒体指定触发](media-shape-triggers.md)及`media_trigger_*`：两组真实对象触发，原GIF/MP4、背景约70%透出及原生36+20秒实播，不以自动播放代替指定触发|
 |交互/时间轴|Spin直到下一次单击、当前相位保持与Left回退|[点击相位保持](until-next-click.md)及`until_next_*`：原生Repeat/onNext条件，32秒两轮及15秒持续旋转对照，不是固定次数截断|
 |文字/循环|单文本框逐字Wave与幅度变化|[逐字Wave](text-wave.md)及`text_wave_*`：原生preset34/letter10%/一往返四旋转/父UntilEnd；44秒三参数与静态对照通过，整词周期含错峰|
 |动画|连续自转、圆轨道、遮罩液面上升|`prepare_refinement.py`→`refine_visual.ps1`：圆轨径和往返原生检查；液面为矩形窗口，不是完整烧瓶波浪|

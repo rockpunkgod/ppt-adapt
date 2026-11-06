@@ -71,6 +71,7 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 |仅移动鼠标切换介绍卡片|[悬停状态导航](references/hover-state-navigation.md)|`hover_cards_*`：真实MouseOver内部动作，四卡五状态，移出保持；不是点击触发|
 |悬停预览、移出返回、点击Zoom深入|[完整悬停Zoom菜单](references/hover-zoom-menu.md)|`hover_zoom_*`：真孔罩/SlideZoom、连续真实MOVE，120秒/21状态/135项fresh验证|
 |多个不同时长的动作整组循环并留停顿|[音频书签序列](references/audio-bookmark-sequence.md)|`audio_bookmark_*`：一条书签触发首动作，同组WithPrevious推进，实际多轮录屏；不等同Ink Replay|
+|同页指定蛋糕显示GIF、指定标题启动视频叠加|[媒体指定触发](references/media-shape-triggers.md)|`media_trigger_*`：两独立入口，Fly/Play/透明70%同组，36+20秒原生实播与不透明对照|
 |媒体裁剪、真实声音淡化与视频书签跳点|[原生媒体控制](references/media-controls.md)|`media_controls_*`：保原媒体、同WAV对照实录、6/9/6跳点；跨页音乐另验|
 |跨页连续音乐与有限停止|[跨页音频生命周期](references/media-cross-slide-lifecycle.md)|`media_lifecycle_*`：第一页启动、第二页不断不重启、第三页停止；仅已测直线翻页路径|
 |真实墨迹逐笔回放、5秒绘制与2秒停顿循环|[Ink Replay停顿循环](references/ink-replay-pause.md)|`ink_pause_*`：原创InkML、保留原生drawProgress行为、7秒媒体书签；29秒真实多轮前向通过|
