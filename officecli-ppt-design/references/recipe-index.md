@@ -134,6 +134,7 @@
 |限定混合公式|SoftLight、局部Overlay/SoftLight|[blend-compositing.md](blend-compositing.md)：外部编码RGB公式产生最终像素，PNG嵌入/原生合成已验；不宣称所有原生实现不可能|
 |字形虚实|全字／选定笔画的Gaussian alpha|[local-blur-background.md](local-blur-background.md)、`glyph_gaussian_build.py`：原创四笔、默认σ12，透明PNG与原生清晰路径组合；三页/23秒返回实播及重开通过，不含方向性Motion Blur|
 |图像故障|真实R/GB通道分离与窄条复制错位|[image-channel-glitch.md](image-channel-glitch.md)、`image_glitch_*`；18离线/16原生项，明确失去通道效果的PPT内编辑性，Wind仅近似对照|
+|图像故障/色光|实际Blast条带与独立冷暖Overlay层|[image-blast-overlay.md](image-blast-overlay.md)、`image_blast_*`；复用原通道与选区机制，实际Photopea滤镜及两层叠加，四页/27秒原生窗口前进返回实播；不把旧近似升级为实际Wind|
 |限定纸墨提取|已知均匀纸色/单墨色输出真alpha|[scanned-stroke-extraction.md](scanned-stroke-extraction.md)、`scan_stroke_*`；原创模拟扫描与淡线/灰边过，不覆盖真实复杂纸纹阴影|
 
 图片处理、CLI接口缺失和原生GUI能力不自动归到这一类；以上各项的核心像素机制实际发生在外部，保留原件、参数及生成脚本。

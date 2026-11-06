@@ -72,6 +72,8 @@
 
 宇航员3D场景的[制作指导](officecli-ppt-design/references/model3d.md)与[52秒原生播放](officecli-ppt-design/verification/native-3d-navigation/playback.mp4)也已入库：保留模型内部动作，组合跨页Morph及四圆点导航，8次非顺序点击通过。此项使用调用方提供的原生模板，技能包不附作者原模板或模型文件；区别于上方附原创GLB的3D动作示例。
 
+[局部拖尾与冷暖叠加PPTX](examples/image-blast/image-blast.pptx)组合实际Blast透明条带与两个独立Overlay画笔层；文字和图片位置可编辑，附四页作品、原始图像层和27秒本机窗口放映。
+
 ## 环境
 
 OfficeCLI、Python 3；本地预览与精修使用Windows桌面版PowerPoint和Windows PowerShell。按具体配方准备Pillow、NumPy或FFmpeg等依赖。字体与素材由调用方确认可用。

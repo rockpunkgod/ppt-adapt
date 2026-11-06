@@ -123,6 +123,8 @@ description: 自主设计、制作和优化整套可编辑PPT。先理解受众�
 
 字形全体／选定笔画的虚化见[局部Gaussian](references/local-blur-background.md)：`glyph_gaussian_build.py`复用已有原创笔画，外部计算透明Gaussian图层，OfficeCLI保留其余清晰路径及原文。按实际核心效果归external-render，不与原生艺术Blur或方向性Motion Blur混称。
 
+故障色光需要真实条带拖尾时，读[Blast与双层冷暖叠加](references/image-blast-overlay.md)：复用通道/选区配方，仅在透明副本上实际执行Blast，再给两个独立画笔层分别设Overlay；OfficeCLI负责可编辑排版。旧max-brightness近似不能代替实际滤镜，组合结果另做原生预览。
+
 需要复制/重排后自动编号时使用[真实动态页码](references/dynamic-slide-number.md)：母版样式、版式页码占位符和原生slidenum字段共同工作，不能换成固定数字文本。
 
 自动生成章节目录、整体改列与节末返回使用[真Summary Zoom](references/summary-zoom.md)：OfficeCLI基础页加本机原生UI创建/编辑摘要容器；不要将手工SectionZoom组称为Summary，新增缩略图须等待可见Normal原生渲染就绪。
