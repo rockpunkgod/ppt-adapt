@@ -1,0 +1,29 @@
+{
+  "field-top": {
+    "file": "field-top.jpeg",
+    "width": 981,
+    "height": 559,
+    "pdfPage": 30
+  },
+  "field-axon": {
+    "file": "field-axon.jpeg",
+    "width": 1044,
+    "height": 615,
+    "pdfPage": 31
+  },
+  "arena-banner": {
+    "file": "arena-banner.jpg",
+    "width": 5086,
+    "height": 862
+  },
+  "arena-poster": {
+    "file": "arena-poster.jpg",
+    "width": 4000,
+    "height": 2667
+  },
+  "team-culture": {
+    "file": "team-culture.png",
+    "width": 1200,
+    "height": 484
+  }
+}
