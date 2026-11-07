@@ -1,7 +1,7 @@
 {
   "passed": true,
-  "durationSeconds": 43,
-  "physicalRight": 8,
+  "durationSeconds": 52,
+  "physicalRight": 10,
   "route": [
     {
       "input": "initial",
@@ -47,13 +47,31 @@
       "input": "physical-right",
       "actualSlide": 9,
       "slide": 9
+    },
+    {
+      "input": "physical-right",
+      "actualSlide": 10,
+      "slide": 10
+    },
+    {
+      "input": "physical-right",
+      "actualSlide": 11,
+      "slide": 11
     }
   ],
   "presentation": "robomaster.pptx",
-  "slides": 9,
-  "pptxSha256": "f9befd582ab016eb548406fc9593bcd0785fc08a41aabd8672aa25c2600d3dab",
-  "videoSha256": "50a6b7fca8f78ca62aa0c5d995ec614a04a0a9bf5df5dc5b856c563e6cbe6563",
+  "slides": 11,
+  "pptxSha256": "db5293c4d1c0773decbfe6009837e7c075a01dcdc9781df0a24fa15203ec6df4",
+  "videoSha256": "1c6a37f90fe85f93cbe32ef21cb9ffbc45478e3a067cd6a91a0b080b7fe119c5",
   "nativeTextOverflow": [],
-  "visualReview": "New complete GMaster robot photo, battle scene and BirdieBot workshop images inspected at native size and on slides. Whole-body photo identity preserved through slides 4-6.",
-  "originalStudioPhotoEmbedded": true
+  "visualReview": "Reviewed seven correctly matched 2026 robot/system photographs on native slides and recorded playback. Radar is upright; hero and engineer retain identity through Morph. Engineering uses sentry, teamwork uses a separate team photograph. Historical photographs and 2027 rule evolution are separate.",
+  "originalPhotosEmbedded": {
+    "robot": true,
+    "hero": true,
+    "engineer": true,
+    "sentry": true,
+    "aerial": true,
+    "radar": true,
+    "dart": true
+  }
 }

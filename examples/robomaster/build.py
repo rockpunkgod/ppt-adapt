@@ -15,8 +15,8 @@ class Robo(Scene):
  def photo(self,s,n,key,x,y,w):
   info=IMAGES[key];self.pic(s,n,x,y,w,w*info['height']/info['width'],ASSET/info['file'])
  def tag(self,s,t,dark=False):self.txt(s,'chapter',1.7,1.0,30.2,1.15,t,22,WHITE if dark else RED,LATIN)
- def robot_photo(self,s,x,y,w):
-  self.photo(s,'!!unit-image','robot-studio',x,y,w)
+ def robot_photo(self,s,x,y,w,key,name):
+  self.photo(s,name,key,x,y,w)
  def heading(self,s,t,w=30,c=INK):self.txt(s,'heading',1.7,2.75,w,4.5,t,43,c,HEAVY)
  def line(self,s,n,x1,y1,x2,y2,c=GRAY):
   self.poly(s,'!!knowledge-link-'+n,[(x1,y1),(x2,y2),(x2+.01,y2+.02),(x1+.01,y1+.02)],c)
@@ -32,7 +32,7 @@ class Robo(Scene):
   self.txt(s,'cover-master',1.55,7.1,15,4.1,'MASTER',90,INK,LATIN,bold=True)
   self.photo(s,'studio-hero','robot-studio',16.3,3.5,17.57)
   self.txt(s,'cover-head',1.75,12.0,14.0,4.0,'把工程，\n带上赛场。',35,INK,HEAVY)
-  self.txt(s,'cover-season',1.8,17.0,14.0,1.2,'2027 赛季入门',24,RED)
+  self.txt(s,'cover-season',1.8,17.0,14.0,1.2,'高校机器人赛事入门',24,RED)
   self.txt(s,'cover-subject',17.3,16.3,15.0,1.3,'2026 · GMaster 步兵机器人',22,INK)
   self.note(s,SOURCES+'主视觉为GMaster战队公开的2026区域赛3号步兵机器人“大哥”定妆原照，6000×4000，https://gmaster.team/robots/infantry-robot/2026-infantry-3 。2027是规则讲解版本，不将历史照片声称为2027已实测车型。')
   return s
@@ -52,34 +52,60 @@ class Robo(Scene):
   for j,t in enumerate(['攻击对方基地','争夺关键阵地','建立全场控制']):self.txt(s,'goal'+str(j),1.8,10.0+j*2.1,11.4,1.6,t,27,RED if j==0 else INK,HEAVY)
   self.note(s,SOURCES+'官方2027规则V1.0.0，印刷页29–30，图4-3。依官网概述，击毁基地或在结束时取得更高全场控制程度可获胜；此页为观赛概述，不替代完整获胜判定。')
  def roles(self):
-  s=self.d.slide(WHITE);self.tag(s,'地面机器人 / 同一目标，不同分工')
-  self.txt(s,'role-head',15.2,2.8,17,4.5,'不同分工，\n合成一支战队。',39,INK,HEAVY)
-  self.photo(s,'!!field','field-axon',-34.0,6.4,31.0)
-  self.robot_photo(s,1.7,5.1,11.5)
-  self.txt(s,'role-photo-caption',1.8,14.3,11.5,2.6,'GMaster · 3号步兵\n2026 区域赛参赛版本',24,INK,HEAVY)
-  for j,(h,b) in enumerate([('重装','获取、装配能量单元，提供团队增益'),('步兵','地面机动，参与弹丸对抗'),('哨兵','全自动或半自动运行')]):
-   y=8.0+j*2.7;self.txt(s,'role-h'+str(j),17.0,y,14.6,1.35,h,29,RED,HEAVY);self.txt(s,'role-b'+str(j),17.0,y+1.4,14.6,1.15,b,21)
-  self.txt(s,'other-systems',1.8,17.3,30.5,1.0,'组合系统：空中系统 / 飞镖系统 / 雷达系统',22,GRAY)
-  self.note(s,SOURCES+'2027规则印刷页13、20–28：英雄与工程合并为重装；地面机器人为重装、步兵和哨兵。配图为GMaster公开的2026区域赛3号步兵原照，不把它指认为2027重装或哨兵。')
+  s=self.d.slide(WHITE);self.tag(s,'兵种图鉴 / GMaster 2026 区域赛公开车型')
+  self.heading(s,'四种分工，四种真实的机器。')
+  items=[('英雄','hero-studio','!!role-hero','远程火力支援'),('工程','engineer-studio','!!role-engineer','机构操作与资源获取'),('步兵','robot-studio','role-infantry','机动对抗与协作'),('哨兵','sentry-studio','role-sentry','自动运行与场地协同')]
+  for j,(h,key,name,b) in enumerate(items):
+   x=1.7+j*8.1;self.photo(s,name,key,x,7.3,7.5)
+   self.txt(s,'role-h'+str(j),x,13.2,7.5,1.6,h,31,RED,HEAVY)
+   self.txt(s,'role-b'+str(j),x,15.5,7.5,2.0,b,22)
+  self.note(s,SOURCES+'本页是2026公开车型图鉴，照片按GMaster档案逐一对应英雄、工程、步兵、哨兵，全部采用整机原图。不是2027出场阵容；下一页单独解释2027规则变化。来源：https://gmaster.team/#robots 。')
+ def evolution(self):
+  s=self.d.slide(WHITE);self.tag(s,'规则演进 / RMUC 2027')
+  self.heading(s,'从英雄、工程，到重装。')
+  self.photo(s,'!!role-hero','hero-studio',1.7,7.2,9.0)
+  self.photo(s,'!!role-engineer','engineer-studio',11.6,7.2,9.0)
+  self.txt(s,'old-hero',1.7,13.6,9,1.5,'2026 · 英雄',25,INK,HEAVY)
+  self.txt(s,'old-engineer',11.6,13.6,9,1.5,'2026 · 工程',25,INK,HEAVY)
+  self.line(s,'merge-a',6.2,15.1,6.2,15.7,GRAY)
+  self.line(s,'merge-b',16.1,15.1,16.1,15.7,GRAY)
+  self.line(s,'merge-rail',6.2,15.7,22.0,15.7,GRAY)
+  self.line(s,'merge-out',22.0,15.7,23.2,10.3,GRAY)
+  self.txt(s,'heavy-role',23.7,7.4,8.6,2.8,'重装',47,RED,HEAVY)
+  self.txt(s,'heavy-functions',23.8,11.0,8.5,4.2,'能量单元装配\n团队增益\n模块化发射',24,INK)
+  self.txt(s,'current-ground',1.8,17.0,30.2,1.2,'2027 地面机器人：重装 / 步兵 / 哨兵',24,INK)
+  self.note(s,SOURCES+'2027规则印刷页13、20–28明确英雄与工程合并为重装。左侧照片仍标识为2026英雄和工程来源车型，用规则演进关系解释新角色，不将旧照片改名冒充2027重装实物。')
+ def systems(self):
+  s=self.d.slide(WHITE);self.tag(s,'更多角色 / GMaster 2026 公开实物')
+  self.heading(s,'地面之外，还有另一套协作。')
+  self.photo(s,'aerial-photo','aerial-studio',1.7,8.1,9.6)
+  self.photo(s,'dart-photo','dart-studio',22.5,8.1,9.6)
+  # Original radar JPEG carries EXIF orientation 8. Keep the pixels unchanged;
+  # apply the corresponding CCW quarter-turn as a native PowerPoint transform.
+  self.flush();info=IMAGES['radar-studio']
+  self.d.run('add',f'/slide[{s}]','--type','picture',props={'name':'radar-photo','src':str(ASSET/info['file']),'x':'12.6cm','y':'7.433333cm','width':'8.6cm','height':'5.733333cm','rotation':270})
+  for j,(h,b) in enumerate([('空中机器人','空中支援与侦察'),('雷达系统','全场感知与信息共享'),('飞镖系统','发射装置与目标打击')]):
+   x=1.7+j*10.4;self.txt(s,'system-h'+str(j),x,15.2,9.6,1.7,h,29,RED,HEAVY);self.txt(s,'system-b'+str(j),x,17.2,9.6,1.2,b,21)
+  self.note(s,SOURCES+'三张照片分别来自GMaster2026公开档案的空中机器人、雷达机器人与飞镖系统，按主体身份对应使用。2027规则将空中、飞镖、雷达归为组合系统；2026照片不冒充2027完整系统配置。雷达原JPEG带EXIF方向8，仅通过PPT对象旋转显示正立，未改动图像内容。')
  def engineering(self,alt=False):
   s=self.d.slide(INK if alt else WHITE);self.tag(s,'工程视角 / 一个动作背后的完整链路',alt)
   self.heading(s,'看见之后，\n还要做出动作。',w=16,c=WHITE if alt else INK)
-  self.robot_photo(s,17.8,3.6,14.3)
+  self.robot_photo(s,17.8,3.6,14.3,'sentry-studio','sentry-engineering')
   for j,(h,b) in enumerate([('感知','获取环境信息'),('决策','判断下一步动作'),('控制','让运动跟上预期'),('执行','把指令变成动作')]):
    x=1.8+j*8.1;self.txt(s,'chain-h'+str(j),x,14.8,7.4,1.4,h,30,RED,HEAVY)
    self.txt(s,'chain-b'+str(j),x,16.6,7.3,1.4,b,21,WHITE if alt else INK)
    if j<3:self.line(s,'chain'+str(j),x+2.5,14.2,x+8.1,14.2,GRAY)
-  self.note(s,SOURCES+'此页将赛事涉及的感知、控制、嵌入式与机械工程整理为教学用通用工程链路，不声称所有机器人的软硬件完全相同。延续同一张GMaster步兵定妆原照，只改变位置与等比尺寸，不生成或修改机器结构。')
+  self.note(s,SOURCES+'本页采用GMaster2026哨兵整机原照，介绍赛事中的感知、决策、控制与执行链路，不声称所有机器人的软硬件完全相同。未生成或修改机器人结构。')
  def teamwork(self):
   s=self.d.slide(WHITE);self.tag(s,'团队视角 / 单机之外，才是比赛')
   self.heading(s,'把单机能力，变成团队优势。')
   self.photo(s,'battlefield','field-top',13.5,7.3,19)
   self.line(s,'team-a',8.1,12.7,18.7,9.0,RED)
   self.line(s,'team-b',8.1,12.7,25.2,14.3,CYAN)
-  self.robot_photo(s,2.4,9.4,8.1)
+  self.robot_photo(s,1.7,8.4,11.0,'crew-photo','team-crew-photo')
   for j,(x,y) in enumerate([(17,9),(26,14)]):self.sh(s,'partner-marker'+str(j),x,y,2,2,'队友',20,WHITE,fill=CYAN,preset='ellipse',align='center',bold=True)
   for j,(x,y,t) in enumerate([(2,15.7,'共享信息'),(14.4,6.0,'协调位置'),(24.4,6.0,'把握时机')]):self.txt(s,'team-label'+str(j),x,y,8.5,1.7,t,28,INK,HEAVY)
-  self.note(s,SOURCES+'团队关系为原创教学示意，不是实际对局路线或推荐战术，也不表示2027机器人实际部署位置。底图为规则手册印刷页29图4-1。')
+  self.note(s,SOURCES+'团队照片来自BirdieBot公开图库“冠军团队与机器人”，照片中为2023活动，不将其指认为2027赛队或比赛成绩。关系线为教学示意，不是实际对局路线；底图为规则手册印刷页29图4-1。')
  def iterate(self):
   s=self.d.slide(WHITE);self.tag(s,'赛场之外 / 一整年的工程实践')
   self.heading(s,'让图纸，经得起反复验证。')
@@ -114,9 +140,9 @@ def main():
  out.mkdir(parents=True);d=Deck(out/'robomaster.pptx',args.officecli);a=Robo(d)
  if args.pilot:a.cover();a.engineering();a.cover(True);a.engineering(True)
  else:
-  a.cover();a.what();a.arena();a.roles();a.engineering();a.teamwork();a.iterate();a.people();a.close()
+  a.cover();a.what();a.arena();a.roles();a.evolution();a.systems();a.engineering();a.teamwork();a.iterate();a.people();a.close()
   a.flush()
-  for i in range(1,10):d.run('set',f'/slide[{i}]',props={'transition':'morph-1500' if i in [4,5,6] else 'fade-750','advanceClick':True})
+  for i in range(1,d.count+1):d.run('set',f'/slide[{i}]',props={'transition':'morph-1500' if i==5 else 'fade-750','advanceClick':True})
  a.finish();print(d.file)
 
 if __name__=='__main__':main()

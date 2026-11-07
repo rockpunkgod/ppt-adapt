@@ -35,5 +35,47 @@
     "file": "workshop-portrait.jpg",
     "width": 933,
     "height": 1400
+  },
+  "hero-studio": {
+    "file": "hero-studio.jpg",
+    "width": 6000,
+    "height": 4000,
+    "orientation": 1
+  },
+  "engineer-studio": {
+    "file": "engineer-studio.jpg",
+    "width": 6000,
+    "height": 4000,
+    "orientation": 1
+  },
+  "sentry-studio": {
+    "file": "sentry-studio.jpg",
+    "width": 6000,
+    "height": 4000,
+    "orientation": 1
+  },
+  "aerial-studio": {
+    "file": "aerial-studio.jpg",
+    "width": 6000,
+    "height": 4000,
+    "orientation": 1
+  },
+  "radar-studio": {
+    "file": "radar-studio.jpg",
+    "width": 6000,
+    "height": 4000,
+    "orientation": 8
+  },
+  "dart-studio": {
+    "file": "dart-studio.jpg",
+    "width": 6000,
+    "height": 4000,
+    "orientation": 1
+  },
+  "crew-photo": {
+    "file": "crew-photo.jpg",
+    "width": 1400,
+    "height": 933,
+    "orientation": 1
   }
 }
