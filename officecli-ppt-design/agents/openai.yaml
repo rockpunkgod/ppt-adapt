@@ -1,4 +1,4 @@
 interface:
   display_name: "PPT Adapt"
-  short_description: "整套PPT设计与制作：艺术方向、字体配色、变化构图与现有配方组合"
-  default_prompt: "使用 $officecli-ppt-design，理解我的内容与受众，确定艺术方向和整套页面节奏，组合已有配方制作可编辑PPT，边预览边调整，最后用本机PowerPoint播放确认。"
+  short_description: "描述主题与受众，自动设计制作完整演示，交付可编辑PPTX和预览"
+  default_prompt: "使用 $officecli-ppt-design，根据我的主题、受众和素材制作一套有独特设计的演示，交付可编辑PPTX和预览。"

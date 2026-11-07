@@ -2,7 +2,7 @@
 
 一个能够自主设计并制作整套可编辑PowerPoint的Agent Skill。根据主题、受众与内容选择艺术方向、字体、配色和逐页构图，再自然组合已有技术配方。
 
-[下载技能包 v1.0.0](https://github.com/rockpunkgod/ppt-adapt/releases/download/v1.0.0/ppt-adapt-v1.0.0.zip) · [下载可编辑 PPT](https://github.com/rockpunkgod/ppt-adapt/releases/download/v1.0.0/ppt-adapt-value.pptx) · [完整实播视频](https://github.com/rockpunkgod/ppt-adapt/releases/download/v1.0.0/ppt-adapt-playback.mp4) · [发布说明](https://github.com/rockpunkgod/ppt-adapt/releases/tag/v1.0.0)
+[下载最新源码与技能](https://github.com/rockpunkgod/ppt-adapt/archive/refs/heads/main.zip) · [下载可编辑 PPT](https://github.com/rockpunkgod/ppt-adapt/releases/download/v1.0.0/ppt-adapt-value.pptx) · [完整实播视频](https://github.com/rockpunkgod/ppt-adapt/releases/download/v1.0.0/ppt-adapt-playback.mp4) · [v1.0.0 发布归档](https://github.com/rockpunkgod/ppt-adapt/releases/tag/v1.0.0)
 
 ## 先看成品
 
@@ -35,9 +35,21 @@
 
 ## 使用
 
-加载 `officecli-ppt-design`，提供内容、受众、场景、页数以及可用素材。例如：
+**安装 Skill → 输入需求 → Agent 制作 → 收到 PPTX 和预览。**
 
-> 制作一套9页科技产品介绍，面向产品团队。先确定整套艺术方向和叙事节奏，组合已有字体、网格、原生图表及适量Morph，保留可编辑对象，制作中预览关键页面，最后用本机PowerPoint播放检查。
+让支持Skill安装的Agent安装本仓库中的`officecli-ppt-design`，或将该目录放入Agent的技能目录。安装后直接描述需求，例如：
+
+> 用 PPT Adapt 为我的离线 AI 产品做一套9页发布演示，面向产品团队。下面是产品资料和图片。希望有鲜明的设计，讲清价值、工作方式和应用场景，给我可编辑PPTX和预览。
+
+不需要指定OfficeCLI、COM、配方或脚本。Agent负责设计与制作，自动衔接内部工具并预览修正，再返回文件。可以指定品牌、场景、页数和参考风格，也可以交给Agent决定。
+
+本地完整制作需要Windows桌面版PowerPoint及制作运行环境；Agent先检查并复用已安装的工具，只在实际缺失时说明需要准备什么。
+
+### 一键重建首页作品
+
+下载[最新仓库源码](https://github.com/rockpunkgod/ppt-adapt/archive/refs/heads/main.zip)，在具备运行环境的本机双击`rebuild-demo.cmd`，即可从随附源文件和本地素材重建十页介绍，输出**可编辑PPTX、整套预览图和动效预览视频**。不重新下载素材，不覆盖已有文件。该入口新增于v1.0.0之后，旧版压缩包不包含它。
+
+也可以直接对Agent说：**“重建 PPT Adapt 的首页示例，把PPTX和预览给我。”** 技术参数由Agent处理，详见[内部重建说明](officecli-ppt-design/references/rebuild-demo.md)。该脚本只复现示例，新需求仍由Agent独立设计。
 
 默认由同一Agent保持全稿设计上下文：理解需求 → 确定风格 → 规划整套演示 → 选择和组合配方 → 制作 → 实际预览 → 调整 → 交付。设计便笺按任务需要保留，不要求额外Agent、机器规格、依赖图、评分或兼容性数据库。
 
@@ -117,7 +129,7 @@ OfficeCLI、Python 3；本地预览与精修使用Windows桌面版PowerPoint和W
 
 ## 完整技能包
 
-仓库保留技能、配方、制作脚本、可编辑示例和已有原生播放记录。`ppt-skills.zip` 提供同一批项目文件的离线包，也包含可选的 `ppt-director` 与 `ppt-composition-planner`；默认制作入口仍为 `officecli-ppt-design`。
+仓库保留技能、配方、制作脚本、可编辑示例和已有原生播放记录。`ppt-skills.zip`保留为v1.0.0离线归档，也包含可选的`ppt-director`与`ppt-composition-planner`；新增重建入口请使用最新源码。默认制作入口仍为`officecli-ppt-design`。
 
 维护者将新增项目文件加入Git后，可在本地执行 `python scripts/package_delivery.py` 更新离线包。打包只读取已跟踪的本地文件并检查压缩包完整性，不下载资源，不打入缓存、工具安装目录或工作区临时文件。归档的播放记录仅证明对应作品的既有结果，不能替代新作品或新组合的原生验证。
 
