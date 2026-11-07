@@ -12,7 +12,7 @@
 
 [![PPT Adapt 制作的三页产品发布：整体展示、工作方式与应用场景的原生连续播放](docs/media/ppt-adapt-demo.gif)](https://github.com/rockpunkgod/ppt-adapt/releases/download/v1.0.0/ppt-adapt-playback.mp4)
 
-上方是本机 PowerPoint 实播节选，点击查看完整 55 秒视频。文字、图表与页面结构保留可编辑对象；不是将整套页面做成视频。
+上方是本机 PowerPoint 实播节选，点击动图即可播放预览；[完整 55 秒实播视频](https://github.com/rockpunkgod/ppt-adapt/releases/download/v1.0.0/ppt-adapt-playback.mp4)可单独下载。文字、图表与页面结构保留可编辑对象；不是将整套页面做成视频。
 
 <details>
 <summary>展开查看完整 10 页</summary>
