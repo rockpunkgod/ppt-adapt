@@ -8,6 +8,8 @@
 
 入口：[officecli-ppt-design](officecli-ppt-design/SKILL.md) · [整套演示设计指南](officecli-ppt-design/references/deck-design.md) · [配方索引](officecli-ppt-design/references/recipe-index.md)
 
+正式版：[v1.0.0 发布与下载](https://github.com/rockpunkgod/ppt-adapt/releases/tag/v1.0.0) · [版本记录](CHANGELOG.md)
+
 ## 使用
 
 加载 `officecli-ppt-design`，提供内容、受众、场景、页数以及可用素材。例如：
