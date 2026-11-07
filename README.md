@@ -2,6 +2,10 @@
 
 一个能够自主设计并制作整套可编辑PowerPoint的Agent Skill。根据主题、受众与内容选择艺术方向、字体、配色和逐页构图，再自然组合已有技术配方。
 
+默认每套作品独立构思，在内容适配的方向中随机探索字体、配色、构图和动效。同题重做也重新设计，共用技术配方而不沿用固定美术模板；整套语言连贯，页面随叙事变化。见[制作总则](officecli-ppt-design/references/deck-design.md#每套作品独立构思让随机产生新选择)。
+
+开放需求先尝试两到三个不同方向的封面与代表内容页，依据真实预览比较；通过大胆的艺术方向和精准取舍完善作品，删去无用容器、过度强调和重复动画。
+
 入口：[officecli-ppt-design](officecli-ppt-design/SKILL.md) · [整套演示设计指南](officecli-ppt-design/references/deck-design.md) · [配方索引](officecli-ppt-design/references/recipe-index.md)
 
 ## 使用
@@ -23,6 +27,8 @@
 保留OfficeCLI主体制作、PowerPoint COM/VBA精修及原生PowerPoint预览。既有配方与适用边界保持原样；仓库原有附加规划工具可按特定任务使用，不属于默认制作链。
 
 ## 原创作品
+
+[PPT Adapt：每个想法，都有自己的样子](examples/ppt-adapt-unique/ppt-adapt-unique.pptx)是新的10页独立设计版：松绿与信号黄、衬线排版、环形数据页及双面3D转化场景。先比较三个封面/内容页方向，再以减法精修收敛；[作品与原生播放](examples/ppt-adapt-unique/README.md)展示新的制作总则。
 
 [PPT Adapt：让 Agent 做出值得上台的 PPT](examples/ppt-adapt-showcase/ppt-adapt-showcase.pptx)是12页完整项目介绍，以演示本身体现设计与制作能力。包含内容组织、真实数据图表、连续3D聚光场景与可编辑交付；[原生播放预览](examples/ppt-adapt-showcase/playback.mp4)和[作品说明](examples/ppt-adapt-showcase/README.md)一并提供。
 
