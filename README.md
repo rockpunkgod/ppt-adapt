@@ -49,6 +49,8 @@
 
 全稿保持共同的字体、色彩与空间语言，页面随信息关系变化。先让静态画面成立，再用有目的的连续运动推进理解；通过实际预览与减法精修完善作品。
 
+所有素材先筛选、看原素材，再在实际版式里预览。来源可靠之外，还要确认主体清楚、内容准确、画质够用、风格合适、裁切后仍能表达；不以官网来源、文件尺寸或生成成功代替选择。
+
 主体制作沿用OfficeCLI，必要时由PowerPoint COM/VBA精修，最后用原生PowerPoint预览和播放。已有字体、版式、图表、Morph、3D、媒体和交互配方继续复用，不新建PPT引擎或审美评分平台。
 
 [技能入口](officecli-ppt-design/SKILL.md) · [设计总则与视觉构思](officecli-ppt-design/references/deck-design.md) · [内部配方索引](officecli-ppt-design/references/recipe-index.md)

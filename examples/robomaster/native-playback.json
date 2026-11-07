@@ -51,8 +51,9 @@
   ],
   "presentation": "robomaster.pptx",
   "slides": 9,
-  "pptxSha256": "044bfaad9b5c376115e6b1b417ce3270da77bc8b5e094cea286efcca54d8852d",
-  "videoSha256": "0f921aba5faec6c5c0dd5619b478d1176688d1e62091fb7a9f9023c97c214ca0",
+  "pptxSha256": "f9befd582ab016eb548406fc9593bcd0785fc08a41aabd8672aa25c2600d3dab",
+  "videoSha256": "50a6b7fca8f78ca62aa0c5d995ec614a04a0a9bf5df5dc5b856c563e6cbe6563",
   "nativeTextOverflow": [],
-  "visualReview": "Nine native slides inspected; field transition, image focus and teamwork intermediate states reviewed."
+  "visualReview": "New complete GMaster robot photo, battle scene and BirdieBot workshop images inspected at native size and on slides. Whole-body photo identity preserved through slides 4-6.",
+  "originalStudioPhotoEmbedded": true
 }

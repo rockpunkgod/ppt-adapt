@@ -11,19 +11,29 @@
     "height": 615,
     "pdfPage": 31
   },
-  "arena-banner": {
-    "file": "arena-banner.jpg",
-    "width": 5086,
-    "height": 862
-  },
   "arena-poster": {
     "file": "arena-poster.jpg",
     "width": 4000,
     "height": 2667
   },
-  "team-culture": {
-    "file": "team-culture.png",
-    "width": 1200,
-    "height": 484
+  "robot-studio": {
+    "file": "robot-studio.jpg",
+    "width": 6000,
+    "height": 4000
+  },
+  "competition-scene": {
+    "file": "competition-scene.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "workshop-wide": {
+    "file": "workshop-wide.jpg",
+    "width": 1400,
+    "height": 933
+  },
+  "workshop-portrait": {
+    "file": "workshop-portrait.jpg",
+    "width": 933,
+    "height": 1400
   }
 }

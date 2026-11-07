@@ -16,36 +16,34 @@ class Robo(Scene):
   info=IMAGES[key];self.pic(s,n,x,y,w,w*info['height']/info['width'],ASSET/info['file'])
  def tag(self,s,t,dark=False):self.txt(s,'chapter',1.7,1.0,30.2,1.15,t,22,WHITE if dark else RED,LATIN)
  def robot_photo(self,s,x,y,w):
-  self.flush();info=IMAGES['arena-banner']
-  h=w/(info['width']*.24/info['height'])
-  self.d.run('add',f'/slide[{s}]','--type','picture',props={'name':'!!unit-image','src':str(ASSET/info['file']),'x':f'{x}cm','y':f'{y}cm','width':f'{w}cm','height':f'{h}cm','cropLeft':70,'cropRight':6})
+  self.photo(s,'!!unit-image','robot-studio',x,y,w)
  def heading(self,s,t,w=30,c=INK):self.txt(s,'heading',1.7,2.75,w,4.5,t,43,c,HEAVY)
  def line(self,s,n,x1,y1,x2,y2,c=GRAY):
   self.poly(s,'!!knowledge-link-'+n,[(x1,y1),(x2,y2),(x2+.01,y2+.02),(x1+.01,y1+.02)],c)
  def cover(self,alt=False):
   if alt:
-   s=self.d.slide(INK);self.photo(s,'cover-photo','arena-banner',-5.0,7.0,52)
+   s=self.d.slide(INK);self.photo(s,'cover-photo','competition-scene',0,2.3,33.87)
    self.tag(s,'ROBOMASTER / 机甲大师',True)
    self.txt(s,'alt-title',1.7,3.0,29,4.5,'让工程，成为现场。',56,WHITE,HEAVY)
    self.txt(s,'alt-name',1.7,14.4,31,3.2,'ROBOMASTER',67,WHITE,LATIN,bold=True)
    return s
   s=self.d.slide(WHITE);self.tag(s,'机甲大师 / 认识 RoboMaster')
-  self.txt(s,'cover-robo',1.55,3.1,18,4.1,'ROBO',97,INK,LATIN,bold=True)
-  self.txt(s,'cover-master',1.55,7.0,19,4.1,'MASTER',97,INK,LATIN,bold=True)
-  self.txt(s,'cover-head',20.2,3.8,12.0,5.4,'把工程，\n带上赛场。',43,INK,HEAVY)
-  self.txt(s,'cover-season',20.3,9.7,12.2,1.2,'2027 赛季入门',24,RED)
-  self.sh(s,'photo-bed',0,12.2,33.87,6.85,fill=INK)
-  self.photo(s,'!!competition-photo','arena-banner',0,12.2,33.87)
-  self.txt(s,'cover-statement',1.7,17.8,30,1,'技术成为现场，团队成为答案。',22,WHITE)
-  self.note(s,SOURCES+'封面照片来自官网RMUC页面的公开横幅，不把照片中的机器人指认为2027特定兵种。')
+  self.txt(s,'cover-robo',1.55,3.2,15,4.1,'ROBO',90,INK,LATIN,bold=True)
+  self.txt(s,'cover-master',1.55,7.1,15,4.1,'MASTER',90,INK,LATIN,bold=True)
+  self.photo(s,'studio-hero','robot-studio',16.3,3.5,17.57)
+  self.txt(s,'cover-head',1.75,12.0,14.0,4.0,'把工程，\n带上赛场。',35,INK,HEAVY)
+  self.txt(s,'cover-season',1.8,17.0,14.0,1.2,'2027 赛季入门',24,RED)
+  self.txt(s,'cover-subject',17.3,16.3,15.0,1.3,'2026 · GMaster 步兵机器人',22,INK)
+  self.note(s,SOURCES+'主视觉为GMaster战队公开的2026区域赛3号步兵机器人“大哥”定妆原照，6000×4000，https://gmaster.team/robots/infantry-robot/2026-infantry-3 。2027是规则讲解版本，不将历史照片声称为2027已实测车型。')
   return s
  def what(self):
   s=self.d.slide(INK);self.tag(s,'DJI 大疆发起 / 高校机器人赛事',True)
   self.heading(s,'学生造机甲，团队打配合。',c=WHITE)
-  self.photo(s,'!!competition-photo','arena-banner',-7.0,7.1,47.9)
+  self.photo(s,'competition-scene','competition-scene',1.7,6.1,19.35)
   for j,(h,b) in enumerate([('自主研发','高校战队设计并制作机器人'),('战术对抗','在同一赛场协作、交锋'),('工程实践','把多个学科接成可运行系统')]):
-   x=1.7+j*10.6;self.txt(s,'what-h'+str(j),x,14.4,9.4,1.5,h,31,RED if j==0 else WHITE,HEAVY)
-   self.txt(s,'what-b'+str(j),x,16.5,9.5,1.8,b,22,'C6CDD4')
+   y=7.0+j*3.8;self.txt(s,'what-h'+str(j),22.5,y,9.5,1.5,h,30,RED if j==0 else WHITE,HEAVY)
+   text=['高校战队\n设计并制作机器人','在同一赛场\n协作、交锋','把多个学科\n接成可运行系统'][j]
+   self.txt(s,'what-b'+str(j),22.5,y+1.6,9.5,2.15,text,22,'C6CDD4')
   self.note(s,SOURCES+'RoboMaster由DJI大疆发起，介绍以高校系列赛中的超级对抗赛为主。其他入口包括高校联盟赛及高校人工智能挑战赛。')
  def arena(self,alt=False):
   s=self.d.slide(WHITE);self.tag(s,'RMUC 2027 / 观赛的第一张地图')
@@ -58,11 +56,11 @@ class Robo(Scene):
   self.txt(s,'role-head',15.2,2.8,17,4.5,'不同分工，\n合成一支战队。',39,INK,HEAVY)
   self.photo(s,'!!field','field-axon',-34.0,6.4,31.0)
   self.robot_photo(s,1.7,5.1,11.5)
-  self.txt(s,'role-photo-caption',1.8,14.3,11.5,2.6,'一台机器人，\n接入整个团队。',25,INK,HEAVY)
+  self.txt(s,'role-photo-caption',1.8,14.3,11.5,2.6,'GMaster · 3号步兵\n2026 区域赛参赛版本',24,INK,HEAVY)
   for j,(h,b) in enumerate([('重装','获取、装配能量单元，提供团队增益'),('步兵','地面机动，参与弹丸对抗'),('哨兵','全自动或半自动运行')]):
    y=8.0+j*2.7;self.txt(s,'role-h'+str(j),17.0,y,14.6,1.35,h,29,RED,HEAVY);self.txt(s,'role-b'+str(j),17.0,y+1.4,14.6,1.15,b,21)
   self.txt(s,'other-systems',1.8,17.3,30.5,1.0,'组合系统：空中系统 / 飞镖系统 / 雷达系统',22,GRAY)
-  self.note(s,SOURCES+'2027规则印刷页13、20–28：英雄与工程合并为重装；地面机器人为重装、步兵和哨兵。插画为原创通用地面机器人示意，不代表具体赛队结构。')
+  self.note(s,SOURCES+'2027规则印刷页13、20–28：英雄与工程合并为重装；地面机器人为重装、步兵和哨兵。配图为GMaster公开的2026区域赛3号步兵原照，不把它指认为2027重装或哨兵。')
  def engineering(self,alt=False):
   s=self.d.slide(INK if alt else WHITE);self.tag(s,'工程视角 / 一个动作背后的完整链路',alt)
   self.heading(s,'看见之后，\n还要做出动作。',w=16,c=WHITE if alt else INK)
@@ -71,7 +69,7 @@ class Robo(Scene):
    x=1.8+j*8.1;self.txt(s,'chain-h'+str(j),x,14.8,7.4,1.4,h,30,RED,HEAVY)
    self.txt(s,'chain-b'+str(j),x,16.6,7.3,1.4,b,21,WHITE if alt else INK)
    if j<3:self.line(s,'chain'+str(j),x+2.5,14.2,x+8.1,14.2,GRAY)
-  self.note(s,SOURCES+'此页将赛事涉及的感知、控制、嵌入式与机械工程整理为教学用通用工程链路，不声称所有机器人的软硬件完全相同。插画为原创原生形状。')
+  self.note(s,SOURCES+'此页将赛事涉及的感知、控制、嵌入式与机械工程整理为教学用通用工程链路，不声称所有机器人的软硬件完全相同。延续同一张GMaster步兵定妆原照，只改变位置与等比尺寸，不生成或修改机器结构。')
  def teamwork(self):
   s=self.d.slide(WHITE);self.tag(s,'团队视角 / 单机之外，才是比赛')
   self.heading(s,'把单机能力，变成团队优势。')
@@ -85,11 +83,11 @@ class Robo(Scene):
  def iterate(self):
   s=self.d.slide(WHITE);self.tag(s,'赛场之外 / 一整年的工程实践')
   self.heading(s,'让图纸，经得起反复验证。')
+  self.photo(s,'workshop-wide','workshop-wide',1.7,8.7,14.7)
+  self.photo(s,'workshop-portrait','workshop-portrait',24.2,6.5,8.0)
   for j,t in enumerate(['设计','制作','联调','复盘']):
-   x=1.8+j*8.1;self.txt(s,'loop'+str(j),x,7.3,7.0,1.7,t,31,RED if j==2 else INK,HEAVY)
-   if j<3:self.line(s,'loop'+str(j),x+3.2,8.1,x+7.2,8.1,GRAY)
-  self.photo(s,'!!team-photo','team-culture',0,10.0,33.87)
-  self.note(s,SOURCES+'官方赛事介绍说明团队备赛、综合技术实践与工程师文化。照片直接来自官网赛事文化图片，权利归原作者；四步为本演示的工程实践概括，不是官方固定赛程。')
+   self.txt(s,'loop'+str(j),18.1,7.4+j*2.8,5.5,1.7,t,30,RED if j==2 else INK,HEAVY)
+  self.note(s,SOURCES+'两张原图来自木鸢BirdieBot战队公开图库：https://birdiebot.org/photo/ ，标题为准备阶段·算法调试、机械组·检修现场。保留原图全部边界和水印。四步为本演示的工程实践概括，不是官方固定赛程。')
  def people(self):
   s=self.d.slide(WHITE);self.tag(s,'找到自己的位置 / 从一个模块开始')
   self.heading(s,'每一种专长，\n都有上场的位置。')
@@ -118,7 +116,7 @@ def main():
  else:
   a.cover();a.what();a.arena();a.roles();a.engineering();a.teamwork();a.iterate();a.people();a.close()
   a.flush()
-  for i in range(1,10):d.run('set',f'/slide[{i}]',props={'transition':'morph-1500' if i in [2,4,5,6] else 'fade-750','advanceClick':True})
+  for i in range(1,10):d.run('set',f'/slide[{i}]',props={'transition':'morph-1500' if i in [4,5,6] else 'fade-750','advanceClick':True})
  a.finish();print(d.file)
 
 if __name__=='__main__':main()
