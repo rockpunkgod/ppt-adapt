@@ -24,6 +24,8 @@
 
 ## 原创作品
 
+[PPT Adapt：让 Agent 做出值得上台的 PPT](examples/ppt-adapt-showcase/ppt-adapt-showcase.pptx)是12页完整项目介绍，以演示本身体现设计与制作能力。包含内容组织、真实数据图表、连续3D聚光场景与可编辑交付；[原生播放预览](examples/ppt-adapt-showcase/playback.mp4)和[作品说明](examples/ppt-adapt-showcase/README.md)一并提供。
+
 [循迹 TRACE：团队知识工作台](examples/trace-product/trace-product.pptx)是一套9页科技概念产品演示。采用编辑式字体层级、墨色/浅灰/酸橙色、多种构图、可编辑产品界面、原生图表及连续场景Morph。
 
 [作品说明与制作源](examples/trace-product/README.md)。产品与数值均为概念演示，非在售功能或实测性能；跨机需要Noto Serif SC与Noto Sans SC，或替换后检查折行。
