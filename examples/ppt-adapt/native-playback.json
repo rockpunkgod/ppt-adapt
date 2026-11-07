@@ -51,8 +51,9 @@
   ],
   "presentation": "ppt-adapt.pptx",
   "slides": 9,
-  "pptxSha256": "e9676c713df50faca5b854504b5a497bcd3a722931492eafae66a23e91cac0f2",
-  "videoSha256": "27e10c15b5f6a92c39294e84c4e3eaeae2e66768dbf520d6258eb43648d34b66",
+  "pptxSha256": "696ad0afce97dd79ecdd0d979779d2811f4cef127d1cba2c70331e9e7be38c39",
+  "videoSha256": "2e6abbbbbbd7038a5343d615f1198de2ef8025431c563a0a90f0421f2c32d134",
   "nativeTextOverflow": [],
-  "visualReview": "Paper unfolding and document focus reviewed at intermediate states; links use open paths; labels keep their identities."
+  "visualReview": "Compared city-scene and editorial directions. Tested the three-state native city camera before expanding the deck. Reviewed final whole-district, walking-route and bookshop intermediate states, chapter fades, real RoboMaster artwork comparison, and readable cover/end credits. No claims of true 3D navigation or real city data.",
+  "editableScene": "Native text, shapes and custom paths; the artwork comparison on slide 7 contains two actual preview images."
 }

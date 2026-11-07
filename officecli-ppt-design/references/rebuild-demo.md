@@ -4,7 +4,7 @@
 
 仓库用户可双击根目录`rebuild-demo.cmd`。默认在当前目录的`output/ppt-adapt-日期时间/`生成：
 
-- `presentation.pptx`：重新生成的九页可编辑演示，包含原生纸张结构、文档空间与连续Morph。
+- `presentation.pptx`：重新生成的九页可编辑演示，包含原创轴测街区、步行路线与连续Morph。
 - `preview.jpg`：PowerPoint原生渲染的整套预览。
 - `preview.mp4`：PowerPoint原生视频导出，默认每页停留五秒，保留转场。
 
@@ -18,7 +18,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/rebuild_demo.ps1
 
 入口自动寻找Python以及仓库`tools/officecli.exe`、`PPT_ADAPT_OFFICECLI`和PATH内的OfficeCLI，并实际探测创建文件能力。Agent也可传入`-OfficeCli`和`-PythonExe`定位已有工具。`-SkipVideo`只输出PPTX和静态预览；`-KeepWork`保留本次构建素材以便调试，默认删除本次内部中间产物。失败时保留工作目录供Agent排查，不宣称成功。
 
-内部顺序：用既有`build_components.Deck`和示例源创建方向页及产品场景 → 原生导图 → 重建九页 → COM精修 → 原生预览。主体由可编辑原生形状和路径构成，作品缩略图来自本次实际原生导图；不调用图像生成或下载服务。纸张展开、文档聚焦和页面展开使用已有Morph连续对象机制；二维空间表达不称为真实三维运镜。
+内部顺序：用既有`build_components.Deck`和示例源创建关键连续场景及方向页 → 原生导图 → 重建九页 → COM精修 → 原生预览。街区、建筑、河道和路线由可编辑原生形状和路径构成，漫游作品缩略图来自本次实际原生导图；RoboMaster预览随技能提供并保留照片来源。不调用图像生成或下载服务。街区全景、路线中景与书店近景使用已有Morph连续对象机制；二维投影不称为真实三维运镜。入口复现已选定方向，新任务仍先规划分镜、试做关键片段。
 
 需要复核当前作品的实播时，内部`demo_source/record.ps1`接受`-Deck`、新建的`-Evidence`目录及本机`-Ffmpeg`路径，原生放映并记录8次真实前进键。运行期间PowerPoint需保持前台；发现焦点丢失或页序不符即停止，不将录屏或导出成功单独当作视觉通过。它只适用于当前九页作品，不替代特殊配方原有交互验证。
 

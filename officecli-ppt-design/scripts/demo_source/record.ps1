@@ -7,6 +7,7 @@ using System;using System.Text;using System.Collections.Generic;using System.Run
 public static class PaperShow{
  [StructLayout(LayoutKind.Sequential)]public struct RECT{public int L,T,R,B;}
  [DllImport("user32.dll")]public static extern bool SetForegroundWindow(IntPtr h);
+ [DllImport("user32.dll")]public static extern uint GetWindowThreadProcessId(IntPtr h,out uint p);
  [DllImport("user32.dll")]public static extern IntPtr GetForegroundWindow();
  [DllImport("dwmapi.dll")]public static extern int DwmGetWindowAttribute(IntPtr h,int a,out RECT r,int s);
  [DllImport("user32.dll")]public static extern void keybd_event(byte k,byte s,uint f,UIntPtr e);
@@ -27,7 +28,11 @@ try{
  $show=$p.SlideShowSettings.Run();Start-Sleep -Milliseconds 750
  if(-not $show){throw 'No own slideshow returned'}
  if($show.Presentation.FullName -ne $p.FullName){throw 'Slideshow ownership mismatch'}
- $h=[PaperShow]::Find();[PaperShow]::SetForegroundWindow($h)|Out-Null;Start-Sleep -Milliseconds 200
+ $h=[PaperShow]::Find();$showPid=[uint32]0
+ [PaperShow]::GetWindowThreadProcessId($h,[ref]$showPid)|Out-Null
+ $focus=New-Object -ComObject WScript.Shell;$focus.AppActivate([int]$showPid)|Out-Null
+ Start-Sleep -Milliseconds 250
+ [PaperShow]::SetForegroundWindow($h)|Out-Null;Start-Sleep -Milliseconds 200
  if([PaperShow]::GetForegroundWindow() -ne $h){throw 'Own show is not foreground'}
  $r=New-Object PaperShow+RECT;[PaperShow]::DwmGetWindowAttribute($h,9,[ref]$r,16)|Out-Null
  $width=$r.R-$r.L;$height=$r.B-$r.T

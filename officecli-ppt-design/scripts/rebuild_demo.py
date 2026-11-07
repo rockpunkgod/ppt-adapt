@@ -80,7 +80,7 @@ def main():
        '-OutputDirectory', work / 'native-directions')
     print('2/4 Building the nine-slide presentation...', flush=True)
     run([sys.executable, '-X', 'utf8', SOURCE / 'build.py', '--work', work, '--officecli', exe])
-    print('3/4 Finishing the native paper and document scenes...', flush=True)
+    print('3/4 Finishing the native city scenes...', flush=True)
     deck = output / 'presentation.pptx'
     ps(SOURCE / 'finish.ps1', '-Work', work, '-OutputDeck', deck)
     ns = {'p': 'http://schemas.openxmlformats.org/presentationml/2006/main'}
