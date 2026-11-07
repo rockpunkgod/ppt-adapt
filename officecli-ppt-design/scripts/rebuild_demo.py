@@ -1,4 +1,4 @@
-"""Rebuild the shipped ten-slide example from local source, not a deck copy.
+"""Rebuild the current nine-slide example from local source, not a deck copy.
 
 The Agent handles arbitrary presentation briefs; this command reproduces one
 specific example. Python stdlib, existing OfficeCLI and Windows PowerPoint only.
@@ -78,21 +78,16 @@ def main():
     run([sys.executable, '-X', 'utf8', SOURCE / 'pilot.py', '--work', work, '--officecli', exe])
     ps(SKILL / 'scripts/layout_story_native.ps1', '-InputDeck', work / 'directions.pptx',
        '-OutputDirectory', work / 'native-directions')
-    print('2/4 Building the ten-slide presentation...', flush=True)
+    print('2/4 Building the nine-slide presentation...', flush=True)
     run([sys.executable, '-X', 'utf8', SOURCE / 'build.py', '--work', work, '--officecli', exe])
-    print('3/4 Finishing native typography and editable chart...', flush=True)
+    print('3/4 Finishing the native paper and document scenes...', flush=True)
     deck = output / 'presentation.pptx'
-    ps(SOURCE / 'finish.ps1', '-Work', work, '-OutputDeck', deck,
-       '-ChartTemplate', SKILL / 'assets/demo/chart-template.pptx')
-    # Reuse the established workbook check rather than inventing a new validator.
-    sys.path.insert(0, str(SKILL / 'scripts'))
-    from chart_workbook import verify
-    verify(deck, deck, [])
+    ps(SOURCE / 'finish.ps1', '-Work', work, '-OutputDeck', deck)
     ns = {'p': 'http://schemas.openxmlformats.org/presentationml/2006/main'}
     with ZipFile(deck) as archive:
         root = ET.fromstring(archive.read('ppt/presentation.xml'))
-        if len(root.findall('p:sldIdLst/p:sldId', ns)) != 10:
-            raise RuntimeError('Expected ten rebuilt slides.')
+        if len(root.findall('p:sldIdLst/p:sldId', ns)) != 9:
+            raise RuntimeError('Expected nine rebuilt slides.')
     print('4/4 Exporting previews with native PowerPoint...', flush=True)
     ps(SKILL / 'scripts/render_preview.ps1', '-InputDeck', deck,
        '-OutputDirectory', output, *([] if args.skip_video else ['-Video']))
@@ -103,7 +98,7 @@ def main():
     print(f'Ready: {deck}\nPreview: {output / "preview.jpg"}', flush=True)
     if not args.skip_video:
         print(f'Native export: {output / "preview.mp4"}')
-    print('Video is a native export preview, not a screen-recorded playback verification.')
+        print('Video is a native export preview, not a screen-recorded playback verification.')
 
 
 if __name__ == '__main__':

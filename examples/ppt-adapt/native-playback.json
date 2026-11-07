@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "durationSeconds": 43,
+  "physicalRight": 8,
+  "route": [
+    {
+      "input": "initial",
+      "actualSlide": 1,
+      "slide": 1
+    },
+    {
+      "input": "physical-right",
+      "actualSlide": 2,
+      "slide": 2
+    },
+    {
+      "input": "physical-right",
+      "actualSlide": 3,
+      "slide": 3
+    },
+    {
+      "input": "physical-right",
+      "actualSlide": 4,
+      "slide": 4
+    },
+    {
+      "input": "physical-right",
+      "actualSlide": 5,
+      "slide": 5
+    },
+    {
+      "input": "physical-right",
+      "actualSlide": 6,
+      "slide": 6
+    },
+    {
+      "input": "physical-right",
+      "actualSlide": 7,
+      "slide": 7
+    },
+    {
+      "input": "physical-right",
+      "actualSlide": 8,
+      "slide": 8
+    },
+    {
+      "input": "physical-right",
+      "actualSlide": 9,
+      "slide": 9
+    }
+  ],
+  "presentation": "ppt-adapt.pptx",
+  "slides": 9,
+  "pptxSha256": "e9676c713df50faca5b854504b5a497bcd3a722931492eafae66a23e91cac0f2",
+  "videoSha256": "27e10c15b5f6a92c39294e84c4e3eaeae2e66768dbf520d6258eb43648d34b66",
+  "nativeTextOverflow": [],
+  "visualReview": "Paper unfolding and document focus reviewed at intermediate states; links use open paths; labels keep their identities."
+}
