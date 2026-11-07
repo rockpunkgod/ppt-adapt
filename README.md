@@ -28,7 +28,7 @@
 
 ## 原创作品
 
-[PPT Adapt：每个想法，都有自己的样子](examples/ppt-adapt-unique/ppt-adapt-unique.pptx)是新的10页独立设计版：松绿与信号黄、衬线排版、环形数据页及双面3D转化场景。先比较三个封面/内容页方向，再以减法精修收敛；[作品与原生播放](examples/ppt-adapt-unique/README.md)展示新的制作总则。
+[PPT Adapt：每个想法，都有自己的样子](examples/ppt-adapt-unique/ppt-adapt-smooth.pptx)是新的10页独立设计版：松绿与信号黄、衬线排版、环形数据页及双面3D转化场景。先比较三个封面/内容页方向，再以减法精修收敛，并优化柔和过渡与入场节奏；[作品与预览](examples/ppt-adapt-unique/README.md)展示新的制作总则与实际验证范围。
 
 [PPT Adapt：让 Agent 做出值得上台的 PPT](examples/ppt-adapt-showcase/ppt-adapt-showcase.pptx)是12页完整项目介绍，以演示本身体现设计与制作能力。包含内容组织、真实数据图表、连续3D聚光场景与可编辑交付；[原生播放预览](examples/ppt-adapt-showcase/playback.mp4)和[作品说明](examples/ppt-adapt-showcase/README.md)一并提供。
 
