@@ -2,6 +2,29 @@
 
 一个能够自主设计并制作整套可编辑PowerPoint的Agent Skill。根据主题、受众与内容选择艺术方向、字体、配色和逐页构图，再自然组合已有技术配方。
 
+[下载技能包 v1.0.0](https://github.com/rockpunkgod/ppt-adapt/releases/download/v1.0.0/ppt-adapt-v1.0.0.zip) · [下载可编辑 PPT](https://github.com/rockpunkgod/ppt-adapt/releases/download/v1.0.0/ppt-adapt-value.pptx) · [完整实播视频](https://github.com/rockpunkgod/ppt-adapt/releases/download/v1.0.0/ppt-adapt-playback.mp4) · [发布说明](https://github.com/rockpunkgod/ppt-adapt/releases/tag/v1.0.0)
+
+## 先看成品
+
+**输入一段需求，交出三页连贯发布。**
+
+> 为一款离线工作的边缘 AI 模块做三页产品发布，依次讲清：它是什么、怎样工作、用在哪里。
+
+[![PPT Adapt 制作的三页产品发布：整体展示、工作方式与应用场景的原生连续播放](docs/media/ppt-adapt-demo.gif)](https://github.com/rockpunkgod/ppt-adapt/releases/download/v1.0.0/ppt-adapt-playback.mp4)
+
+上方是本机 PowerPoint 实播节选，点击查看完整 55 秒视频。文字、图表与页面结构保留可编辑对象；不是将整套页面做成视频。
+
+<details>
+<summary>展开查看完整 10 页</summary>
+
+![PPT Adapt 项目介绍完整十页预览](examples/ppt-adapt-value/preview.jpg)
+
+[作品说明](examples/ppt-adapt-value/README.md) · [原创主视觉与提示词](examples/ppt-adapt-value/assets/README.md)
+
+</details>
+
+## 设计方式
+
 默认每套作品独立构思，在内容适配的方向中随机探索字体、配色、构图和动效。同题重做也重新设计，共用技术配方而不沿用固定美术模板；整套语言连贯，页面随叙事变化。见[制作总则](officecli-ppt-design/references/deck-design.md#每套作品独立构思让随机产生新选择)。
 
 开放需求先尝试两到三个不同方向的封面与代表内容页，依据真实预览比较；通过大胆的艺术方向和精准取舍完善作品，删去无用容器、过度强调和重复动画。
